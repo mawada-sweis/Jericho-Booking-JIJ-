@@ -1,0 +1,348 @@
+
+.breakhorizontally{
+height: 100px;
+    }
+#imagesection1{
+z-index:1000;
+position: absolute;
+padding-top:7px;
+padding-left:7px;
+float:left;
+width: 150px;
+height: 125px;
+}
+
+.header{
+overflow: hidden;
+background-color:rgba(0, 29, 74, 1) ;
+width: 100%;
+height:81px;
+background-position:top;
+margin-top:0px;
+}
+
+.header p{
+margin-left:170px;
+margin-top:20px;
+border-width: 0px;
+position: absolute;
+font-family: Merriweather;
+font-size: 45px;
+color: #FFFFFF;
+}
+
+.navigation{
+margin-top:25px;
+margin-left:390px;
+
+}
+
+ #trip{
+font-size:22px;
+border-radius:20px;
+background-color:rgb(236, 164, 0);
+color:white;
+text-decoration: none;
+margin-right:16px;
+border-width:0px;
+height:40px;
+padding-left:10px;
+width:140px;
+height:40px;
+}
+
+#places , #tourist_nav, #service{
+font-size:18px;
+border-radius:20px;
+background-color:white;
+color:black;
+text-decoration: none;
+margin-right:20px;
+border-width:1px;
+text-align: center;
+width:170px;
+height:40px;
+}
+
+.sidePart{
+border-width: 0px;
+width: 300px;
+height: 428px;
+background: inherit;
+background-color: rgba(0, 105, 146, 1);
+border: none;
+}  
+
+.sidePart p{
+font-size:16px;
+margin-top:40px;
+padding-left:10px;
+
+}
+.sidePart h1{
+margin-top:80px;
+padding-left:10px;
+}
+#tripPic{
+width: 1030px;
+height: 345px;
+}
+
+#tripName{
+position:absolute;
+font-size:35px;
+margin-top:90px;
+margin-left:600px;
+}
+
+#hishamTrip{
+position:absolute;
+width: 310px;
+height: 180px;
+margin-left:40px;
+border-radius:9px;
+}
+
+#startPoint{
+font-size:30px;
+margin-left:75px;
+}
+
+#line1{
+width: 30px;
+height: 153px;
+margin-left:150px;
+margin-top:15px;
+}
+
+#EinTrip{
+width: 310px;
+height: 180px;
+margin-left:40px;
+margin-top:10px;
+border-radius:9px;
+}
+
+#line2{
+position:absolute;
+width: 210px;
+height: 30px;
+margin-left:10px;
+margin-top:80px;
+}
+
+#line3{
+position:absolute;
+margin-top:-70px;
+margin-left:190px;
+}
+
+#mountTrip{
+position:absolute;
+width: 310px;
+height: 180px;
+margin-left:95px;
+margin-top:-265px;
+border-radius:9px;
+}
+
+#line4{
+position:absolute;
+margin-left:410px;
+margin-top:-220px;
+}
+
+#line5{
+position:absolute;
+margin-left:571px;
+margin-top:-162px;
+}
+
+#churchTrip{
+position:absolute;
+width: 310px;
+height: 180px;
+margin-left:420px;
+margin-top:-10px;
+border-radius:9px;
+}
+
+.Trip-way{
+margin-left:150px;
+margin-top:100px;
+}
+
+.Masar{
+margin-top:60px;
+text-align:center;
+}
+
+#masarKhalil{
+font-size:29px;
+}
+#masarInfo{
+font-size:17px;
+}
+#bookHostel{
+  margin: 10px;
+/*position:absolute;*/
+background-color:rgba(22, 155, 213, 1);
+width:202px;
+height: 79px;
+color:white;
+font-size:24px;
+border-radius:9px;
+}
+#lookAt{
+  margin: 10px;
+/*position:absolute*/
+background-color:rgba(22, 155, 213, 1);
+width:202px;
+height: 79px;
+color:white;
+font-size:24px;
+border-radius:9px;
+}
+#jerichoAtt{
+  margin: 10px;
+/*position:absolute;*/
+background-color:rgba(22, 155, 213, 1);
+width:202px;
+height: 82px;
+color:white;
+font-size:24px;
+border-radius:9px;
+}
+.row {
+  display: flex;
+  margin-left: 12%;
+  }
+  .column {
+  flex: 44.44%;
+  
+  }
+.container {
+  position: relative;
+  width: 80%; 
+  }
+.imageReco {
+  display: block;
+  width: 80%;
+  height: 200px;
+  border-radius:50%;
+  }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+   width: 80%;
+  height: 200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius:50%;
+  }
+.container:hover .overlay {
+  opacity: 1;
+  }
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+#Tour-operater{
+	margin-top: 25%;	
+	}
+
+/* footer */
+footer{
+  letter-spacing: 1px;
+  display: flex;
+  background-color: #001D4A;
+  height: 35%;
+  color: white;
+  padding-left: 3%;
+  }
+footer h1{
+  font-size: 50px;
+  }
+#mail {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color:#F59A23;
+  }
+#aboutUs{
+  width: 400px;
+  }
+.marginLeft {
+  margin-left: 8%;
+  }
+.formatText{
+  font-size: 30px;
+  font-weight: bold;
+  }
+input[type=email] {
+  margin-left: 10%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  }
+.subscribeButton {
+  background-color:#F59A23;
+  border-radius: 5px;
+  border: none; 
+  color: white; 
+  padding: 14px 20px; 
+  } 
+.subscribeButton:hover {
+  background-color: #001D4A;
+  }
+#additionalId{
+font-size:22px;
+}
+#addP{
+font-size:15px;
+}
+.additional{
+padding-left:20px;
+background-color:white;
+width:1110px;
+height:465px;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.996078431372549);
+}
+ .trip{
+                width: 100%;
+                height: 100%;
+                background-color: #001D4A;
+                color: white;
+            }
+            .input{
+                width: 40%;
+                background-color: rgb(175, 39, 39);
+                border-radius: 5px;
+                color: white;
+                font-size: 12px;
+            }
+            .button{
+                width: 100%;
+                background-color: #f59a23;
+                border-radius: 5px;
+                color: white;
+            }
+            .button:hover{
+                width: 100%;
+                color: #f59a23;
+                border-radius: 5px;
+                background-color: white;
+            }
+	

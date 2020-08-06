@@ -1,0 +1,187 @@
+.navigation{
+	overflow: hidden;
+	background-color:rgba(0, 29, 74, 1) ;
+	width: 100%;
+	height:81px;
+	background-position:top;
+	margin-top:0px;
+}
+.navigation p{
+	margin-left:170px;
+	margin-top:20px;
+	position: absolute;
+	border-width: 0px;
+	font-family: Merriweather;
+	font-size: 45px;
+	color: #FFFFFF;
+}
+#logo{
+	position: absolute;
+	padding-top:7px;
+	padding-left:7px;
+	float:left;
+	width: 150px;
+	height: 125px;
+	z-index:1000px;
+}
+.SL{
+	list-style-type: none;
+	padding-top:23px;
+	padding-left:1130px;
+	position: absolute;
+}
+#Settings, #Logout {
+	display: inline;
+}
+#Settings a, #Logout a {
+	text-decoration: none;
+	color:white;
+	font-size:20px;
+	font-family: Arial;
+	padding-left:25px;
+}
+.cover{
+	width:1100px;
+	height:300px;
+}
+.profile{
+	display:inline;
+	height:215px;
+	width:230px;
+	padding-top:0;
+}
+.name{
+	position: absolute;
+	bottom: 100px;
+	left: 50px;
+	color:white;
+	font-size:50px;
+	font-family: Merriweather;
+}
+.username{
+	position: absolute;
+	bottom: 80px;
+	left: 50px;
+	color:white;
+	font-size:15px;
+	font-family: Arial;
+}
+* {
+	box-sizing: border-box;
+}
+.row {
+	display: flex;
+	position:absolute;
+}
+.column {
+	flex: 44.44%;
+	display:inline;
+	position: relative;
+}
+.leftInfo{
+	background-color:#f6f4d2;
+	width:30%;
+	height:1200px;
+	display:block;
+	position:absolute;
+}
+#tg{
+	padding-top:80%; 
+	text-align:center;
+}
+#info{
+	padding-left:30px;
+}
+#CIicon{
+	height:30px;
+	width:30px;
+	
+}
+.container {
+	width: 50%; 
+	background-color: #ddd; 
+}
+.skills {
+	text-align: right; 
+	padding-top: 5px; 
+	padding-bottom: 5px; 
+	color: white;
+}
+.Arabic {
+	width: 100%; 
+	background-color: #d62828;
+} 
+.English {
+	width: 90%;
+	background-color: #d62828;
+} 
+.French {
+	width: 70%;
+	background-color: #d62828;
+}
+.rightInfo{
+	width:65%;
+	margin-left:450px;
+	height:1200px;
+	display:block;
+	position:absolute;	
+} 
+.border { 
+	border:1px solid #f6f4d2;
+	padding:10px;
+	border-radius:5px;
+}
+.RI{
+	font-size:20px;
+	text-align: left; 
+	padding: 5px;
+	padding-top:160px;
+}
+.RI th{
+	font-size:25px;
+}
+footer{
+	letter-spacing: 1px;
+	display: flex;
+	background-color: #001D4A;
+	height: 35%;
+	color: white;
+	padding-left: 3%;
+	margin-top:90%;
+}
+footer h1{
+	font-size: 50px;
+}
+#mail {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color:#F59A23;
+}
+#aboutUs{
+	width: 400px;
+}
+.marginLeft {
+	margin-left: 8%;
+}
+.formatText{
+	font-size: 30px;
+	font-weight: bold;
+}
+input[type=email] {
+	margin-left: 10%;
+	padding: 12px 20px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.subscribeButton {
+	background-color:#F59A23;
+	border-radius: 5px;
+	border: none; 
+	color: white; 
+	padding: 14px 20px; 
+} 
+.subscribeButton:hover {
+	background-color: #001D4A;
+}
