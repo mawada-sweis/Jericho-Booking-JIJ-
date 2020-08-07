@@ -334,54 +334,7 @@ margin-top:115px;
 #linkTour{
     margin-left: 60%;
     }
-.row {
-  display: flex;
-  margin-left: 12%;
-  }
-  .column {
-  flex: 44.44%;
-  
-  }
-.container {
-  position: relative;
-  width: 80%; 
-  }
-.imageReco {
-  display: block;
-  width: 80%;
-  height: 200px;
-  border-radius:50%;
-  }
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-   width: 80%;
-  height: 200px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-  border-radius:50%;
-  }
-.container:hover .overlay {
-  opacity: 1;
-  }
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  }
-#recommended{
-  margin-top: 10%;  
-  }
+
 
 /* footer */
 footer{
@@ -675,3 +628,90 @@ margin-right:30px;
   border-radius:12px;
   }
   
+/*recommended*/
+/*carousel 1*/ 
+.carousel-inner img {
+  width: 180px;
+  height: 200px;
+  border-radius:50%;
+}
+.carousel-control-next{
+left:150px;
+}
+.carousel-control-prev{
+left:10px;
+}
+.carousel-control-next , .carousel-control-prev{ 
+  display: flexbox;
+  width: 2%;
+  text-align: center;
+  opacity: .5;
+}
+.carousel-indicators{
+margin-left:-110px;
+width:400px;
+}
+#demo {
+ margin-left:170px;
+}
+
+/*carousal 2*/
+
+#carousel-inner-2 img {
+  width: 180px;
+  height: 200px;
+  border-radius:50%;
+}
+#carousel-control-next-2{
+left:150px;
+}
+#carousel-control-prev-2{
+left:1px;
+}
+#carousel-control-next-2 , #carousel-control-prev-2{ 
+  display: flexbox;
+  width: 2%;
+  text-align: center;
+  opacity: .5;
+}
+#carousel-indicators-2{
+ margin-left:-110px;
+ width:400px;
+}
+#demo2{
+margin-left:450px;
+margin-top:-200px;
+}
+
+/*carousal 3*/
+
+#carousel-inner-3 img {
+  width: 180px;
+  height: 200px;
+  border-radius:50%;
+}
+#carousel-control-next-3{
+left:150px;
+}
+#carousel-control-prev-3{
+left:1px;
+}
+#carousel-control-next-3 , #carousel-control-prev-3{ 
+  display: flexbox;
+  width: 2%;
+  text-align: center;
+  opacity: .5;
+}
+#carousel-indicators-3{
+margin-left:-110px;
+width:400px;
+}
+#demo3{
+margin-left:750px;
+margin-top:-200px;
+}
+.recommended{
+position:relative;
+align-items: center;
+justify-content: center
+}
