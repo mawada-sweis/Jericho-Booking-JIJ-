@@ -643,20 +643,24 @@ margin-right:30px;
   }
   
   #heart{
-  padding-left:5%;
+  padding-left:1.5em;
   margin-top:2%;
   }
   
   #comment{
-  padding-left:10%;
+  padding-left:1.5em;
   margin-top: 3%;
   }
   
   #share{
-  padding-left:10%;
-  margin-top: 3.5%
+    padding-left:1.5em;
+    margin-top: 3.5%
   }
-  
+  .btnMsg{
+    background-color: inherit;
+    border: none;
+    }
+    
   #ImgCont{
   margin-top:-600px;
   margin-left:700px;
