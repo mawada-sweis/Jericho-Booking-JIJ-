@@ -65,25 +65,37 @@
                 font-family: Arial;
                 font-size: 25px;
             }
-            .button{
+            
+            .btnBook{
                 background-color: #F59A23;
+                border: none;
                 padding: 20px;
                 margin: 5px;
                 width: 420px;
                 height: 100px;
-                font-size: 20px;
+                font-size: 30px;
                 color: white;
                 border-radius: 5px;
             }
-            .button:hover{
-                background-color: white;
+            .btnBook:hover{
+                background-color:beige;
                 padding: 20px;
                 margin: 5px;
                 width: 420px;
                 height: 100px;
-                font-size: 20px;
+                font-size: 35px;
                 color: #F59A23;
                 border-radius: 5px;
+            }
+            .infOwner{
+              border: 1px solid black;
+              text-align: center;
+              padding: 20px;
+              margin: 5px;
+              width: 420px;
+              height: 100px;
+              font-size: 20px;
+              border-radius: 5px;
             }
             #iid{
                 font-size: 20px;
