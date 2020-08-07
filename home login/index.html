@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="Home when logged in.css">
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <script type="text/javascript">
+                function showMessage(){
+                    alert("The process will take place at the end of the website's work");
+                }
+            </script>
+<title>Home</title>
+</head>
+<body>
+<div class="navigation">
+<a href>
+<img id="logo" src="images/logo.png"></img>
+</a>
+<p>Journey Into Jericho</p>
+
+<form method="post">
+
+<form method="post">
+<select class="currency" name="currency" >
+<option  >NIS</option>
+<option>AUD</option>
+<option>BHD</option>
+<option>BRL</option>
+<option>CAD</option>
+<option>CHF</option>
+<option>CLP</option>
+<option>CNY</option>
+<option>COP</option>
+<option>DZD</option>
+<option>EGP</option>
+<option>EUR</option>
+<option>GBP</option>
+<option>GHS</option>
+<option>HKD</option>
+<option>IDR</option>
+<option>ILS</option>
+<option>INR</option>
+<option>IQD</option>
+<option>JOD</option>
+<option>JPY</option>
+<option>KRW</option>
+<option>KWD</option>
+<option>LKR</option>
+<option>MAD</option>
+<option>MYR</option>
+<option>NGN</option>
+<option>NZD</option>
+<option>OMR</option>
+<option>PHP</option>
+<option>PKR</option>
+<option>PLN</option>
+<option>QAR</option>
+<option>RUB</option>
+<option>SAR</option>
+<option>SEK</option>
+<option>SGD</option>
+<option>THB</option>
+<option>TND</option>
+<option>TRY</option>
+<option>TWD</option>
+<option>USD</option>
+<option>VND</option>
+<option>ZAR</option></select>
+
+<select class="currency" id="Lang" name="Language" >
+<option>EN</option>
+<option>AR</option>
+</select>
+
+ <a href="TouristProfile.html" id="profile">
+                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                </svg>
+            </a>
+	<p id="UserName">UserName</p>
+ <a href="" id="pin">  
+                <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-bookmark-fill" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12l-5-3-5 3V3z"/>
+                </svg>
+            </a>
+            <a href="" id="seen">
+                <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                </svg>
+            </a>
+
+<select id="setting" name="setting" >
+<option>Settings</option>
+<option>Log out</option>
+</select>
+
+</form>
+</div>
+
+
+<div class="jeric">
+<p id="where">Where's next?UserName</p><br>
+<form method="post">
+<input type="search" placeholder="Search for a hotel, hostel or chalet..">
+<input id="Check_in" type="date"  name="Check_in" placeholder="Check in">
+
+<select name="Guests" >
+<option value=" " disabled selected>Guests</option>
+<option>Adults</option>
+<option>Children</option>
+<option>rooms</option></select><br>
+<a id="search" href="../type/index.html">Search</a>
+<input type="checkbox" id="workTraveler">I'm travelling for work</label> 
+ <div class="breakhorizontally"></div>
+ <div id="upper">
+            <div class="flx2">
+                <div id="upper">
+                    <div class="offers"><h2 id="offer">OFFERS</h2></div>
+                    <div id="space"><h1 id="discount">Here's a 15% discount</h1><h1>because you booked 3 times in the last 40 days</h1><h4>Press to earn the code</h4></div>
+                </div>
+                <div class="flx2">
+                    <div><h1 id="hh1">Recent Searches</h1></div>
+                    <div class="searches">
+                        <a  href="../room/index.html">
+                            <img class="Recent" src="images/magtas.jpg" alt="Magtas hotel">
+                        </a> 
+                        <h2>Magtas hotel</h2>
+                        <h4>Review : 7.3/10</h4>
+                        <h4>Address : Magtas st, 0058588 Jericho, Palestinian Territory</h4>
+                    </div>
+                    <br><br>
+                    <div class="searches">
+                       <a href="../room/index.html">
+                           <img class="Recent" src="images/Wadi AL-Qelt Hostel.jpg" alt="Wadi AL-Qelt Hostel">
+                       </a> 
+                        <h2>Wadi AL-Qelt Hostel</h2>
+                        <h4>Review : 9.2/10</h4>
+                        <h4>Address : Al-Marashahat Street (Wadi Al-Qalt), next to Wadi Al-Qelt Equestrian Center, Jericho, Palestinian Territory</h4>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="flx">
+                <div class="Chaletspage"><h2 class="hh2">Chalets</h2></div>
+                <div class="ima"><button class="buttonn"><img id="arrow" src="images/up.jpg" alt="Up Arrow"></button></div>
+                <div class="Hotelspage"><h2 id="ra">Hotels</h2></div>
+                <div class="ima"><button class="buttonn"><img id="arrow" src="images/down.jpg" alt="Down Arrow"></button></div>
+                <div class="Hostelspage"><h2 class="hh2">Hostels</h2></div>
+            </div>-->
+        </div>
+        <br><br><br><br>
+        <div class="lower flx2">
+            <div class="bott"><h1>Your booking state:</h1></div><br>
+            <div id="upper">
+                <div class="bot extra">
+                    <h2>Jericho Resort Village</h2><br>
+                    <h3>Booked on: mm/dd/yy</h3>
+                    <h3>Duration: mm/dd/yy - mm/dd/yy</h3>
+                    <h3>Features:</h3>
+                    <label class="labll">Currency change</label>
+                    <label class="labll">Dry cleaning</label>
+                    <label class="labll">Laundry service</label>
+                </div>
+                <div class="bot extra">
+                    <h2>Transportation state:</h2>
+                    <h3>Rent a Skoda Octavia for 3 days</h3>
+                    <br><br><br><h3>Features:</h3>
+                    <label class="labll">Daily wash</label>
+                    <label class="labll">Parking space</label>
+                </div>
+                <div class="flx2">
+                    <div class="bot">
+                        <h3>SIM card state:</h3>
+                        <h4>Purchased a JAWWAL SIM card with </h4><h4>50 NIS balance and 2GB 3g service.</h4>
+                    </div>
+                    <div class="bot">
+                        <h3>Luggage state:</h3>
+                        <h4>Your luggage are in a safe place</h4><h4>so you can enjoy your time.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+<div class="cont">
+<p id="conect"><b>Connect with other travelers<b></p>
+<div class="post">
+<img class="pp" src="images/pp.jpg" alt="profile picture">
+<p id="nameForPost">lisa jones</p>
+<p id="accountPost">@lisa19.ah</p>
+<button class="btnMsg" id="follow"onClick='showMessage()'>
+    Follow
+    </button>
+<img id="postPic" src="images/postPic.jpg"></img><br>
+<p id="review">I came here with a tour group at the end of October.
+ The best part of this trip was the bus ride through the Judean Desert,. The site itself was interesting.</p>
+ <div class="social">
+<button class="btnMsg" onClick='showMessage()'>
+    <svg id="heart" width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-emoji-laughing" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path fill-rule="evenodd" d="M12.331 9.5a1 1 0 0 1 0 1A4.998 4.998 0 0 1 8 13a4.998 4.998 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5z"/>
+        <path d="M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5z"/>
+      </svg> 
+</button>
+                <p class="action">like</p>
+                <button class="btnMsg" onClick='showMessage()'>
+                    <svg id="comment" width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-chat-fill" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/>
+                </svg>
+                </button>
+                <p class="action">comment</p>
+                <button class="btnMsg" onClick='showMessage()'>
+                <svg id="share"width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-share-fill" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M12.024 3.797L4.499 7.56l-.448-.895 7.525-3.762.448.894zm-.448 9.3L4.051 9.335 4.5 8.44l7.525 3.763-.448.894z"/>
+                  <path fill-rule="evenodd" d="M13.5 5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm-11-5.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                </svg>
+            </button>
+                <p class="action">share</p>
+            
+            </div>
+<img id="ImgCont" src="images/connect.jpg"></img>
+</div>
+<div class="breakhorizontally"></div>
+		    
+		    <!--about jericho+AD section-->
+		    <div class="flexible">
+		      
+		      <div class="breakVertically"></div>
+		      <div class="card imageAD">
+		        <h1 id="titleAD"> Jericho cable car </h1>
+		        <p id="aboutAD"> visit with us and enjoy the amazing views</p>
+		      </div>
+		    </div>
+		</section>
+        <div class="breakhorizontally"></div>
+
+		<section class="recommended">
+      <h1 id="headinRecom">________________recommended________________</h1> 
+       <br><br>
+			
+<div class="col-10 offset-2 justify-content-center align-items-center">
+<div id="demo" class="carousel slide" data-ride="carousel" >
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+	<li data-target="#demo" data-slide-to="3"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/1.jpg"  >
+    </div>
+    <div class="carousel-item">
+      <img src="images/2.jpg" >
+    </div>
+    <div class="carousel-item">
+      <img src="images/3.jpg">
+    </div>
+	<div class="carousel-item">
+      <img src="images/4.jpg" >
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+		
+
+<div id="demo2" class="carousel slide" data-ride="carousel" >
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators" id="carousel-indicators-2">
+    <li data-target="#demo2" data-slide-to="0" class="active"></li>
+    <li data-target="#demo2" data-slide-to="1"></li>
+    <li data-target="#demo2" data-slide-to="2"></li>
+	<li data-target="#demo2" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner" id="carousel-inner-2">
+    <div class="carousel-item active" id="carousel-item-2 active">
+      <img src="images/1.jpg"  >
+    </div>
+    <div class="carousel-item">
+      <img src="images/2.jpg" >
+    </div>
+    <div class="carousel-item">
+      <img src="images/3.jpg">
+    </div>
+	<div class="carousel-item">
+      <img src="images/4.jpg" >
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo2" data-slide="prev" id="carousel-control-prev-2">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo2" data-slide="next" id="carousel-control-next-2">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>		
+		
+		
+
+<div id="demo3" class="carousel slide" data-ride="carousel" >
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators" id="carousel-indicators-3">
+    <li data-target="#demo3" data-slide-to="0" class="active"></li>
+    <li data-target="#demo3" data-slide-to="1"></li>
+    <li data-target="#demo3" data-slide-to="2"></li>
+	<li data-target="#demo3" data-slide-to="3"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner" id="carousel-inner-3">
+    <div class="carousel-item active" id="carousel-item-3 active">
+      <img src="images/1.jpg"  >
+    </div>
+    <div class="carousel-item">
+      <img src="images/2.jpg" >
+    </div>
+    <div class="carousel-item">
+      <img src="images/3.jpg">
+    </div>
+	<div class="carousel-item">
+      <img src="images/4.jpg" >
+    </div>
+  </div>
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo3" data-slide="prev" id="carousel-control-prev-3">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo3" data-slide="next" id="carousel-control-next-3">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+  </div>
+</div>
+		
+</section>
+		
+		<div class="breakhorizontally"></div>
+		<footer>
+			<div id="aboutUs">
+				<h1>JIJ</h1>
+				<p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
+			</div>
+			<div class="marginLeft " style="margin-top: 3%;">
+				<p class="formatText">Subscribe to see what's new</p>
+				<form > 
+					<input type="email" id="email" name="email" placeholder=" Your email ">
+					<button class="subscribeButton"> Subscribe </button>
+				</form>
+			</div>
+			<div class="marginLeft " style="margin-top: 3%;">
+				<h2 class="formatText">contant us</h2>
+				<a id="mail"href="mailto:STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
+				999-9999-999 <br>
+				<address>Palestine - Nablus</address>
+			</div>
+		</footer>
+	</body>
+<html>
