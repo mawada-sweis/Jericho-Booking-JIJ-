@@ -7,117 +7,133 @@
                     alert("The process will take place at the end of the website's work");
                 }
             </script>
+                    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+                    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+                    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            
 <title>Home</title>
 </head>
 <body>
-<div class="navigation">
-<a href>
-<img id="logo" src="images/logo.png"></img>
-</a>
-<p>Journey Into Jericho</p>
-
-<form method="post">
-
-<form method="post">
-<select class="currency" name="currency" >
-<option  >NIS</option>
-<option>AUD</option>
-<option>BHD</option>
-<option>BRL</option>
-<option>CAD</option>
-<option>CHF</option>
-<option>CLP</option>
-<option>CNY</option>
-<option>COP</option>
-<option>DZD</option>
-<option>EGP</option>
-<option>EUR</option>
-<option>GBP</option>
-<option>GHS</option>
-<option>HKD</option>
-<option>IDR</option>
-<option>ILS</option>
-<option>INR</option>
-<option>IQD</option>
-<option>JOD</option>
-<option>JPY</option>
-<option>KRW</option>
-<option>KWD</option>
-<option>LKR</option>
-<option>MAD</option>
-<option>MYR</option>
-<option>NGN</option>
-<option>NZD</option>
-<option>OMR</option>
-<option>PHP</option>
-<option>PKR</option>
-<option>PLN</option>
-<option>QAR</option>
-<option>RUB</option>
-<option>SAR</option>
-<option>SEK</option>
-<option>SGD</option>
-<option>THB</option>
-<option>TND</option>
-<option>TRY</option>
-<option>TWD</option>
-<option>USD</option>
-<option>VND</option>
-<option>ZAR</option></select>
-
-<select class="currency" id="Lang" name="Language" >
-<option>EN</option>
-<option>AR</option>
-</select>
-
- <a href="TouristProfile.html" id="profile">
-                <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
-                  <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                  <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
-                </svg>
-            </a>
-	<p id="UserName">UserName</p>
- <a href="" id="pin">  
-                <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-bookmark-fill" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" d="M3 3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12l-5-3-5 3V3z"/>
-                </svg>
-            </a>
-            <a href="" id="seen">
-                <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
-                </svg>
-            </a>
-
-<select id="setting" name="setting" >
-<option>Settings</option>
-<option>Log out</option>
-</select>
-
-</form>
+<div class="navigation d-flex">
+    <a href class="col-2">
+    <img id="logo" src="images/logo.png"></img>
+    </a>
+    <p class="col-6">Journey Into Jericho</p>
+        
+    <form method="post" class="col-4 d-flex">
+    <select class="currency " name="currency" >
+    <option >NIS</option>
+    <option>AUD</option>
+    <option>BHD</option>
+    <option>BRL</option>
+    <option>CAD</option>
+    <option>CHF</option>
+    <option>CLP</option>
+    <option>CNY</option>
+    <option>COP</option>
+    <option>DZD</option>
+    <option>EGP</option>
+    <option>EUR</option>
+    <option>GBP</option>
+    <option>GHS</option>
+    <option>HKD</option>
+    <option>IDR</option>
+    <option>ILS</option>
+    <option>INR</option>
+    <option>IQD</option>
+    <option>JOD</option>
+    <option>JPY</option>
+    <option>KRW</option>
+    <option>KWD</option>
+    <option>LKR</option>
+    <option>MAD</option>
+    <option>MYR</option>
+    <option>NGN</option>
+    <option>NZD</option>
+    <option>OMR</option>
+    <option>PHP</option>
+    <option>PKR</option>
+    <option>PLN</option>
+    <option>QAR</option>
+    <option>RUB</option>
+    <option>SAR</option>
+    <option>SEK</option>
+    <option>SGD</option>
+    <option>THB</option>
+    <option>TND</option>
+    <option>TRY</option>
+    <option>TWD</option>
+    <option>USD</option>
+    <option>VND</option>
+    <option>ZAR</option></select>
+    
+    <select class="currency "  name="Language" >
+    <option>EN</option>
+    <option>AR</option>
+    </select>
+    <div class="d-flex">
+     <a href="TouristProfile.html" id="profile">
+                    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-person-circle" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13.468 12.37C12.758 11.226 11.195 10 8 10s-4.757 1.225-5.468 2.37A6.987 6.987 0 0 0 8 15a6.987 6.987 0 0 0 5.468-2.63z"/>
+                      <path fill-rule="evenodd" d="M8 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                      <path fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8z"/>
+                    </svg>
+                </a>
+        <p id="UserName">UserName</p>
+     <a href="" id="pin">  
+                    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-bookmark-fill" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 3a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v12l-5-3-5 3V3z"/>
+                    </svg>
+                </a>
+                <a href="" id="seen">
+                    <svg width="2.5em" height="2.5em" viewBox="0 0 16 16" class="bi bi-bag-fill" fill="#f1f1f1" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 4h14v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4zm7-2.5A2.5 2.5 0 0 0 5.5 4h-1a3.5 3.5 0 1 1 7 0h-1A2.5 2.5 0 0 0 8 1.5z"/>
+                    </svg>
+                </a>
+    </div>
+    <select class="currency" name="setting" >
+    <option>Settings</option>
+    <option>Log out</option>
+    </select>
+    
+    </form>
 </div>
 
 
 <div class="jeric">
-<p id="where">Where's next?UserName</p><br>
-<form method="post">
-<input type="search" placeholder="Search for a hotel, hostel or chalet..">
-<input id="Check_in" type="date"  name="Check_in" placeholder="Check in">
-
-<select name="Guests" >
-<option value=" " disabled selected>Guests</option>
-<option>Adults</option>
-<option>Children</option>
-<option>rooms</option></select><br>
-<a id="search" href="../type/index.html">Search</a>
-<input type="checkbox" id="workTraveler">I'm travelling for work</label> 
- <div class="breakhorizontally"></div>
- <div id="upper">
+    <div class="justify-content-center align-items-center">
+        <div class="d-flex">
+            <div class="col-1"></div>
+            <div class="justify-content-center align-items-center"><p id="where">Where's next?UserName</p><br></div>
+        </div>
+        
+    <div class="d-flex row justify-content-center align-items-center">
+        <input class="search" type="search" placeholder="Search for a hotel, hostel or chalet..">
+        <input id="Check_in" type="date"  name="Check_in" placeholder="Check in">
+        
+        <select name="Guests" class="guests">
+        <option value=" " disabled selected>Guests</option>
+        <option>Adults</option>
+        <option>Children</option>
+        <option>rooms</option></select>
+        <button class="searchB" onclick="document.location ='../type/index.html';">Search</button>
+    
+    </div>
+    <div class="d-flex">
+        <div class="col-2"></div>
+        <div><label><input type="checkbox" id="workTraveler">I'm travelling for work</label> </div>
+    </div>
+        
+    </div>
+     <div class="breakhorizontally"></div>
+ <div id="upper w-100">
             <div class="flx2">
                 <div id="upper">
                     <div class="offers"><h2 id="offer">OFFERS</h2></div>
                     <div id="space"><h1 id="discount">Here's a 15% discount</h1><h1>because you booked 3 times in the last 40 days</h1><h4>Press to earn the code</h4></div>
                 </div>
+                <div class="breakhorizontally"></div>
                 <div class="flx2">
                     <div><h1 id="hh1">Recent Searches</h1></div>
                     <div class="searches">
@@ -148,7 +164,8 @@
             </div>-->
         </div>
         <br><br><br><br>
-        <div class="lower flx2">
+        <div class="flx2 w-100">
+        <div class="lower">
             <div class="bott"><h1>Your booking state:</h1></div><br>
             <div id="upper">
                 <div class="bot extra">
@@ -178,6 +195,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
 </div>
 <div class="cont">

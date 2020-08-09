@@ -22,10 +22,38 @@ color:black;
 }
 .card button:hover {
   opacity: 0.7;
+} 
+.text {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+.imgcont{
+  position: relative; 
+  text-align: center; 
+  color: white;
+}
+.imgcont:hover .text{
+  position: absolute;
+  text-align: left;
+  vertical-align: middle;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  color: white;
+  font-size: 20px;
+}
+.roompic{
+  width: 350px;
+  height: 200px;
+}
+.roompic:hover{
+  filter: brightness(20%);
+  
 }
 body {
   font-family: "Lato", sans-serif;
-margin: 0px 80px;
 }
 .sidenav {
   height: 1100x;
