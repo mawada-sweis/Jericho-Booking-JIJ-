@@ -1,4 +1,29 @@
-body {
+.container{
+  margin-top:-200px ;
+  width: auto;
+  height: 23em;
+   background-color: #006992;
+   color: white;
+}
+  .v-divider{
+   margin-left:5px;
+   margin-right:5px;
+   width:1px;
+   height: 10%;
+   border-left:1px solid gray;
+  }
+  .btnState{
+      background-color: #ECA400;
+      color: white;
+  }
+  #price{
+      padding-top: 20%;
+      font-size: 40px;
+  }
+  span{
+      font-size: 25px;
+  }
+  body {
   font-family: "Lato", sans-serif;
 }
 .card {
@@ -62,10 +87,6 @@ body {
     height: 162px;
 }
 
-#container{
-  display: flex;
-  flex-direction: row;
-}
 
 #info{
   display: flex;
@@ -110,9 +131,7 @@ input[type=submit]:hover {
   border: 2px solid orange;
 }
 .firstgroup{
-  display: flex;
   flex-direction: row;
-  margin-top: -340px;
 }
 .thirdgroup{
   display: flex;
