@@ -293,6 +293,32 @@
 .hint {
   text-align: center;
 }
+/*slide show*/
+#carousel-inner img {
+  width: 900px;
+  height: 550px;    
+}
+#carousel-control-next{
+left:820px;
+}
+#carousel-control-prev{
+left:20px;
+}
+#carousel-control-next , #carousel-control-prev{ 
+  display: flexbox;
+  width: 2%;
+  text-align: center;
+  opacity: .5;
+}
+#carousel-indicators{
+ content-align:center;
+}
+.row{
+margin-left:-10px;
+display: flexbox;
+flex-wrap: wrap;
+margin-left: 70px;
+}
 /*rating star*/
 .main {
 	margin-right: 20px;
