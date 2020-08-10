@@ -7,15 +7,10 @@
           border-radius: 0;
           background-color:rgba(0, 29, 74, 1) ;
         }
-        footer {
-          background-color: #f2f2f2;
-          padding: 25px;
-        }
         .JIJname{
             font-size:35px;
             text-decoration:none;
             color:white;
-            disabled:hover;
         }
         /* Login popup css:*/
         .join{
