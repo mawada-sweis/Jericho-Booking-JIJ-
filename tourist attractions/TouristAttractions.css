@@ -294,8 +294,7 @@ body{
 .mid{
     text-align: center;
 }
-.right{
-}
+
 .TG{
     width: 300px;
     height: 200px;
@@ -399,4 +398,7 @@ input[type=email] {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+.text button{
+    background-color: #F59A23;
 }
