@@ -9,14 +9,97 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	
 </head>
- <body>
+
         <header class="navigation">
         	<a >
 			<img id="logo" src="images/logo.png"></img>
 			</a>
 			<p>Journey Into Jericho</p>
-			<button class="join" href="">Login</button>
-            <button class="join" href="">join us</button><form method="post">
+			<button class="join" id="LogInBtn">Login</button>
+				<div id="PopUpLogin" class="PopUpLogin">
+					<div class="PopUpLogin-content">
+						<span class="close">&times;</span>
+						<form class="form-container">
+							<h1 class="Login">Welcome back</h1>
+							<hr> <br>
+							<label for="email" >Email address</label> <br>
+							<input type="email" placeholder="Enter Email" name="email" required> <br> 
+							<label for="psw" >Password</label> <br>
+							<input type="password" placeholder="Enter Password" name="psw" required> <br>
+							<label>
+								<input type="checkbox" name="remember"> Remember me
+							</label> 
+							<span class="SF"> 
+								<button id="SignUpBtn"> Sign up </button> 
+								<b>   |    </b>
+								<button id="ForgetPassword"> Forget Password?</button>
+							</span>
+							<br> <br>
+							<button id="btn">Login</button>
+						</form>
+					</div>
+				</div>
+			<script>
+				var modal = document.getElementById("PopUpLogin");
+				var btn = document.getElementById("LogInBtn");
+				var span = document.getElementsByClassName("close")[0];
+				btn.onclick = function() {
+					modal.style.display = "block";
+				}
+				span.onclick = function() {
+					modal.style.display = "none";
+				}
+				window.onclick = function(event) {
+					if (event.target == modal) {
+						modal.style.display = "none";
+					}
+				}
+			</script>
+			<button class="join" id="SignUpBtn">join us</button>
+				<div id="PopUpSignUp" class="PopUpSignUp">
+					<div class="PopUpSignUp-content">
+						<span class="close">&times;</span>
+						<form class="formSignUp-container">
+							<h1 class="JoinUS">Join us</h1> 
+							<hr>				 
+							<input type="text" placeholder="First name" required> 
+							<input type="text" placeholder="Last name" required><br> <br>
+							<label for="email" >Email address</label> <br>
+							<input type="email" placeholder="Enter Email" name="email" required> <br> 
+							<label for="psw" >Password</label> <br>
+							<input type="password" placeholder="Enter Password" name="psw" required> <br>
+							<label>
+								<input type="checkbox" name="rememberSignUp"> Remember me
+							</label>  	
+							<a href="#" style="float:right;">Already have an account</a><br><br>
+							<span id="type">I'm a </span>
+							<input type="radio" id="Tourists" name="Tourists" value="Tourists" />
+							<label for="Tourists">Tourists</label>
+							<input type="radio" id="Owner" name="Owner" value="Owner" />
+							<label for="Owner">Owner</label>
+							<input type="radio" id="Tour guide" name="Tour guide" value="Tour guide" />
+							<label for="Tour guide">Tour guide</label><br><br>
+							<button type="submit" class="button">Sign up</button>
+
+						</form>
+					</div>
+				</div>
+				<script>
+					var modal = document.getElementById("PopUpSignUp");
+					var btn = document.getElementById("SignUpBtn");
+					var span = document.getElementsByClassName("close")[0];
+					btn.onclick = function() {
+						modal.style.display = "block";
+					}
+					span.onclick = function() {
+						modal.style.display = "none";
+					}
+					window.onclick = function(event) {
+						if (event.target == modal) {
+							modal.style.display = "none";
+						}
+					}
+				</script>
 				<select class="currency" name="currency" >
 					<option>NIS</option>
 					<option>AUD</option>
@@ -69,64 +152,6 @@
 					<option>AR</option>
 				</select>
 			</form>
-	        <div class="form-popup" id="myForm">
-				<form action="/action_page.php" class="form-container">
-					<h1>Welcome back</h1><br>
-					<p id="space">__________________________</p>
-					<label for="email"><b>Email</b></label>
-					<input type="text" placeholder="Enter Email" name="email" required>
-					<label for="psw"><b>Password</b></label>
-					<input type="password" placeholder="Enter Password" name="psw" required> 
-					<label>
-					<input type="checkbox" name="remember"> Remember me</label> 	
-					<a href>sign up</a> <a href>Foregt password?</a><br><br>
-					<button type="submit" class="btn">Login</button>
-					<button type="button" class="btn cancel" onclick="closeForm1()">close</button>
-				</form>
-			</div>
-			<script>
-				function openForm1() {
-				  document.getElementById("myForm").style.display = "block";
-				}
-				function closeForm1() {
-				  document.getElementById("myForm").style.display = "none";
-				}
-			</script>
-			<div class="formSingup-popup" id="myFormSignup">
-				<form action="/action_page.php" class="formSignUp-container">
-					<h1>Join us</h1><br>
-					<p id="spaceSignUp">____________________________</p>
-					<input type="text" placeholder="First name" required>
-					<input type="text" placeholder="Last name" required><br>
-					<label for="email">Email</label>
-					<input type="email" placeholder="Enter Email" name="email" required>
-					<label for="psw">Password</label>
-					<input type="password" placeholder="Enter Password" name="psw" required> 
-					<label>
-					<input type="checkbox" name="rememberSignUp"> Remember me</label> 	
-					<a href>Already have account</a><br>
-
-
-					  <p id="type">I'm a:</p>
-					  <input type="radio" id="Tourists" name="Tourists" value="Tourists" />
-					  <label for="Tourists">Tourists</label>
-					  <input type="radio" id="Owner" name="Owner" value="Owner" />
-					  <label for="Owner">Owner</label>
-					  <input type="radio" id="Tour guide" name="Tour guide" value="Tour guide" />
-					  <label for="Tour guide">Tour guide</label><br><br>
-
-					<button type="submit" class="button">Login</button>
-					<button type="button" class="button cancel" onclick="closeForm()">close</button>
-				</form>
-			</div>
-			<script>
-				function openFormS() {
-				  document.getElementById("myFormSignup").style.display = "block";
-				}
-				function closeForm() {
-				  document.getElementById("myFormSignup").style.display = "none";
-				}
-			</script>
 		</header>
 		
         <div>
@@ -223,29 +248,54 @@
 			</div>
 		</div>
 		<div class="breakBetweenSec"></div>
-		 <div class="container-fluid">    
+		<div class="container-fluid">    
 			<div style="display: flex;">
 				<div class="col-sm-6 ">
+<<<<<<< HEAD
 					<div class="card">
 					<h1 style="font-size: 40px;">ASDSADASAD Jericho</h1>
 					<p style="font-size: 22px;"> Jericho is one of the earliest continuous settlements in the world, dating perhaps from about 9000 BCE. Archaeological excavations have demonstrated Jericho’s lengthy history. The city’s...
 		        	<a href="#">Read more  </a>
 					</p>
+=======
+				<div class="card">
+					<h1 style="font-size: 40px;">About Jericho</h1>
+					<p style="font-size: 22px;"> 
+					Jericho is one of the earliest continuous settlements in the world, dating perhaps from about 9000 BCE.
+					<span id="dots">...</span><span id="more"> Archaeological excavations have demonstrated Jericho’s lengthy history. The city’s.. </span>
+					</p> 
+					<button onclick="myFunction()" id="Btn">Read more</button>
+>>>>>>> fed0c00fdd9378a123c1481156334fce4391b64a
 					<div style="float:right;"> Don't know where to go in Jericho? </div>
 					<br>
 					<div id="linkTour"><a href="#">Check out our Tour Guide</a> </div>
 				</div>
-				</div>
-				<div class="col-sm-6 ">
+			</div>
+			<div class="col-sm-6 ">
 				<div class="card"> 
 					<div class="card imageAD">
 						<h1 id="titleAD"> Jericho cable car </h1>
 						<p id="aboutAD"> visit with us and enjoy the amazing views</p>
 					</div>
 				</div>					
-				</div>
 			</div>
 		</div>
+		<script>
+			function myFunction() {
+				var dots = document.getElementById("dots");
+				var moreText = document.getElementById("more");
+				var btnText = document.getElementById("Btn");
+				if (dots.style.display === "none") {
+					dots.style.display = "inline";
+					btnText.innerHTML = "Read more"; 
+					moreText.style.display = "none";
+				} else {
+					dots.style.display = "none";
+					btnText.innerHTML = "Read less"; 
+					moreText.style.display = "inline";
+				}
+			}
+		</script>
 		<div class="breakBetweenSec"></div>
 		<div class="container-fluid">
 			<div style="display: flex;">
