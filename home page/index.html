@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid " style="background-color:rgba(0, 29, 74, 1) ;">
+          <div class="collapse navbar-collapse" style="margin-left: 15em;">
+            <ul class="nav navbar-nav">
+              <li><a href="../tourist attractions/index.html">Tourist effects</a></li>
+              <li><a href="../places/index.html">Places</a></li>
+              <li><a href="../trip/index.html">Trip</a></li>
+            </ul> 
+            <div class="navbar-header">
+                <a href="../home page/index.html" class="navbar-brand " style="margin-right:2em;margin-left:2em;color: ivory;font-size: 3em;">Journey Into Jericho</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li><a href="../type/index.html">Type</a></li>
+              <li><a href="#contant">contant us</a></li>
+            </ul> 
+            <ul class="nav navbar-nav navbar-right">
+                <li><button class="nav join" id="LogInBtn"> 
+                    <span class="glyphicon glyphicon-log-in"> </span>Login</button>
+                    <div id="PopUpLogin" class="PopUpLogin">
+                          <div class="PopUpLogin-content">
+                              <span class="close">&times;</span>
+                              <form class="form-container">
+                                  <h1 style="text-align: center;font-size: 30px;">Welcome back</h1>
+                                  <hr> <br>
+                                  <label for="email" >Email address</label> <br>
+                                  <input type="email" placeholder="Enter Email" name="email" required> <br> 
+                                  <label for="psw" >Password</label> <br>
+                                  <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                                  <label>
+                                      <input type="checkbox" name="remember"> Remember me
+                                  </label> 
+                                  <span style="float:right;"> 
+                                    <button id="SignUpBtn"> Sign up </button> 
+                                    <b>   |    </b>
+                                    <button id="ForgetPassword"> Forget Password?</button>
+                                  </span>
+                                  <br> <br>
+                                  <button id="btn"> Login</button>
+                              </form>
+                          </div>
+                    </div>
+                    <script>
+                      var modal = document.getElementById("PopUpLogin");
+                      var btn = document.getElementById("LogInBtn");
+                      var span = document.getElementsByClassName("close")[0];
+                      btn.onclick = function() {
+                          modal.style.display = "block";
+                      }
+                      span.onclick = function() {
+                          modal.style.display = "none";
+                      }
+                      window.onclick = function(event) {
+                          if (event.target == modal) {
+                              modal.style.display = "none";
+                          }
+                      }
+                    </script>
+                </li>
+                <li><a href="../Templates/Joinus.html">Join us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+<div class="container">
+  <div class="overlay justify-content-center align-items-center row">
+      <video autoplay muted loop>
+          <source src="intro.mp4" type="video/mp4" />
+      </video>
+      <div id="bookinginfo"class="overlay justify-content-center align-items-center row">
+          <div class=" justify-content-center align-items-center w-50" method="post">
+              <div class="justify-content-center align-items-center w-100 row m-2">
+                  <input class="search p-2"type="search" placeholder="Search for a hotel, hostel or chalet..">
+              </div>
+              <div class="justify-content-center align-items-center w-100 row m-2">
+                  <input id="check"class="infoBook m-2 p-2" type="text" name="datefilter" value="Check-in / Check_out "/>
+
+                  <script type="text/javascript">
+                      $(function(){
+          
+                      $('input[name="datefilter"]').daterangepicker({
+                          autoUpdateInput: false,
+                          locale: {
+                              cancelLabel: 'Clear'
+                          }
+                      });
+          
+                      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                          $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+                      });
+          
+                      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                          $(this).val('');
+                      });
+          
+                      });
+                  </script>
+
+                  <select class="infoBook m-2 p-2" name="Adults">
+                      <option value="" disabled selected hidden>Adults</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6+</option>
+                  </select>
+                  <select class="infoBook m-2 p-2" name="Children">
+                      <option value="" disabled selected hidden>Children</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6+</option>
+                  </select>
+                  <select class="infoBook m-2 p-2" name="Room">
+                      <option value="" disabled selected hidden>Rooms</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6+</option>
+                  </select>           
+              </div>
+              <input type="checkbox" id="work" name="work" value="workingType">
+              <label id="labelWork"for="work"> I'm on duty</label>    
+              <br>
+              <div class="justify-content-center align-items-center row">
+                  <button class="booking" onclick="window.location.href='../type/index.html';"> Book now</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <hr>
+</div>
+<div style="margin-top: 40em;"></div>
+
+<div class="container text-center">    
+  <h3>What We Do</h3>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="images/trip.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p class="card-title">Trip</p>
+      <br>
+      <p>Enjoy the amazing places that get the tourists attention with the trips that we provide and organize to get your satisfaction and make sure you have a great time.</p>
+      <button type="button" class="btn browse" onclick="document.location='../trip/index.html';">Browse trip</button>
+    </div>
+    <div class="col-sm-3"> 
+      <img src="images/masar.jfif" class="img-responsive" style="width:100%" alt="Image">
+      <p class="card-title">Masar ibrahim al khalil</p>
+      <br>
+<p class="text-left">
+  is a way to meet and create relationships with Palestinians and hikers from all over the world.
+  <br>
+  Explore bedouin villages and experience the main Palestinian tradition of hospitality.
+ </p>
+ <button type="button" class="btn browse" onclick="document.location='../trip/index.html#masarKhalil';">Learn more</button>
+</div>
+    <div class="col-sm-3">
+        <div class="card text-left">
+          <div class="card-body">
+            <h5 class="card-title text-center">Communicate</h5>
+            <h6 class="card-subtitle mb-2 text-muted">SIM</h6>
+            <p class="card-text">You can buy a SIM card from Jawwal or Ooredoo which will be provided in your place once yiu arrive.</p>
+            <a href="../notWork/index.html" class="card-link">Buy</a>
+          </div>
+        </div>
+        <div class="card text-left">
+          <div class="card-body">
+            <h5 class="card-title text-center">Transport</h5>
+            <h6 class="card-subtitle mb-2 text-muted">CAREEM or local Taxi drivers</h6>
+            <p class="card-text">Booking transportations to get you to your place safely ,or rent a car of your choice to go wherever you want.</p>
+            <a href="../notWork/index.html" class="card-link">Book</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card text-left">
+        <div class="card-body">
+          <h5 class="card-title text-center">Move your luggage</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Amteaa</h6>
+          <p class="card-text">Move your luggage to the place you are staying in.</p>
+          <a href="../notWork/index.html" class="card-link">Hire</a>
+        </div>
+      </div>
+      <div class="card text-left">
+        <div class="card-body">
+          <h5 class="card-title text-center">Know more</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Tour Gide</h6>
+          <p class="card-text">Know more about Jericho's historical places with our experienced and well educated tour guides.</p>
+          <a href="../tourist attractions/index.html#gide" class="card-link">See out tour guides</a>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <hr>
+</div>
+
+<div class="container text-center">    
+  <h3>recommended</h3>
+  <br>
+  <section class="recommended">
+     <br><br>
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/1.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/2.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/3.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/4.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+        </div>
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/3.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/1.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/4.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/2.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+        </div>
+
+        <!--Third slide-->
+        <div class="carousel-item">
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/2.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/4.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/1.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-3 mb-3">
+            <div class="card2">
+              <img class="img-fluid" src="images/3.jpg"
+                alt="Card image cap">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
