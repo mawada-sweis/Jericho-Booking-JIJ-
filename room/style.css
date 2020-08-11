@@ -159,11 +159,11 @@ left:20px;
   display: flexbox;
   width: 2%;
   text-align: center;
-  opacity: .5;
 }
-#carousel-indicators{
- content-align:center;
-}
+
+  
+
+
 .row{
 margin-left:-10px;
 display: flexbox;
@@ -216,3 +216,5 @@ margin-left: 70px;
     font-weight: bold;
     font-size: 30px;
 }  
+
+
