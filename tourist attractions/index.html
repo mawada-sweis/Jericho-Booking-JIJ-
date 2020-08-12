@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -32,10 +33,96 @@
 </div>
 <div class="d-flex justify-content-center align-items-center w-100">
 <div class="river">
+=======
+  <title>Tourist Attractions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>  
+ <link rel="stylesheet" href="style.css">
+ </head>
+ 
+ <body>
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+     <a href="#" class=" navbar-brand JIJname" style="color: ivory;">Journey Into Jericho</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#">Book Now</a></li>       
+          <li><a href="#">Tourist Attractions </a></li>  
+      <li><a href="#">Trips</a></li>
+      <li><a href="#">Places</a></li>
+      <li><a href="#">Community</a></li>		
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><button class="join" id="LogInBtn"> <span class="glyphicon glyphicon-log-in"> </span> Login</button>
+          <div id="PopUpLogin" class="PopUpLogin">
+            <div class="PopUpLogin-content">
+              <span class="close">&times;</span>
+              <form class="form-container">
+                <h1 class="Login">Welcome back</h1>
+                <hr> <br>
+                <label for="email" >Email address</label> <br>
+                <input type="email" placeholder="Enter Email" name="email" required> <br> 
+                <label for="psw" >Password</label> <br>
+                <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                <label>
+                  <input type="checkbox" name="remember"> Remember me
+                </label> 
+                <span class="SF"> 
+                  <button id="SignUpBtn"> Sign up </button> 
+                  <b>   |    </b>
+                  <button id="ForgetPassword"> Forget Password?</button>
+                </span>
+                <br> <br>
+                <button id="btn"> Login</button>
+              </form>
+            </div>
+          </div>
+        <script>
+          var modal = document.getElementById("PopUpLogin");
+          var btn = document.getElementById("LogInBtn");
+          var span = document.getElementsByClassName("close")[0];
+          btn.onclick = function() {
+            modal.style.display = "block";
+          }
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
+        </script></li>
+          <li><a href="joinus.html" >Join us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="jumbotron Section">
+  
+    
+  <div class="container-fluid">
+    <div class="row">
+    <br>
+      <span class="col-8 video" style="float:left; padding-left:5%;">   
+>>>>>>> master
 <video autoplay muted loop>
-<source  src="river.mp4" type="video/mp4" />
-</div>
-<div>
+<source  src="video.mp4" type="video/mp4" />
+</span>
+<span class="col-4 imgs" style="float:right; padding-right:5%;">
 <div class="d-flex">
 <img id="ojaPic" src="images/oja1.jpg"></img>
 <img id="ojaPic2" src="images/oja2.jpg"></img>
@@ -44,87 +131,127 @@
 <img id="ojaPic3" src="images/oja3.jpg"></img>
 <img id="ojaPic4" src="images/oja4.jpg"></img>
 </div>
+</span>
 </div>
 </div>
+<br><br><br><br>
+<div>
 
+  <div class="container-fluid bg-3 text-center">    
+    <div class="container-fluid">
+     <div class="row content">
+       <div class="col-sm-8">
+       <div id="overf"> <br>
 
-<div class="breakhorizontally"></div>
-
-
-<div class="d-flex justify-content-center align-items-center w-100">
-<div id="overf">
-<br>
-<p id="Tourist_attractions">Tourist attractions</p>
-<p id="line">_______________________________________________________________</p>
-<img id="addIcon" src="images/add.png"></img>
+<h2>Tourist attractions</h2>
+<hr>
+<div class="row">
+  <span class="img_plus">
+<span class="glyphicon glyphicon-plus " > 
 <img id="MonasteryPic" src="images/MTV.jpg"></img>
-<p id="Monastery"><b>Monastery of the Temptation</b></p>
-<img id="locIcon" src="images/location.png"></img>
-<p id="captionMonstery"><b>00 km away from the city center</b></p>
-<img id="pinIcon" src="images/pin.png"></img><br><br>
-
-<img id="addIcon" src="images/add.png"></img>
-<img id="sultanPic" src="images/sultan.jpg"></img>
-<p id="Monastery"><b>Tell es-Sultan</b></p>
-<img id="locIcon" src="images/location.png"></img>
-<p id="captionMonstery"><b>00 km away from the city center</b></p>
-<img id="pinIcon" src="images/pin.png"></img>
-<p id="discrebtion">Lorem ipsum dolor sit amet, consecteturadipiscing elit. Aenean euismod bibendum laoreet. Proin gravida 
- dolvulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget.</p>
-
-<img id="addIcon" src="images/add.png"></img>
-<img id="hisham" src="images/hisham.jpg"></img>
-<p id="Monastery"><b>Hisham's Palace</b></p>
-<img id="locIcon" src="images/location.png"></img>
-<p id="captionMonstery"><b>00 km away from the city center</b></p>
-<img id="pinIcon" src="images/pin.png"></img><br><br>
-
-<img id="addIcon" src="images/add.png"></img>
-<img id="auja" src="images/oja3.jpg"></img>
-<p id="Monastery"><b>auja spring</b></p>
-<img id="locIcon" src="images/location.png"></img>
-<p id="captionMonstery"><b>00 km away from the city center</b></p>
-<img id="pinIcon" src="images/pin.png"></img><br><br>
-
+</span>
+</span>
+<span class="glyphicon glyphicon-plus " > 
+<span id="TAname"><h3>Monastery of the Temptation</h3></span>
+<br><br><br>
+<div class="TAplace">
+  <span class="glyphicon glyphicon-map-marker location"></span> 
+  <span id="captionMonstery"><b>00 km away from the city center</b></span>
+  </div>
+  </div>
+  <div class="row">
+  <span class="img_plus">
+    <span class="glyphicon glyphicon-plus " > 
+      <img id="MonasteryPic" src="images/sultan.jpg">
+    </span>
+  </span>
+  <span class="glyphicon glyphicon-bookmark saveIcon" > </span>
+  <span class="TAname"> <h3> Tell es-Sultan </h3> </span>
+  <br><br><br> 
+  <div class="TAplace"> 
+  <span class="glyphicon glyphicon-map-marker location"></span> 
+  <span id="captionMonstery"><b>00 km away from the city center</b></span>
+  </div>
+  </div>
+  <div class="overflow-hidden"> 
+  <div class="row ">
+    <div class="col-sm-6"> </div>
+    <div class="col-sm-8 break"> 
+    Lorem ipsum dolor sit amet, consecteturadipiscing elit. Aenean euismod bibendum laoreet  Proin gravida dolvulputate,
+    </div>
+  </div> <br>
+  <div class="row">
+  <span class="img_plus">
+    <span class="glyphicon glyphicon-plus " > 
+      <img id="MonasteryPic" src="images/hisham.jpg">
+    </span>
+  </span>
+  <span class="glyphicon glyphicon-bookmark saveIcon" > </span>
+  <span class="TAname"> <h3> Hisham's Palace </h3> </span>
+  <br><br><br> 
+  <div class="TAplace"> 
+  <span class="glyphicon glyphicon-map-marker location"></span> 
+  <span id="captionMonstery"><b>00 km away from the city center</b></span>
+  </div>
+  </div>
+  <div class="row">
+  <span class="img_plus">
+    <span class="glyphicon glyphicon-plus " > 
+      <img id="MonasteryPic" src="images/oja3.jpg">
+    </span>
+  </span>
+  <span class="glyphicon glyphicon-bookmark saveIcon" > </span>
+  <span class="TAname"> <h3> Auja Spring </h3> </span>
+  <br><br><br> 
+  <div class="TAplace"> 
+  <span class="glyphicon glyphicon-map-marker location"></span> 
+  <span id="captionMonstery"><b>00 km away from the city center</b></span>
+  </div>
+  </div>
+</div>
+</div>
 </div>
 
-<div style="padding: 15px;">
+<div class=" col-sm-4 sidenav">
 <div class="near">
-<h1>Near by places</h1>
+<h1>Nearby Places</h1>
 <br>
 <label for="neraTo" id="NearToLabel">Near to:</label><br>
-<input type="text" id="nearTo" name="NeraTo" placeholder="your current location"><br><br><br>
-<label for="checkIn" id="checkInLable" >Check in</label>
-<label for="checkOut" id="checkOutLable" >Check out</label><br>
+<input type="text" id="nearTo" name="NeraTo" placeholder="Your current location"><br><br><br>
+<label for="checkIn" id="checkInLabel" >Check in</label>
+<label for="checkOut" id="checkOutLabel" >Check out</label><br> 
+
 <input type="date" id="checkIn" name="checkIn">
-<input type="date" id="checkIn" name="checkIn"><br>
-<input type="checkbox" id="In work"><b>for work</b></label> <br><br>
-<label id="nu" for="adults"><b>adults</b></label>
+<input type="date" id="checkOut" name="checkOut"><br><br>
+<input type="checkbox" >
+<label  id="InWork"> <b>For work</b></label> <br><br>
+<label id="nu" for="adults"><b>Adults</b></label>
 <select id="AdultsNumb" name="adults">
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="more than 4">more than 4</option>
 </select>
-<label id="nu" for="children"  ><b>children</b></label>
+<label id="nu" for="children"  ><b>Children</b></label>
 <select id="childrenNumb" name="children">
+  <option value="1">0</option>
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="more than 4">more than 4</option>
 </select>
-<label for="room"><b>room</b></label>
+<label id="nu" for="room"><b>Rooms</b></label>
 <select  id="roomNumb" name="room">
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="more than 4">more than 4</option>  
-</select><br>
+</select><br><br> <br>
 <button class="button" id="bookNow"><b> Book Now</b>  </button>
-	
 </div>
 </div>
 </div>
+<<<<<<< HEAD
 <div class="breakhorizontally"></div>
 <br><br><br><br>
 <div class="w-100 justify-content-center align-items-center container" >
@@ -143,10 +270,54 @@
     <img id="image2" src="images/trial.jpg" alt="Trial">
     <p class="para">Here are qualities a great tour guide should possess: <br>
       - Knowledge of the Tour Area. <br> 
+=======
+
+
+</div><br><br>
+
+<button onclick="topFunction()" id="topbtn" title="Go to top"><span class="	glyphicon glyphicon-chevron-up"> </span> </button>
+<script> 
+//Get the button:
+mybutton = document.getElementById("topbtn");	
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+
+<div class="jumbotron Section">
+<div class="w-100 justify-content-center align-items-center container" >
+<div class="justify-content-center align-items-center w-100 row">
+  <h1 class="mid" style="font-size:45px;">Don't know where to go? Learn about the Tour Guide.</h1> <br>
+  <div class="justify-content-center align-items-center w-100">
+    <img id="image1" src="images/tourism.png" alt="Tourism">
+    <h2 style="text-align:left;">Why should we walk with a tour guide?</h2> <br>			
+    <p style="text-align:left; font-size:18px; padding-right:35%;">Guides are known to be cultural ambassadors to their country and community. They provide safe, enjoyable and fun travel experiences for their guest. Priding themselves in being able to perfectly blend the professionalsim needed for the job with the hospitality and welcoming spirit of friendship that makes the guest feel like they have spent the day with a close friend. So is it important for a guide to belong to an association or should they just be independent.</p>
+  </div>
+  <br><br><br>
+  <div class="justify-content-center align-items-center w-100">
+    <h2 style="text-align:left;">How I choose the tour guide?</h2> <br> 
+    <img id="image2" src="images/trial.jpg" alt="Trial" > 			
+    <p style="text-align:left; font-size:18px; padding-left:37%;">
+    <b> Here are qualities a great tour guide should possess:</b> <br>
+      - Knowledge of the Tour Area.  <br>
+>>>>>>> master
       - Ability to Communicate Effectively. <br>
       - Strong Empathy and Understanding. <br>
       - Charismatic Personality. <br>
       - Keen Ability to Improvise and Adapt. <br>
+<<<<<<< HEAD
       - Engaging Storyteller and Actor. <br>
       - Flexibility.</p>
 </div>
@@ -200,10 +371,44 @@
                                     <p class="card-text">Is a Palestinian engineer that has been working as a tour guide for 5 years and she has a very good knowledge about Jericho's beautiful places and historical features.</p>
                                     <button class="TGbook">Book</button>
                                 </div>
+=======
+      - Engaging Storyteller and Actor.<br>
+      - Flexibility.<br>
+    </p>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="jumbotron Section">
+<h2 style="text-align: center;">Our Tour Guides:</h2> <br>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" >
+                <div class="mainflip flip-0">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="images/hala.jpg" alt="card image"></p>
+                                <h4 class="card-title">Hala Masri</h4>
+                                <p class="card-text"><b class="b">5</b> Years experience</p>
+                                <a href="#"> <span class="	glyphicon glyphicon-plus" style="font-size:30px;"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Hala Masri</h4>
+                                <p class="card-text">Is a Palestinian engineer that has been working as a tour guide for 5 years and she has a very good knowledge about Jericho's beautiful places and historical features.</p>
+                                <button class="TGbook">Book</button>
+>>>>>>> master
                             </div>
                         </div>
                     </div>
                 </div>
+<<<<<<< HEAD
 =======
 <div>
     <h1 class="mid" id="gide">Recommended tour guides:</h1>
@@ -237,11 +442,36 @@
                                     <p class="card-text">Jordanian tour guide that has been working in this field for 4 years and he has fulfilled his job perfectly with great feedback.</p>
                                     <button class="TGbook">Book</button>
                                 </div>
+=======
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="images/Dawoud.jpg" alt="card image"></p>
+                                <h4 class="card-title">Dawoud Ibrahim</h4>
+                                <p class="card-text"><b class="b">4</b> Years experience</p>
+                                <a href="#"> <span class="	glyphicon glyphicon-plus" style="font-size:30px;"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Dawoud Ibrahim</h4>
+                                <p class="card-text">Jordanian tour guide that has been working in this field for 4 years and he has fulfilled his job perfectly with great feedback.</p>
+                                <button class="TGbook">Book</button>
+>>>>>>> master
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
   
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
@@ -383,11 +613,35 @@
                                     <p class="card-text">EXAMPLE EXAMPLE EXAMPLE EXAMPLE EXAMPLE EXAMPLE EXAMPLE</p>
                                     <button class="TGbook">Book</button>
                                 </div>
+=======
+        </div>
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <div class="image-flip" ontouchstart="this.classList.toggle('hover');">
+                <div class="mainflip">
+                    <div class="frontside">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <p><img class=" img-fluid" src="images/osama.jpg" alt="card image"></p>
+                                <h4 class="card-title">Osama Mahmoud</h4>
+                                <p class="card-text"><b class="b">9</b> Years experience</p>
+                               <a href="#"> <span class="	glyphicon glyphicon-plus" style="font-size:30px;"> </span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backside">
+                        <div class="card">
+                            <div class="card-body text-center mt-4">
+                                <h4 class="card-title">Osama Mahmoud</h4>
+                                <p class="card-text">He is a proud Palestinian tour guide that have been working for 9 years and he has very interesting facts that can get the tourists attention.</p>
+                                <button class="TGbook">Book</button>
+>>>>>>> master
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+<<<<<<< HEAD
 
             <div class="col-xs-12 col-sm-6 col-md-4">
                 <div class="image-flip" >
@@ -456,22 +710,32 @@
 <br><br><br>
 <footer class="cl1">
     <div id="aboutUs col-4">
+=======
+        </div>
+      </div>
+
+  </div>
+ 
+
+	<footer class="container-fluid text-center d-flex cl2">	
+    <div id="aboutUs"  class="col-4">
+>>>>>>> master
         <h1>JIJ</h1>
         <p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
     </div>
-    <div class="marginLeft col-4" style="margin-top: 3%;">
+    <div class="col-4" style="margin-top: 2% ; margin-left:8%;">
         <p class="formatText">Subscribe to see what's new</p>
         <form > 
             <input type="email" id="email" name="email" placeholder=" Your email ">
             <button class="subscribeButton"> Subscribe </button>
         </form>
     </div>
-    <div class="marginLeft col-4" style="margin-top: 3%;">
+    <div class="col-4" style="margin-top: 1%;margin-left:8%;">
         <h2 class="formatText">contant us</h2>
         <a id="mail"href="STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
         999-9999-999 <br>
         <address>Palestine - Nablus</address>
     </div>
 </footer>
-</html>
 </body>
+</html>
