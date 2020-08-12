@@ -382,7 +382,32 @@ margin-top:115px;
     #recommended{
       margin-top: 10%;  
       }
-
+      #carousel-inner img {
+        width: 900px;
+        height: 400px;    
+      }
+      #carousel-control-next{
+      left:820px;
+      }
+      #carousel-control-prev{
+      left:20px;
+      }
+      #carousel-control-next , #carousel-control-prev{ 
+        display: flexbox;
+        width: 2%;
+        text-align: center;
+        opacity: .5;
+      }
+      #carousel-indicators{
+       content-align:center;
+      }
+      .row{
+      margin-right:-10px;
+      display: flexbox;
+      flex-wrap: wrap;
+      margin-left: 300px;
+      margin-top:-400px;
+      }
 
 /* footer */
 footer{
@@ -681,89 +706,21 @@ margin-right:30px;
   text-align:center;
   font-size:24px;
   }
-/*carousel 1*/ 
-.carousel-inner img {
-  width: 180px;
-  height: 200px;
-  border-radius:50%;
-}
-.carousel-control-next{
-left:150px;
-}
-.carousel-control-prev{
-left:10px;
-}
-.carousel-control-next , .carousel-control-prev{ 
-  display: flexbox;
-  width: 2%;
-  text-align: center;
-  opacity: .5;
-}
-.carousel-indicators{
-margin-left:-110px;
-width:400px;
-}
-#demo {
- margin-left:170px;
-}
 
-/*carousal 2*/
-
-#carousel-inner-2 img {
-  width: 180px;
-  height: 200px;
-  border-radius:50%;
-}
-#carousel-control-next-2{
-left:150px;
-}
-#carousel-control-prev-2{
-left:1px;
-}
-#carousel-control-next-2 , #carousel-control-prev-2{ 
-  display: flexbox;
-  width: 2%;
-  text-align: center;
-  opacity: .5;
-}
-#carousel-indicators-2{
- margin-left:-110px;
- width:400px;
-}
-#demo2{
-margin-left:450px;
-margin-top:-200px;
-}
-
-/*carousal 3*/
-
-#carousel-inner-3 img {
-  width: 180px;
-  height: 200px;
-  border-radius:50%;
-}
-#carousel-control-next-3{
-left:150px;
-}
-#carousel-control-prev-3{
-left:1px;
-}
-#carousel-control-next-3 , #carousel-control-prev-3{ 
-  display: flexbox;
-  width: 2%;
-  text-align: center;
-  opacity: .5;
-}
-#carousel-indicators-3{
-margin-left:-110px;
-width:400px;
-}
-#demo3{
-margin-left:750px;
-margin-top:-200px;
-}
 .recommended{
 position:relative;
 align-items: center;
 justify-content: center
 }
+
+@media (min-width: 768px) {
+  .carousel-multi-item-2 .col-md-3 {
+  float: left;
+  width: 25%;
+  max-width: 100%;
+   }
+   }
+  
+  .card2{
+  height:150px;
+  }
