@@ -59,12 +59,12 @@
 	width:1100px;
 	height:300px;
 }
-.profile{
+/* .profile{
 	display:inline;
 	height:215px;
 	width:230px;
 	padding-top:0;
-}
+} */
 .name{
 	position: absolute;
 	bottom: 100px;

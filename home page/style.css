@@ -1,0 +1,315 @@
+
+      /* Hide the carousel text when the screen is less than 600 pixels wide */
+      @media (max-width: 600px) {
+        .carousel-caption {
+          display: none; 
+        }
+    }
+    * {
+      font-family: 'Poppins', sans-serif;
+      }
+  
+    .PopUpLogin {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .PopUpLogin-content {
+    background-color:rgb(244,241,222);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .join{
+    font-size: 1.2em;
+    border:none;
+    color:white;
+    background-color:rgb(236, 164, 0) ;
+}
+
+  /* Set a style for the submit/login button */
+  .form-container #btn{
+    border-radius:4px;
+    background-color: rgb(236, 164, 0);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    font-size:18px;
+  }
+  
+  .form-container  input[type=email], .form-container input[type=password] {
+    border-radius:6px;
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+  }
+  #SignUpBtn {
+    border:none;
+    font-size:15px;
+    background-color:rgb(244,241,222);
+  }
+  #ForgetPassword{
+    border:none;
+    font-size:15px;
+    background-color:rgb(244,241,222);
+  }
+  .search{
+    border: 2px solid #F59A23;
+    width: 350px;
+    height: 50px;
+    padding: 2px;
+    margin-bottom: 2em;
+    margin-left: 10em;
+    border-radius: 5px;
+}
+.infoBook{
+    border: 2px solid #F59A23;
+    width: 150px;
+    height: 50px;
+    padding: 2px;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+#check{
+  width:200px;
+}
+.booking{
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    background-color: #F59A23;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 12em;
+
+    }
+video{
+    object-position: center;
+    object-fit: cover;
+    width: 100%;
+    height: 35em;
+    }
+.overlay {
+    position: absolute;
+    width: auto;
+    height: 80%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#labelWork{
+    background-color: wheat;
+    padding: 0.3em;
+}
+select:invalid { color: gray; }
+#bookinginfo{
+  margin-left: 34em;
+  margin-top: 15em;
+}
+.card{
+  border: 1px solid tomato;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  height: 14em;
+  box-shadow: 10px 10px 10px grey;
+}
+.card-title{
+  background-color: #0096c7;
+  color:white;
+  margin: 0;
+  padding: 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.browse{
+  background-color: #555555;
+  color: white;
+}
+
+.browse:hover {
+  color: white;
+  background-color: black;
+}
+
+footer {
+  background-color:  rgba(0, 29, 74, 1) ;
+  padding: 25px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+input[type=email] {
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}	
+.subscribeButton {
+  background-color:#F59A23;
+  border-radius: 5px;
+  border: none; 
+  color: white; 
+  padding: 14px 20px; 
+}  
+.subscribeButton:hover {
+  background-color: #001D4A;
+}
+#mail {
+  text-decoration: none;
+  font-size: 16px;	
+  font-weight: bold;	
+  color:#F59A23;
+}
+#topbtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color:#F59A23;
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 18px; 
+}
+#topbtn:hover {
+  background-color: rgba(0, 29, 74, 1) ;
+}
+.cl2{
+  display: flex;
+}
+#linkTour a:link, #linkTour a:visited {
+    color: black;
+    text-decoration: none;
+    background-color:#F59A23;
+    border-radius: 5px; 
+    padding: 2px;
+    font-size: 15px;
+}
+#linkTour a:hover, #linkTour a:active {
+    background-color: #0096c7;
+    color: white;
+}
+#aboutJericho{
+  border:none;
+  box-shadow: 5px 5px 10px grey;
+
+}
+#more{
+  display: none;
+}
+.breakBetweenSec{
+	margin-top: 7%;
+  }
+  .zoom {
+    transition: transform .2s;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+  .zoom a {
+    text-decoration:none;
+    font-size:22px;
+    font-weight: bold;
+    color: black;
+  }
+  .zoom a p {
+    padding-top: 1em;
+  }
+  .zoom a:hover{
+    text-decoration:none;
+    font-size:22px;
+    color:black;
+  }
+  .zoom a img { 
+    border-radius: 50%;
+  width:200px;
+  height:200px;
+  }
+  .overlayReco {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:200px;
+    height: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(236, 164, 0);
+    border-radius:50%;
+  }
+  .container:hover .overlayReco {
+    opacity: 1;
+  }
+  .text {
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+ #myCarousel{
+   background-color: rgb(236, 164, 0);
+ }
