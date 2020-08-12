@@ -220,44 +220,40 @@ video{
     background-size: cover;
     position: relative;
 }
-.container {
-	position: relative;
-	width: 80%; 
-}
-.imageReco {
-	
-	display: block;
-	width: 80%;
-	height: 200px;
-	border-radius:50%;
-}
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 80%;
-	height: 200px;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #008CBA;
-	border-radius:50%;
-}
-.container:hover .overlay {
-	opacity: 1;
-}
-.text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+/*recommended*/
+#recommended{
+	margin-top: 10%;  
+	}
+#carousel-inner img {
+	width: 900px;
+	height: 400px;    
+  }
+  #carousel-control-next{
+  left:820px;
+  }
+  #carousel-control-prev{
+  left:20px;
+  }
+  #carousel-control-next , #carousel-control-prev{ 
+	display: flexbox;
+	width: 2%;
 	text-align: center;
-}
+	opacity: .5;
+  }
+  #carousel-indicators{
+   content-align:center;
+  }
+  .row{
+  margin-right:-10px;
+  display: flexbox;
+  flex-wrap: wrap;
+  margin-left: 300px;
+  margin-top:-400px;
+  }
+
+
+
+
 .cl2{
   background-color: #001D4A;
   background-size: 100%;

@@ -259,6 +259,7 @@ select{
     box-shadow: none;
     position: absolute;
 }
+
 body{
     display: flex;
     flex-direction: column;
