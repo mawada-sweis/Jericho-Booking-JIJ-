@@ -13,6 +13,7 @@
           background-color:#F59A23 ;
           padding: 15px;
       }
+      
     .PopUpLogin {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
