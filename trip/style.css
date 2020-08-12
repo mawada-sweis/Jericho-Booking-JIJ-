@@ -2,87 +2,315 @@
 .breakhorizontally{
 height: 100px;
     }
-#imagesection1{
-z-index:1000;
-position: absolute;
-padding-top:7px;
-padding-left:7px;
-float:left;
-width: 150px;
-height: 125px;
-}
+    * {
+      font-family: 'Poppins', sans-serif !important;
+     }
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color:rgba(0, 29, 74, 1) ;
+      }
+    
+      .JIJname{
+          font-size:35px;
+          text-decoration:none;
+       
+      }
+      /* Login popup css:*/
+      .join{
+          border:none;
+          color:white;
+          background-color:#F59A23 ;
+          padding: 15px;
+      }
+    .PopUpLogin {
+      display: none; /* Hidden by default */
+      position: fixed; /* Stay in place */
+      z-index: 1; /* Sit on top */
+      padding-top: 100px; /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      overflow: auto; /* Enable scroll if needed */
+      background-color: rgb(0,0,0); /* Fallback color */
+      background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    .PopUpLogin-content {
+      background-color:rgb(244,241,222);
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 30%;
+    }
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover, .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    /* Css for the content*/
+    /* Full-width input fields */
+    .Login{
+      text-align:center;
+      font-size:30px;
+      
+    }
+    .form-container  input[type=email], .form-container input[type=password] {
+      border-radius:6px;
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: white;
+    }
+    .SF{
+      float:right;
+    }
+    #SignUpBtn {
+      border:none;
+      font-size:15px;
+      background-color:rgb(244,241,222);
+    }
+    #ForgetPassword{
+      border:none;
+      font-size:15px;
+      background-color:rgb(244,241,222);
+    }
+    
+    /* Set a style for the submit/login button */
+    .form-container #btn {
+      border-radius:4px;
+      background-color: rgb(236, 164, 0);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+      font-size:18px;
+    }
+    body{
+      height:1000px;
+      overflow:scroll;
+      }
+    .Section{
+      background-color:white;
+    }
+    
+     /* NAVIGATION BAR*/
+      nav {
+        margin-bottom: 0;
+        border-radius: 0;
+        background-color:rgba(0, 29, 74, 1) ;
+        padding: 8px;
+      }
+      /* Login popup css:*/
+    .PopUpLogin-content {
+      background-color:rgb(244,241,222);
+    }
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover, .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    /* Css for the content*/
+    /* Full-width input fields */
+    .Login{
+      text-align:center;
+      font-size:30px;
+    }
+    .form-container  input[type=email], .form-container input[type=password] {
+      border-radius:6px;
+      width: 100%;
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      border: none;
+      background: white;
+    }
+    .SF{
+      float:right;
+    }
+    #SignUpBtn {
+      border:none;
+      font-size:15px;
+      background-color:rgb(244,241,222);
+    }
+    #ForgetPassword{
+      border:none;
+      font-size:15px;
+      background-color:rgb(244,241,222);
+    }
+    .joinn{
+        background-color: rgba(0, 29, 74, 1);
+    }
+    .joinn a:link {
+      text-decoration: none;
+      background-color: rgba(0, 29, 74, 1);
+      color:rgb(143, 140, 140);
+    }
+    .joinn a:visited {
+      text-decoration: none;
+      background-color: rgba(0, 29, 74, 1);
+      color:rgb(165, 161, 161);
+    }
+    .joinn a:hover {
+      text-decoration: underline;
+      background-color: rgba(0, 29, 74, 1);
+      color:rgb(143, 140, 140);
+    }
+    .joinn a:active {
+      text-decoration: underline;
+      background-color: rgba(0, 29, 74, 1);
+      color:rgb(90, 90, 90);
+    }
+    /* Set a style for the submit/login button */
+    .form-container #btn {
+      border-radius:4px;
+      background-color: rgb(236, 164, 0);
+      color: white;
+      padding: 16px 20px;
+      border: none;
+      cursor: pointer;
+      width: 100%;
+      margin-bottom:10px;
+      opacity: 0.8;
+      font-size:18px;
+      float: right;
+    }
+    /* NAVIGATION BAR*/
+    .navi a{
+        color: #aaaaaa;
+        margin: 5px 10px;
+    ;
+    }
+    /* Button used to open the contact form - fixed at the bottom of the page */
+    .open-button {
+      background-color: #F59A23;
+      color: white;
+      padding: 6px 10px;
+      border: none;
+      cursor: pointer;
+      opacity: 0.8;
+      bottom: 23px;
+      right: 28px;
+      width: 100px;
+    }
+    /* The popup form - hidden by default */
+    .form-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 15px;
+      border: 3px solid #f1f1f1;
+      z-index: 9;
+    }
+    /* Add styles to the form container */
+    .form-container {
+      max-width: 300px;
+      padding: 10px;
+      background-color: white;
+    }
+    
+    
+    
+    
+    
+    /*flip card*/
+    
+    .flip-card {
+      
+      background-color: transparent;
+      width: 300px;
+      height: 400px;
+      perspective: 1000px;
+      
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden; 
+    }
+    
+    .flip-card-front {
+      background-color: #2980b9;
+      color: black;
+    }
+    
+    .flip-card-back {
+      background-color: #2980b9;
+      color: white;
+      transform: rotateY(180deg);
+    }
+    .flip-card-back p{
+      font-size:13px;
+      
+    }
+    /*neeeeeeeeeew*/
+    
+    #carousel-inner img {
+      width: 900px;
+      height: 400px;  
+     
+    }
+    
+    #carousel-control-next{
+    left:820px;
+    }
+    #carousel-control-prev{
+    left:20px;
+    }
+    #carousel-control-next , #carousel-control-prev{ 
+      display: flexbox;
+      width: 2%;
+      text-align: center;
+      opacity: .5;
+    }
+    #carousel-indicators{
+     align-content: center;
+      
+    }
+    .row{
+    display: flexbox;
+    flex-wrap: wrap;
+    }
+    .flex-container {
+      display: flex;
+    }
+    /*end*/
 
-.header{
-overflow: hidden;
-background-color:rgba(0, 29, 74, 1) ;
-width: 100%;
-height:81px;
-background-position:top;
-margin-top:0px;
-}
 
-.header p{
-margin-left:170px;
-margin-top:20px;
-border-width: 0px;
-position: absolute;
-font-family: Merriweather;
-font-size: 45px;
-color: #FFFFFF;
-}
-
-.navigation{
-margin-top:25px;
-margin-left:390px;
-
-}
-
- #trip{
-font-size:22px;
-border-radius:20px;
-background-color:rgb(236, 164, 0);
-color:white;
-text-decoration: none;
-margin-right:16px;
-border-width:0px;
-height:40px;
-padding-left:10px;
-width:140px;
-height:40px;
-}
-
-#places , #tourist_nav, #service{
-font-size:18px;
-border-radius:20px;
-background-color:white;
-color:black;
-text-decoration: none;
-margin-right:20px;
-border-width:1px;
-text-align: center;
-width:170px;
-height:40px;
-}
-
-.sidePart{
-border-width: 0px;
-width: 300px;
-height: 428px;
-background: inherit;
-background-color: rgba(0, 105, 146, 1);
-border: none;
-}  
-
-.sidePart p{
-font-size:16px;
-margin-top:40px;
-padding-left:10px;
-
-}
-.sidePart h1{
-margin-top:80px;
-padding-left:10px;
-}
 #tripPic{
 width: 1030px;
 height: 345px;
@@ -91,7 +319,7 @@ height: 345px;
 #tripName{
 position:absolute;
 font-size:35px;
-margin-top:90px;
+margin-top:70px;
 margin-left:600px;
 }
 
@@ -112,7 +340,7 @@ margin-left:75px;
 width: 30px;
 height: 153px;
 margin-left:150px;
-margin-top:15px;
+margin-top:160px;
 }
 
 #EinTrip{
@@ -169,7 +397,7 @@ border-radius:9px;
 
 .Trip-way{
 margin-left:150px;
-margin-top:100px;
+margin-top:130px;
 }
 
 .Masar{
@@ -213,82 +441,32 @@ color:white;
 font-size:24px;
 border-radius:9px;
 }
-.row {
-  display: flex;
-  margin-left: 12%;
-  }
-  .column {
-  flex: 44.44%;
-  
-  }
-.container {
-  position: relative;
-  width: 80%; 
-  }
-.imageReco {
-  display: block;
-  width: 80%;
-  height: 200px;
-  border-radius:50%;
-  }
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-   width: 80%;
-  height: 200px;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-  border-radius:50%;
-  }
-.container:hover .overlay {
-  opacity: 1;
-  }
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-  }
-#Tour-operater{
-	margin-top: 25%;	
-	}
 
+@media (min-width: 768px) {
+  .carousel-multi-item-2 .col-md-3 {
+  float: left;
+  width: 25%;
+  max-width: 50%;
+   }
+   }
+  
+  .card2{
+  height:150px;
+  }
 /* footer */
 footer{
-  letter-spacing: 1px;
-  display: flex;
-  background-color: #001D4A;
-  height: 35%;
+  background-color:  rgba(0, 29, 74, 1) ;
+  padding: 25px;
   color: white;
-  padding-left: 3%;
+  letter-spacing: 1px;
   }
-footer h1{
-  font-size: 50px;
-  }
+
 #mail {
   text-decoration: none;
   font-size: 16px;
   font-weight: bold;
   color:#F59A23;
-  }
-#aboutUs{
-  width: 400px;
-  }
-.marginLeft {
-  margin-left: 8%;
-  }
-.formatText{
-  font-size: 30px;
-  font-weight: bold;
+  padding-left:90px;
   }
 input[type=email] {
   margin-left: 10%;
@@ -307,42 +485,28 @@ input[type=email] {
 .subscribeButton:hover {
   background-color: #001D4A;
   }
-#additionalId{
-font-size:22px;
-}
-#addP{
-font-size:15px;
-}
-.additional{
-padding-left:20px;
-background-color:white;
-width:1110px;
-height:465px;
-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.996078431372549);
-}
  .trip{
-                width: 100%;
-                height: 100%;
-                background-color: #001D4A;
-                color: white;
-            }
-            .input{
-                width: 40%;
-                background-color: rgb(175, 39, 39);
-                border-radius: 5px;
-                color: white;
-                font-size: 12px;
-            }
-            .button{
-                width: 100%;
-                background-color: #f59a23;
-                border-radius: 5px;
-                color: white;
-            }
-            .button:hover{
-                width: 100%;
-                color: #f59a23;
-                border-radius: 5px;
-                background-color: white;
-            }
-	
+   width: 100%;
+   height: 100%;
+  background-color: #001D4A;
+   color: white;
+  }
+  .input{
+   width: 40%;
+   background-color: rgb(175, 39, 39);
+   border-radius: 5px;
+   color: white;
+    font-size: 12px;
+  }
+  address{
+    padding-left:90px;
+  }
+  #numb{
+    padding-left:90px;
+  }   
+  #formatText{
+    padding-left: 120px;
+  }   
+	footer h2{
+padding-left: 90px;
+  }
