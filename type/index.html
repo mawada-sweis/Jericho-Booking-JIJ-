@@ -4,37 +4,73 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" type="text/css" href="style.css">
-
-</head>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      </head>
 <body>
- 
-  <div id="menu">
-  <img src="images/logo.png" class="head" id="logo" style="margin:23px 98px;"> 
-  <h3 style="color: white; font-size:20px; cursor: pointer; margin-left: 18%;">Journey Into Jericho</h3>
+ <!-- new header -->
+ <nav class="navbar navbar-expand-sm navbar-dark joinn">
+  <!-- Brand/logo -->
+  <p class="navbar-brand col-3" style="font-size: 25px; margin: auto;">Journey Into Jericho</p>
+  
+  <!-- Links -->
+  <ul class="navbar-nav navi col-6">
+    <li><a href="../type/index.html">Book Now</a></li>       
+    <li><a href="../tourist attractions/index.html">Tourist Attractions </a></li>  
+    <li><a href="../trip/index.html">Trips</a></li>
+    <li><a href="../places/index.html">Places</a></li>
+    <li><a href="../notWork/index.html">Community</a></li>
+    <li></li>
+  </ul>
+  <div class="col-3 d-flex">
+      <div class="w-50 col-12" style="float: right;">
 
-  <div id="right">
-  <select class="head" style="height: 50px;">
-  <option value="NIS">NIS</option>
-  <option value="USD">USD</option>
-</select> 
-<select class="head" style="height: 50px; margin-left: 10%;">
-  <option value="EN">EN</option>
-  <option value="Ar">Ar</option>
-</select>
- <h4 style="color: white; margin-left: 10%; cursor: pointer;"><a class="head">Login</a></h4>
-<button class="head" style="  background-color: #ff9900; width: 200px; height: 50px; margin-left: 10%; cursor: pointer;">Join US!</button> 
+<button class="open-button" onclick="openForm()">Log in</button>
+
+<div class="form-popup" id="myForm">
+    <div class="PopUpLogin-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <form action="/action_page.php" class="form-container">
+            <h1 class="Login">Welcome back</h1>
+            <hr> <br>
+            <label for="email" >Email address</label> <br>
+            <input type="email" placeholder="Enter Email" style="border: solid black;" name="email" required> <br> 
+            <label for="psw" >Password</label> <br>
+            <input type="password" placeholder="Enter Password" style="border: solid black;" name="psw" required> <br>
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label> 
+            <span class="SF"> 
+                <button id="SignUpBtn"> Sign up </button> 
+                <b>   |    </b>
+                <button id="ForgetPassword"> Forget Password?</button>
+            </span>
+            <br> <br>
+            <button id="btn"> Login</button>
+        </form>
+    </div>
 </div>
 
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
+    <a href="../joinus.html" >Join us</a></div>
 </div>
- 
+</nav>
   
 <div id="container">
 
 
-  <div class="sidenav">
+  <div class="sidenav col-2">
     <br><br><br>
-  <a> <input type="date" id="birthday" name="birthday" style="height: 40px;"> </a>
-  <h4 style="color:black;margin-left: 20%;"><a> Guests</a></h4>
   <a style="color:black;font-size:35px;">Type</a>
 
 <a style="color:black;font-size:18px;"> &nbsp; <input type="checkbox" name="Hotel">
@@ -76,29 +112,21 @@
 <br>
 
 
-<div id="data">
-<ul>
-<li> <a onclick="document.location ='../home login/index.html';">Home</a></li>
-<li> <a onclick="document.location ='../room/index.html';">Hotel</a></li>
-<li> <a onclick="document.location ='../room/index.html';">Hostel</a></li>
-<li> <a onclick="document.location ='../room/index.html';">Chalets</a></li>
-<li> <a onclick="document.location ='../tourist attractions/index.html';">Tourist Attractions</a></li>
-<li > <a onclick="document.location ='../room/index.html';">Feautres</a></li>
-</ul>
-  <div id="firstgroup">
-  <div class="card" style=" margin: 20px;">
+<div id="data col-10">
+  <div class="d-flex row col-12 justify-content-center align-items center w-100 m-3">
+  <div class="card col-4">
     <div class="imgcont"><img src="images/JR_family.jpg" alt="pic hotel" class="roompic"><p class="text">A suite for a family <br>Couple bed for the parents and individual beds for the children</p></div>
     <h3>A family suite room at Jericho resort village</h3>
     <p><button onclick="document.location ='../room/index.html';">See Room</button></p>
     <br>  
   </div> 
-   <div class="card" style="margin: 20px;">
+   <div class="card col-4">
     <div class="imgcont"><img src="images/JR_couple.jpg" alt="pic hotel" class="roompic"><p class="text">Treat your self at Jericho Resort Village with a room for a couple </p></div>
     <h3>A room for a couple at Jericho resort village</h3>
     <p><button onclick="document.location ='../room/index.html';">See Rooms</button></p>
      <br>  
   </div> 
-   <div class="card" style="margin: 20px;">
+   <div class="card col-4">
     <div class="imgcont"><img src="images/oasis_couple.jpg" alt="pic hotel" class="roompic"><p class="text">Perfect room for a couple at Oasis Hotel</p></div>
     <h3>A room for a couple at Oasis Hotel</h3>
     <p><button onclick="document.location ='../room/index.html';">See Rooms</button></p>
@@ -106,20 +134,20 @@
   </div> 
 </div>
   
-<div id="secondgroup">
-   <div class="card" style=" margin: 20px;">
+<div class="d-flex row col-12 justify-content-center align-items center w-100 m-3">
+  <div class="card col-4">
     <div class="imgcont"><img src="images/JR_family.jpg" alt="pic hotel" class="roompic"><p class="text">EXAMPLE</p></div>
     <h3>EXAMPLE</h3>
     <p><button onclick="document.location ='../room/index.html';">See Rooms</button></p>
     <br>  
   </div> 
-   <div class="card" style=" margin: 20px;">
+  <div class="card col-4">
     <div class="imgcont"><img src="images/JR_family.jpg" alt="pic hotel" class="roompic"><p class="text">EXAMPLE</p></div>
     <h3>EXAMPLE</h3>
     <p><button onclick="document.location ='../room/index.html';">See Rooms</button></p>
     <br>  
   </div> 
-   <div class="card" style=" margin: 20px;">
+  <div class="card col-4">
     <div class="imgcont"><img src="images/JR_family.jpg" alt="pic hotel" class="roompic"><p class="text">EXAMPLE</p></div>
     <h3>EXAMPLE</h3>
     <p><button onclick="document.location ='../room/index.html';">See Rooms</button></p>
@@ -127,20 +155,20 @@
   </div> 
 </div>
   
-<div id="thirdgroup">
-   <div class="card" style=" margin: 20px;">
+<div class="d-flex row col-12 justify-content-center align-items center w-100 m-3">
+  <div class="card col-4">
     <div class="imgcont"><img src="images/JR_family.jpg" alt="pic hotel" class="roompic"><p class="text">EXAMPLE</p></div>
     <h3>EXAMPLE</h3>
     <p><button onclick="document.location ='../room/index.html';">See Rooms</button></p>
     <br> 
   </div>  
-   <div class="card" style=" margin: 20px;">
+  <div class="card col-4">
     <div class="imgcont"><img src="images/JR_family.jpg" alt="pic hotel" class="roompic"><p class="text">EXAMPLE</p></div>
     <h3>EXAMPLE</h3>
     <p><button onclick="document.location ='../room/index.html';">See Rooms</button></p>
     <br> 
   </div>  
-   <div class="card" style=" margin: 20px;">
+  <div class="card col-4">
     <div class="imgcont"><img src="images/JR_family.jpg" alt="pic hotel" class="roompic"><p class="text">EXAMPLE</p></div>
     <h3>EXAMPLE</h3>
     <p><button onclick="document.location ='../room/index.html';">See Rooms</button></p>
@@ -149,6 +177,24 @@
 </div>
 </div>
   </div>
-
+  <footer class="d-flex col-12">
+    <div id="aboutUs col-4">
+      <h1>JIJ</h1>
+      <p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
+    </div>
+    <div class="marginLeft col-4" style="margin-top: 3%;">
+      <p class="formatText">Subscribe to see what's new</p>
+      <form > 
+        <input type="email" id="email" name="email" placeholder=" Your email ">
+        <button class="subscribeButton"> Subscribe </button>
+      </form>
+    </div>
+    <div class="marginLeft col-4" style="margin-top: 3%;">
+      <h2 class="formatText">contant us</h2>
+      <a id="mail"href="mailto:STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
+      999-9999-999 <br>
+      <address>Palestine - Nablus</address>
+    </div>
+  </footer>
 </body>
 </html>
