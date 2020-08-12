@@ -4,7 +4,7 @@
   <title>Home</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
- 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -17,7 +17,7 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:rgba(0, 29, 74, 1) ;">
         <div class="container-fluid ">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -25,7 +25,11 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>                        
               </button>
-             <a href="#" class=" navbar-brand JIJname" style="color: ivory;">Journey Into Jericho</a>
+<<<<<<< HEAD
+             <a href="../home page/index.html" class=" navbar-brand JIJname" style="color: ivory;">Journey Into Jericho</a>
+=======
+             <a href="../home page/index.html" class=" navbar-brand JIJname" style="color: ivory;font-size:35px;">Journey Into Jericho</a>
+>>>>>>> master
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
@@ -90,8 +94,8 @@
       <video autoplay muted loop>
           <source src="intro.mp4" type="video/mp4" />
       </video>
-      <div id="bookinginfo" class="overlay justify-content-center align-items-center row">
-          <div class=" justify-content-center align-items-center w-50">
+      <div id="bookinginfo" class="overlay justify-content-center align-items-center row w-100">
+          <div class="inOverlay">
               <div class="justify-content-center align-items-center w-100 row m-2">
                   <input class="search p-2" type="search" placeholder="Search for a hotel, hostel or chalet..">
               </div>
@@ -182,7 +186,7 @@
  <button type="button" class="btn browse" onclick="document.location='../trip/index.html#masarKhalil';">Learn more</button>
 </div>
     <div class="col-sm-3">
-        <div class="card text-left">
+        <div class="card text-left feature">
           <div class="card-body">
             <h5 class="card-title text-center">Communicate</h5>
             <h6 class="card-subtitle mb-2 text-muted">SIM</h6>
@@ -190,7 +194,7 @@
             <a href="../notWork/index.html" class="card-link">Buy</a>
           </div>
         </div>
-        <div class="card text-left">
+        <div class="card text-left feature">
           <div class="card-body">
             <h5 class="card-title text-center">Transport</h5>
             <h6 class="card-subtitle mb-2 text-muted">CAREEM or local Taxi drivers</h6>
@@ -200,7 +204,7 @@
         </div>
     </div>
     <div class="col-sm-3">
-      <div class="card text-left">
+      <div class="card text-left feature">
         <div class="card-body">
           <h5 class="card-title text-center">Move your luggage</h5>
           <h6 class="card-subtitle mb-2 text-muted">Amteaa</h6>
@@ -208,7 +212,7 @@
           <a href="../notWork/index.html" class="card-link">Hire</a>
         </div>
       </div>
-      <div class="card text-left">
+      <div class="card text-left feature">
         <div class="card-body">
           <h5 class="card-title text-center">Know more</h5>
           <h6 class="card-subtitle mb-2 text-muted">Tour Gide</h6>
@@ -273,19 +277,19 @@
     <div class="item active">
       <img src="images/cable%20car.jpg" alt="cable car">
       <div class="carousel-caption">
-        Enjoy the amazing views
+        <a href="../trip/index.html">Enjoy the amazing views</a>
       </div>
     </div>
     <div class="item">
       <img src="images/hisham.jpg" alt="hisham palace">
       <div class="carousel-caption">
-        Visit historical features
+        <a href="../trip/index.html"> Visit historical features</a>
       </div>
     </div>
     <div class="item">
       <img src="images/dead%20see.jpg" alt="Dead sea">
       <div class="carousel-caption">
-        Relaxation in the dead sea
+       <a href="../trip/index.html">Relaxation in the dead sea</a> 
       </div>
     </div>
   </div>
@@ -307,26 +311,26 @@
 <div class="container ">
   <div class="container">
     <div style="display: flex;">
-      <div class="zoom col-3 ">
-        <a href="../room/index.html"><img src="images/1.jpg" alt="room 1"></a>
+      <div class="zoom col-3 " onclick="document.location='../room/index.html';">
+        <img src="images/1.jpg" alt="room 1">
         <div class="overlayReco">
             <div class="text">Room 1</div>
         </div>  
       </div>
-      <div class="zoom col-3 ">
-        <a href="../room/index.html"><img src="images/2.jpg" alt="room 2"></a>
+      <div class="zoom col-3 " onclick="document.location='../room/index.html';">
+        <img src="images/2.jpg" alt="room 2">
         <div class="overlayReco">
             <div class="text">Room 2</div>
         </div>  
       </div>
-      <div class="zoom col-3 ">
-        <a href="../room/index.html"><img src="images/3.jpg" alt="room 3"></a>
+      <div class="zoom col-3 " onclick="document.location='../room/index.html';">
+        <img src="images/3.jpg" alt="room 3">
         <div class="overlayReco">
             <div class="text">Room 3</div>
         </div>  
       </div>
-      <div class="zoom col-3 ">
-        <a href="../room/index.html"><img src="images/4.jpg" alt="room 4"></a>
+      <div class="zoom col-3 " onclick="document.location='../room/index.html';">
+        <img src="images/4.jpg" alt="room 4">
         <div class="overlayReco">
             <div class="text">Room 4</div>
         </div>  
@@ -392,25 +396,24 @@
 		}
   </script>
   
-<footer class="container-fluid text-left  d-flex cl2">	
-  <div class="col-4" style="width: 25%;">
-    <h1 style="font-size: 50px;">JIJ</h1>
-    <p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
-  </div>
-  <div class=" col-4" style="width:50%;" >
-    <p style="font-size: 30px;" class="text-center">Subscribe to see what's new</p>
-    <form class="text-center"> 
-      <input type="email" id="email" name="email" placeholder=" Your email ">
-      <button class="subscribeButton"> Subscribe </button>
-    </form>
-  </div>
-  <div class="col-4 text-left" style="width: 25%;">
-    <h2 class="text-center">Contact us</h2>
-    <a id="mail" href="mailto:STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
-    999-9999-999 <br>
-    <address>Palestine - Nablus</address>
-  </div>
-</footer>
-
-</body>
-</html>
+  <footer class="container-fluid text-left  d-flex cl2">	
+    <div class="col-4" style="width: 25%;">
+      <h1 style="font-size: 50px;">JIJ</h1>
+      <p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
+    </div>
+    <div class=" col-4"style="width:50%;" >
+      <p style="font-size: 27px;" class="text-center">Subscribe to see what's new</p>
+      <form class="text-center"> 
+        <input type="email" id="email" name="email" placeholder=" Your email ">
+        <button class="subscribeButton"> Subscribe </button>
+      </form>
+    </div>
+    <div class="col-4 text-left" style="width: 25%;">
+      <h2 class="text-center">Contact us</h2>
+      <a id="mail" class="text-center" href="mailto:STPT.comp@gmail.com">STPT.comp@gmail.com</a>
+    <div id="numb"> 999-9999-999 </div>
+      <address>Palestine - Nablus</address>
+    </div>
+  </footer>
+  </body>
+  </html>
