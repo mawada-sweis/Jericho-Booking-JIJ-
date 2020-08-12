@@ -12,73 +12,72 @@
 <body>
 
 
-<nav class="navbar navbar-inverse ">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-    
- <a class="navbar-brand" href="#"><img src="image/logo.png" style="width:80px; height:350%;" ></a>     
-	 <a href="#" class=" navbar-brand JIJname">Journey Into Jericho</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        
-        <li><a href="#">Community</a></li>
-        <li><a href="#">Tourist</a></li>
-        <li><a href="#">Tourguide</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><button class="join" id="LogInBtn"> <span class="glyphicon glyphicon-log-in"> </span> Login</button>
-				<div id="PopUpLogin" class="PopUpLogin">
-					<div class="PopUpLogin-content">
-						<span class="close">&times;</span>
-						<form class="form-container">
-							<h1 class="Login">Welcome back</h1>
-							<hr> <br>
-							<label for="email" >Email address</label> <br>
-							<input type="email" placeholder="Enter Email" name="email" required> <br> 
-							<label for="psw" >Password</label> <br>
-							<input type="password" placeholder="Enter Password" name="psw" required> <br>
-							<label>
-								<input type="checkbox" name="remember"> Remember me
-							</label> 
-							<span class="SF"> 
-								<button id="SignUpBtn"> Sign up </button> 
-								<b>   |    </b>
-								<button id="ForgetPassword"> Forget Password?</button>
-							</span>
-							<br> <br>
-							<button id="btn"> Login</button>
-						</form>
-					</div>
-				</div>
-			<script>
-				var modal = document.getElementById("PopUpLogin");
-				var btn = document.getElementById("LogInBtn");
-				var span = document.getElementsByClassName("close")[0];
-				btn.onclick = function() {
-					modal.style.display = "block";
-				}
-				span.onclick = function() {
-					modal.style.display = "none";
-				}
-				window.onclick = function(event) {
-					if (event.target == modal) {
-						modal.style.display = "none";
-					}
-				}
-			</script></li>
-        <li><a href="joinus.html" >Join us</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+		  <div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>                        
+			</button>
+		   <a href="#" class=" navbar-brand JIJname" style="color: ivory;">Journey Into Jericho</a>
+		  </div>
+		  <div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+			  <li><a href="#">Book Now</a></li>       
+			  <li><a href="#">Tourist Attractions </a></li>  
+			  <li><a href="#">Trips</a></li>
+			  <li><a href="#">Places</a></li>
+			  <li><a href="#">Community</a></li>		
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+			  <li><button class="join" id="LogInBtn"> <span class="glyphicon glyphicon-log-in"> </span> Login</button>
+					  <div id="PopUpLogin" class="PopUpLogin">
+						  <div class="PopUpLogin-content">
+							  <span class="close">&times;</span>
+							  <form class="form-container">
+								  <h1 class="Login">Welcome back</h1>
+								  <hr> <br>
+								  <label for="email" >Email address</label> <br>
+								  <input type="email" placeholder="Enter Email" name="email" required> <br> 
+								  <label for="psw" >Password</label> <br>
+								  <input type="password" placeholder="Enter Password" name="psw" required> <br>
+								  <label>
+									  <input type="checkbox" name="remember"> Remember me
+								  </label> 
+								  <span class="SF"> 
+									  <button id="SignUpBtn"> Sign up </button> 
+									  <b>   |    </b>
+									  <button id="ForgetPassword"> Forget Password?</button>
+								  </span>
+								  <br> <br>
+								  <button id="btn"> Login</button>
+							  </form>
+						  </div>
+					  </div>
+				  <script>
+					  var modal = document.getElementById("PopUpLogin");
+					  var btn = document.getElementById("LogInBtn");
+					  var span = document.getElementsByClassName("close")[0];
+					  btn.onclick = function() {
+						  modal.style.display = "block";
+					  }
+					  span.onclick = function() {
+						  modal.style.display = "none";
+					  }
+					  window.onclick = function(event) {
+						  if (event.target == modal) {
+							  modal.style.display = "none";
+						  }
+					  }
+				  </script></li>
+			  <li><a href="joinus.html" >Join us</a></li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
 
-<div class="jumbotron">
+<div class="jumbotron "> <!-- PS: if you want to make the background white, use  <div class="jumbotron Section "></div> -->  
   <div class="container text-center">
     <h1>My Portfolio</h1>      
     <p>Some text that represents "Me"...</p>
