@@ -1,0 +1,184 @@
+.container{
+  margin-top:-200px ;
+  width: auto;
+  height: 23em;
+   background-color: #006992;
+   color: white;
+}
+  .v-divider{
+   margin-left:5px;
+   margin-right:5px;
+   width:1px;
+   height: 10%;
+   border-left:1px solid gray;
+  }
+  .btnState{
+      background-color: #ECA400;
+      color: white;
+  }
+  #price{
+      padding-top: 20%;
+      font-size: 40px;
+  }
+  span{
+      font-size: 25px;
+  }
+  body {
+  font-family: "Lato", sans-serif;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+.card button {
+  border: none;
+  outline: 0;
+  padding: 8px;
+  color: white;
+  background-color: #1a8cff;
+ text-align: center;
+  cursor: pointer;
+  width: 60%;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+
+
+.button {
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.bg {
+  height: 30vh;
+  background: linear-gradient(#000066 50%, #ffffff 50%);
+}
+#menu{
+  background-color: #0b1d49;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  background-size: 100%;
+}
+#right{
+  margin-left: 40%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1%;
+}
+
+#logo{
+  border-width: 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 172px;
+    height: 162px;
+}
+
+
+#info{
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  margin-left: 5%;
+  margin-top: 1%;
+}
+#data{
+  display: flex;
+  flex-direction: column;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width:35%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #ffe6cc;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color:#ffb366;
+}
+ .border{
+  width: 100px;
+  height: 60px;
+  border: 2px solid orange;
+}
+.firstgroup{
+  flex-direction: row;
+}
+.thirdgroup{
+  display: flex;
+  flex-direction: row;
+}
+footer{
+  letter-spacing: 1px;
+  display: flex;
+  background-color: #001D4A;
+  height: 35%;
+  color: white;
+  padding-left: 3%;
+  background-size: 100%;
+  }
+footer h1{
+font-size: 50px;
+}
+            #mail {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                color:#F59A23;
+            }
+            #aboutUs{
+                width: 400px;
+            }
+            .marginLeft {
+                margin-left: 8%;
+            }
+            .formatText{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            input[type=email] {
+                margin-left: 10%;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .subscribeButton {
+                background-color:#F59A23;
+                border-radius: 5px;
+                border: none; 
+                color: white; 
+                padding: 14px 20px; 
+            }  
+            .subscribeButton:hover {
+                background-color: #001D4A;
+            }
