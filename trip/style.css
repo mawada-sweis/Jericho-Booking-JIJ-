@@ -441,7 +441,6 @@ color:white;
 font-size:24px;
 border-radius:9px;
 }
-
 @media (min-width: 768px) {
   .carousel-multi-item-2 .col-md-3 {
   float: left;
@@ -453,6 +452,7 @@ border-radius:9px;
   .card2{
   height:150px;
   }
+
 /* footer */
 footer{
   background-color:  rgba(0, 29, 74, 1) ;
