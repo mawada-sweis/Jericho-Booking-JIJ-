@@ -1,13 +1,4 @@
-/* Add a gray background color and some padding to the footer */
-    footer {
-        background-color: #f2f2f2;
-        padding: 25px;
-      }
-      .carousel-inner img {
-        width: 100%; /* Set width to 100% */
-        min-height: 200px;
-      }
-  
+
       /* Hide the carousel text when the screen is less than 600 pixels wide */
       @media (max-width: 600px) {
         .carousel-caption {
@@ -89,10 +80,6 @@
     font-size:15px;
     background-color:rgb(244,241,222);
   }
-
-
-
-
   .search{
     border: 2px solid #F59A23;
     width: 350px;
@@ -174,30 +161,155 @@ select:invalid { color: gray; }
   color: white;
   background-color: black;
 }
-/* 
-#carousel-inner img {
-  width: 900px;
-  height: 400px;    
+
+footer {
+  background-color:  rgba(0, 29, 74, 1) ;
+  padding: 25px;
+  color: white;
+  letter-spacing: 1px;
 }
-#carousel-control-next{
-left:820px;
+
+input[type=email] {
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}	
+.subscribeButton {
+  background-color:#F59A23;
+  border-radius: 5px;
+  border: none; 
+  color: white; 
+  padding: 14px 20px; 
+}  
+.subscribeButton:hover {
+  background-color: #001D4A;
 }
-#carousel-control-prev{
-left:20px;
+#mail {
+  text-decoration: none;
+  font-size: 16px;	
+  font-weight: bold;	
+  color:#F59A23;
 }
-#carousel-control-next , #carousel-control-prev{ 
-  display: flexbox;
-  width: 2%;
-  text-align: center;
-  opacity: .5;
+#topbtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color:#F59A23;
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px;
+  font-size: 18px; 
 }
-#carousel-indicators{
- content-align:center;
+#topbtn:hover {
+  background-color: rgba(0, 29, 74, 1) ;
 }
-.row{
-margin-right:-10px;
-display: flexbox;
-flex-wrap: wrap;
-margin-left: 300px;
-margin-top:-400px;
-} */
+.cl2{
+  display: flex;
+}
+#linkTour a:link, #linkTour a:visited {
+    color: black;
+    text-decoration: none;
+    background-color:#F59A23;
+    border-radius: 5px; 
+    padding: 2px;
+    font-size: 15px;
+}
+#linkTour a:hover, #linkTour a:active {
+    background-color: #0096c7;
+    color: white;
+}
+#aboutJericho{
+  border:none;
+  box-shadow: 5px 5px 10px grey;
+
+}
+#more{
+  display: none;
+}
+.breakBetweenSec{
+	margin-top: 7%;
+  }
+  .zoom {
+    transition: transform .2s;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .zoom:hover {
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+  .zoom a {
+    text-decoration:none;
+    font-size:22px;
+    font-weight: bold;
+    color: black;
+  }
+  .zoom a p {
+    padding-top: 1em;
+  }
+  .zoom a:hover{
+    text-decoration:none;
+    font-size:22px;
+    color:black;
+  }
+  .zoom a img { 
+    border-radius: 50%;
+  width:200px;
+  height:200px;
+  }
+  .overlayReco {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width:200px;
+    height: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:rgb(236, 164, 0);
+    border-radius:50%;
+  }
+  .container:hover .overlayReco {
+    opacity: 1;
+  }
+  .text {
+    color: black;
+    font-weight: bold;
+    font-size: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #f4511e;
+  }
+  .carousel-indicators li {
+    border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+    background-color: #f4511e;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+ #myCarousel{
+   background-color: rgb(236, 164, 0);
+ }
