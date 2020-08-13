@@ -1,3 +1,6 @@
+
+
+
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
@@ -13,17 +16,483 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rating/1.5.0/bootstrap-rating.js" integrity="sha512-2y3fvT2j/1dhWejgIc3kfLfX/n5L/s56MoeM9biJO7QBfw/h8bHu/VYM6JUts1AplduKftAlt8qr4xhh96qF7Q==" crossorigin="anonymous"></script>
+<style>
+    .box{
+                display: flex;
+            }
+            .box1{
+                display: flex;
+                padding-left: 150px;
+            }
+            .logo{
+                z-index:1000;
+                position: relative;
+                float:left;
+                width: 150px;
+                height: 125px;
+            }
+            .p{
+                color: white;
+                font-size: 50px;
+                margin-top: 10px;
+                padding-bottom: 30px;
+                padding-left: 220px;
+            }
+            .cl1{
+                background-color: #001D4A;
+                background-size: 100%;
+                padding-top: 1px;
+            }
+            .pics{
+                width: 200px;
+                height: 140px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border-radius: 4%;
+            }
+	       #id1{
+                margin-top: 0px;
+                padding-left: 30%;
+                font-size: 45px;
+                font-family: Arial;
+            }
+            #address{
+                font-size: 20px;
+                color: black;
+                padding-left: 30%;
+                font-family: Arial;
+            }
+            td{
+                font-size: 25px;
+                font-family: Arial;
+            }
+            table{
+                padding-left: 150px;
+            }
+            .hh{
+                font-family: Arial;
+                font-size: 25px;
+            }
+            .button{
+                background-color: #F59A23;
+                padding: 20px;
+                margin: 5px;
+                width: 420px;
+                height: 100px;
+                font-size: 20px;
+                color: white;
+                border-radius: 5px;
+            }
+            .button:hover{
+                background-color: white;
+                padding: 20px;
+                margin: 5px;
+                width: 420px;
+                height: 100px;
+                font-size: 20px;
+                color: #F59A23;
+                border-radius: 5px;
+            }
+            #iid{
+                font-size: 20px;
+                color: black;
+                padding-left: 150px;
+                font-family: Arial;
+            }
+            #idd{
+                float: right;
+                width: 200px;
+                height:200px;
+            }
+            footer{
+                letter-spacing: 1px;
+                display: flex;
+                background-color: #001D4A;
+                height: 35%;
+                color: white;
+                padding-left: 3%;
+                background-size: 100%;
+            }
+            footer h1{
+                font-size: 50px;
+            }
+            #mail {
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: bold;
+                color:#F59A23;
+            }
+            #aboutUs{
+                width: 400px;
+            }
+            .marginLeft {
+                margin-left: 8%;
+            }
+            .formatText{
+                font-size: 30px;
+                font-weight: bold;
+            }
+            input[type=email] {
+                margin-left: 10%;
+                padding: 12px 20px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+            }
+            .subscribeButton {
+                background-color:#F59A23;
+                border-radius: 5px;
+                border: none; 
+                color: white; 
+                padding: 14px 20px; 
+            }  
+            .subscribeButton:hover {
+                background-color: #001D4A;
+            }
+            .infOwner{
+              border: 1px solid black;
+              text-align: center;
+              padding: 20px;
+              margin: 5px;
+              width: 420px;
+              height: 100px;
+              font-size: 20px;
+              border-radius: 5px;
+            }
+            .btnBook{
+                background-color: #F59A23;
+                border: none;
+                padding: 20px;
+                margin: 5px;
+                width: 420px;
+                height: 100px;
+                font-size: 30px;
+                color: white;
+                border-radius: 5px;
+            }
+            .btnBook:hover{
+                background-color:beige;
+                padding: 20px;
+                margin: 5px;
+                width: 420px;
+                height: 100px;
+                font-size: 35px;
+                color: #F59A23;
+                border-radius: 5px;
+            }
+             /* NAVIGATION BAR*/
+  nav {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color:rgba(0, 29, 74, 1) ;
+    padding: 8px;
+  }
 
+  /* Login popup css:*/
+
+.PopUpLogin-content {
+  background-color:rgb(244,241,222);
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Css for the content*/
+/* Full-width input fields */
+.Login{
+  text-align:center;
+  font-size:30px;
+  
+}
+.form-container  input[type=email], .form-container input[type=password] {
+  border-radius:6px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: white;
+}
+.SF{
+  float:right;
+}
+#SignUpBtn {
+  border:none;
+  font-size:15px;
+  background-color:rgb(244,241,222);
+}
+#ForgetPassword{
+  border:none;
+  font-size:15px;
+  background-color:rgb(244,241,222);
+}
+.joinn{
+    background-color: rgba(0, 29, 74, 1);
+}
+.joinn a:link {
+  text-decoration: none;
+  background-color: rgba(0, 29, 74, 1);
+  color:rgb(143, 140, 140);
+}
+
+.joinn a:visited {
+  text-decoration: none;
+  background-color: rgba(0, 29, 74, 1);
+  color:rgb(165, 161, 161);
+}
+
+.joinn a:hover {
+  text-decoration: underline;
+  background-color: rgba(0, 29, 74, 1);
+  color:rgb(143, 140, 140);
+}
+
+.joinn a:active {
+  text-decoration: underline;
+  background-color: rgba(0, 29, 74, 1);
+  color:rgb(90, 90, 90);
+}
+/* Set a style for the submit/login button */
+.form-container #btn {
+  border-radius:4px;
+  background-color: rgb(236, 164, 0);
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  font-size:18px;
+  float: right;
+}
+/* NAVIGATION BAR*/
+.navi a{
+    color: #aaaaaa;
+    margin: 5px 10px;
+;
+}
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #F59A23;
+  color: white;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  bottom: 23px;
+  right: 28px;
+  width: 100px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+/*neeeeeeeeeeeeew*/
+
+#carousel-inner img {
+    width: 900px;
+    height: 520px;    
+  }
+#carousel-control-next{
+  left:820px;
+  }
+#carousel-control-prev{
+  left:20px;
+  }
+#carousel-control-next , #carousel-control-prev{ 
+  display: flexbox;
+  width: 2%;
+  text-align: center;
+}
+
+  
+
+
+.row{
+  margin-left:-10px;
+  display: flexbox;
+  flex-wrap: wrap;
+  margin-left: 70px;
+}
+/*newwwwwwwwwwwwww star*/
+.main {
+	margin-right: 20px;
+	float:right;
+	
+}
+.rating-star {
+    direction: rtl;
+    font-size: 40px;
+    unicode-bidi: bidi-override;
+    display: inline-block;
+}
+.rating-star input {
+    opacity: 0;
+    position: relative;
+    left: -30px;
+    z-index: 2;
+    cursor: pointer;
+}
+.rating-star span.star:before {
+    color: #777777;
+}
+.rating-star span.star {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+}
+.rating-star span {
+    margin-left: -10px;
+}
+.rating-star span.star:before {
+    color: #777777;
+    content:"\f006";
+}
+.rating-star input:hover + span.star:before, .rating-star input:hover + span.star ~ span.star:before, .rating-star input:checked + span.star:before, .rating-star input:checked + span.star ~ span.star:before {
+    color: #ffd100;
+    content:"\f005";
+}
+ 
+.selected-rating{
+    color: #ffd100;
+    font-weight: bold;
+    font-size: 30px;
+}
+.cl2{
+                    background-color: #001D4A;
+                    background-size: 100%;
+                    padding-top: 1px;
+                    height: Auto;
+                    letter-spacing: 1px;
+                    display: flex;
+                    background-color: #001D4A;
+                    height: 35%;
+                    color: white;
+                    padding-left: 3%;
+                   
+                }
+               
+                footer h1{
+                    font-size: 50px;
+                }
+                #mail {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color:#F59A23;
+                }
+                #aboutUs{
+                    width: 400px;
+                }
+                .marginLeft {
+                    margin-left: 8%;
+                }
+                .formatText{
+                    font-size: 26px;/*neeeeeeeeeeeeeeeeeeeeeeeeeeeew*/
+                    font-weight: bold;
+                }
+                input[type=email] {
+                    margin-left: 10%;
+                    padding: 12px 20px;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                .subscribeButton {
+                    background-color:#F59A23;
+                    border-radius: 5px;
+                    border: none; 
+                    color: white; 
+                    padding: 14px 20px; 
+                }  
+                .subscribeButton:hover {
+                    background-color: #001D4A;
+                }
+</style>
         <title>Room Page</title>
     </head>
     <body>
-        <div class="cl1">
-            <a>
-                <img id="logo" src="images/logo.png" class="logo"></img>
-            </a>
-            <p class="p">Journey Into Jericho</p>
-        </div>
-	
+        <nav class="navbar navbar-expand-sm navbar-dark joinn">
+            <!-- Brand/logo -->
+            <p class="navbar-brand col-3" style="font-size: 25px; margin: auto;">Journey Into Jericho</p>
+            
+            <!-- Links -->
+            <ul class="navbar-nav navi col-6">
+              <li><a href="../type/index.html">Book Now</a></li>       
+              <li><a href="../tourist attractions/index.html">Tourist Attractions </a></li>  
+              <li><a href="../trip/index.html">Trips</a></li>
+              <li><a href="../places/index.html">Places</a></li>
+              <li><a href="../notWork/index.html">Community</a></li>
+              <li></li>
+            </ul>
+            <div class="col-3 d-flex">
+                <div class="w-50 col-12" style="float: right;">
+          
+          <button class="open-button" onclick="openForm()">Log in</button>
+          
+          <div class="form-popup" id="myForm">
+              <div class="PopUpLogin-content">
+                  <span class="close" onclick="closeForm()">&times;</span>
+                  <form action="/action_page.php" class="form-container">
+                      <h1 class="Login">Welcome back</h1>
+                      <hr> <br>
+                      <label for="email" >Email address</label> <br>
+                      <input type="email" placeholder="Enter Email" style="border: solid black;" name="email" required> <br> 
+                      <label for="psw" >Password</label> <br>
+                      <input type="password" placeholder="Enter Password" style="border: solid black;" name="psw" required> <br>
+                      <label>
+                          <input type="checkbox" name="remember"> Remember me
+                      </label> 
+                      <span class="SF"> 
+                          <button id="SignUpBtn"> Sign up </button> 
+                          <b>   |    </b>
+                          <button id="ForgetPassword"> Forget Password?</button>
+                      </span>
+                      <br> <br>
+                      <button id="btn"> Login</button>
+                  </form>
+              </div>
+          </div>
+          
+          <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+              document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+              <a href="../home page/Joinus.html" >Join us</a></div>
+          </div>
+          </nav>
+              
         <div class="box">
             <div class="col-4 justify-content-center align-items-center">
                 <div class="justify-content-center align-items-center row">
@@ -189,7 +658,7 @@ $('#rating-form').on('change','[name="rating"]',function(){
         <div class="box1 justify-content-center align-items-center row">
             <div class="infOwner"><b>+970599999999 <br> example@gmail.com</b></div>
             <div>
-                <button class="btnBook"> <b>Book Now <br></b></button>
+                <button class="btnBook" onclick="document.location='../type/index.html';"> <b>Book Now <br></b></button>
                     
                 
             
@@ -199,13 +668,13 @@ $('#rating-form').on('change','[name="rating"]',function(){
         </div>
         <br><br><br>
         <div class="w-75">
-            <img id="idd" src="images/5.png" alt="profile">
+            <img id="idd" src="images/Dawoud.jpg" alt="profile">
             <h2 class="hh justify-content-center align-items-center row">Why Jericho Resort Village?</h2>
             <p id="iid">Jericho Resort Village is one of the best choices for relaxation if you want to get away from the noise of mega-cities. Jericho Resort Village provides trips to Ein Gedi and Massada, St. George's Monastery in Wadi Quelt and Hisham Palace. Jericho Resort Village is very close to Jericho’s famous cable car, which takes you to the top of Mount of Temptation to find a beautiful restaurant with a great view of the city.</p>
         </div>
         <br><br><br><br>
-        <footer class="cl1">
-			<div id="aboutUs col-4">
+        <footer class="cl2">
+			<div id="aboutUs" class="col-4">
 				<h1>JIJ</h1>
 				<p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
 			</div>
@@ -213,15 +682,14 @@ $('#rating-form').on('change','[name="rating"]',function(){
 				<p class="formatText">Subscribe to see what's new</p>
 				<form > 
 					<input type="email" id="email" name="email" placeholder=" Your email ">
-					<button class="subscribeButton"> Subscribe </button>
+					<button class="subscribeButton" onclick="document.location='../notWork/index.html';"> Subscribe </button>
 				</form>
 			</div>
 			<div class="marginLeft col-4" style="margin-top: 3%;">
 				<h2 class="formatText">contant us</h2>
-				<a id="mail"href="STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
+				<a id="mail" href="mailto:STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
 				999-9999-999 <br>
 				<address>Palestine - Nablus</address>
 			</div>
-		</footer>
-    </body>
+		</footer>    </body>
 </html>
