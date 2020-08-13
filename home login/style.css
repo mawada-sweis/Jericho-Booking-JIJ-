@@ -6,36 +6,28 @@
     height: 100px;
     }
   
-#logo{
-position: absolute;
-padding-top:0.5%;
-padding-left:0.5%;
-float:left;
-width: 150px;
-height: 150px;
+    #logo{
+      position: static;
+      margin: 10px;
+      float:left;
+      width: 150px;
+      height: 150px;
+  }
+  #profile{
+    width:50px;
+    height:50px;
+    margin: 20px 5px;
 }
-#profile{
-position: absolute;
-width:50px;
-height:50px;
-padding-top:23px;
-padding-left:83%;
-}
-
 #seen{
-position: absolute;
-width:40px;
-height:40px;
-padding-top:23px;
-padding-left:64%;
+  width:40px;
+  height:40px;
+  margin: 20px 5px;
 }
 
 #pin{
-position: absolute;
-width:30px;
-height:30px;
-padding-top:27px;
-padding-left:67%;
+  width:30px;
+  height:30px;
+  margin: 20px 5px;
 }
 
 #jericho{
@@ -46,23 +38,20 @@ padding-left:1px;
 
 }
 .navigation{
-overflow: hidden;
-background-color:rgba(0, 29, 74, 1) ;
-width: 100%;
-height:81px;
-background-position:top;
-margin-top:0px;
+  overflow: hidden;
+  background-color:rgba(0, 29, 74, 1) ;
+  width: 100%;
+  height:81px;
+  background-position:top;
+  margin-top:0px;
 }
-
+  
 .navigation p{
-margin-left:11%;
-margin-top:1.5%;
-position: absolute;
-font-size: 45px;
-color: #FFFFFF;
+  font-size: 45px;
+  color: #FFFFFF;
 }
 
-select {
+/*select {
 float:right;
 font-size:14px;
 width: 10px;
@@ -73,22 +62,26 @@ box-sizing: 10px;
 border:none;
 border-radius:4px;
 background-color:#f1f1f1;
-}
+}*/
  
 #setting{
-float:right;
-font-size:14px;
-width: 20px;
-height: 10px;
-padding: 0px;
-margin: 33px -735px;
-box-sizing: 20px;
-border:none;
-border-radius:4px;
+  margin: 8px;
+  font-size:14px;
+  width: 100px;
+  height: 30px;
+  border-radius:4px;
+}
+
+.search{
+  width:20%;
+  height: 40px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 3px;
 }
 
 
-input[type=search]{
+/*input[type=search]{
 position:absolute;
 box-sizing: border-box;
 border: 2px solid #ccc;
@@ -99,24 +92,42 @@ height: 52px;
 padding: 4px 0px 1px 13px;;
 border-radius: 4px;
 margin:70px 0px 40px 130px;
-}  
+} */ 
     
-#Check_in{
-position:absolute;
-font-size:14px;
-width: 217px;
-height: 52px;
-border: 2px solid #ccc;
-box-sizing: border-box;
-border-radius:4px;
-background-color:#f1f1f1;
-padding: 4px 1px 1px 5px;
-margin:70px 15px 4px 500px;
+#check_in{
+  width: 15%;
+  height: 40px;
+  margin: 10px;
+}
+
+.guests{
+  width: 15%;
+  height: 40px;
+  font-size: 18px;
+  margin: 10px;
+  border-radius: 3px;
+
+}
+
+.searchB{
+  width: 20%;
+  height: 40px;
+  font-size: 18px;                
+  margin: 10px;
+  background-color: #F59A23;
+  border-radius: 3px;
+}
+.searchB:hover{
+  width: 20%;
+  height: 40px;
+  font-size: 18px;                
+  margin: 10px;
+  background-color: white;
+  border-radius: 3px;
 }
 
 
-
-.jeric select{
+/*.jeric select{
 position:absolute;
 margin-left: 180px;
 margin-top: 180px;
@@ -130,7 +141,7 @@ background-color:#f1f1f1;
 padding: 4px 1px 1px 5px;
 margin:70px 0px 4px 740px;
 
-}
+}*/
 #search{
 position:absolute;
 font-weight: 700;
@@ -150,24 +161,20 @@ text-decoration: none;
 }
 
 #UserName{
-position: absolute;
-width:45px;
-height:45px;
-padding-top:10px;
-padding-left:76%;
-font-size:15px;
+  width:45px;
+  height:45px;
+  font-size:15px;
+  margin: 20px 5px;
 }
 
- .currency {
-float:right;
-font-size:14px;
-width: 50px;
-height: 30px;
-padding: 0px;
-margin: 30px 370px;
-box-sizing: 20px;
-border-radius:4px;
-background-color:#f1f1f1
+.currency {
+  margin: 20px 12px;
+  font-size:14px;
+  width: 70px;
+  height: 40px;
+  box-sizing: 20px;
+  border-radius:4px;
+  background-color:#f1f1f1
 }
  
 #Lang{
@@ -175,10 +182,10 @@ margin: 30px -480px;
 }
 
 #where{
-position:absolute;
-font-size:28px;
-text-align: left;
-margin-left:150px;
+  font-size: 25px;
+  margin: 100px 20px 20px 20px;
+  justify-content: center;
+  align-items: center;
 }
 #conect{
 margin-left:150px;
@@ -186,10 +193,6 @@ margin-top:200px;
 font-size:22px;
 }
 
-#workTraveler{
-margin-left:140px;
-margin-top:115px;
-}
 
 /*BODY */
 .feature a:link, .feature a:visited {
@@ -530,9 +533,11 @@ input[type=email] {
         margin-top: 42%;
     }
     .flx2{
-        display: flex;
-        flex-direction: column;
-    }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
     .searches{
         font-family: Arial;
         width: 750px;
@@ -561,15 +566,16 @@ input[type=email] {
         font-size: 40px;
     }
     .lower{
-        background-image: linear-gradient(
+      background-image: linear-gradient(
         rgba(0.5, 0, 0, 0.7),
         rgba(0.5, 0, 0, 0.7)), url(images/trial.jpg);
         background-size: 100%;
-        margin-left: 8%;
-        padding-left: 2%;
-        width: 1100px;
-        height: 520px;
-        border-radius: 6px;
+        padding: 2%;
+        width: auto;
+        height: auto;
+        border-radius: 6px; 
+        justify-content: center;
+        align-items: center;
     }
     .bot{
         color: white;
@@ -579,6 +585,7 @@ input[type=email] {
         border-radius: 5px;
         margin: 10px;
         padding: 10px;
+        width: auto;
     }
     .bott{
         color: white;
@@ -592,7 +599,7 @@ input[type=email] {
         padding: 5px;
     }
     .extra{
-        height: 260px;
+        height: auto;
     }
     .buttonn{
         border: none;
