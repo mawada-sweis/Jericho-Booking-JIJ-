@@ -108,12 +108,14 @@ We suggest using this group of colors to format colors in the website:  https://
 ### 8.3 Fonts : 
 We suggest using this font: Merriweather - https://fonts.google.com/specimen/Merriweather?query=Merriweather
 ## 9. Meet our team 
-- Mawada Sweis, Proposal writer <br>
+- Mawada Sweis <br>
 mawada.sweis19@gmail.com
-- Sami ghazal, Competition researcher <br>
+- Sami ghazal <br>
 sami.ghazal.2@gmail.com
-- Noor Kobari, Designer <br>
+- Noor Kobari <br>
 noor.kobari9@gmail.com
-- Zubaida Al-Sadder & Ibrahim Ratrout, Defining the audience group by the persona user <br>
-sdrzubaida@gmail.com, ibrahimratrout11@gmail.com
+- Zubaida Al-Sadder <br> 
+sdrzubaida@gmail.co
+- Ibrahim Ratrout <br>
+ibrahimratrout11@gmail.com
 
