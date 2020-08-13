@@ -8,6 +8,7 @@
 	    <link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<<<<<<< HEAD
 		
 		
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -80,6 +81,82 @@
           </div>
         </div>
       </nav>
+=======
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       
+        <title>Places</title>
+    </head>
+    <body>
+       
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid " style="background-color:rgba(0, 29, 74, 1) ;">
+              <div class="collapse navbar-collapse" style="margin-left: 15em;">
+                <ul class="nav navbar-nav">
+                  <li><a href="../tourist attractions/index.html">Tourist effects</a></li>
+                  <li><a href="../places/index.html">Places</a></li>
+                  <li><a href="../trip/index.html">Trip</a></li>
+                </ul> 
+                <div class="navbar-header">
+                    <a href="../home page/index.html" class="navbar-brand " style="margin-right:2em;margin-left:2em;color: ivory;font-size: 3em;">Journey Into Jericho</a>
+                </div>
+                <ul class="nav navbar-nav">
+                  <li><a href="../type/index.html">Type</a></li>
+                  <li><a href="#contant">contant us</a></li>
+                </ul> 
+                <ul class="nav navbar-nav navbar-right">
+                    <li><button class="nav join" id="LogInBtn"> 
+                        <span class="glyphicon glyphicon-log-in"> </span>Login</button>
+                        <div id="PopUpLogin" class="PopUpLogin">
+                              <div class="PopUpLogin-content">
+                                  <span class="close">&times;</span>
+                                  <form class="form-container">
+                                      <h1 style="text-align: center;font-size: 30px;">Welcome back</h1>
+                                      <hr> <br>
+                                      <label for="email" >Email address</label> <br>
+                                      <input type="email" placeholder="Enter Email" name="email" required> <br> 
+                                      <label for="psw" >Password</label> <br>
+                                      <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                                      <label>
+                                          <input type="checkbox" name="remember"> Remember me
+                                      </label> 
+                                      <span style="float:right;"> 
+                                        <button id="SignUpBtn"> Sign up </button> 
+                                        <b>   |    </b>
+                                        <button id="ForgetPassword"> Forget Password?</button>
+                                      </span>
+                                      <br> <br>
+                                      <button id="btn"> Login</button>
+                                  </form>
+                              </div>
+                        </div>
+                        <script>
+                          var modal = document.getElementById("PopUpLogin");
+                          var btn = document.getElementById("LogInBtn");
+                          var span = document.getElementsByClassName("close")[0];
+                          btn.onclick = function() {
+                              modal.style.display = "block";
+                          }
+                          span.onclick = function() {
+                              modal.style.display = "none";
+                          }
+                          window.onclick = function(event) {
+                              if (event.target == modal) {
+                                  modal.style.display = "none";
+                              }
+                          }
+                        </script>
+                    </li>
+                    <li><a href="../Templates/Joinus.html">Join us</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+
+>>>>>>> 4f2cd05ecd22d2281985fd2d83facb4e127b8b8f
         
         <br><br><br><br>
         <div class="inner">
@@ -148,12 +225,21 @@
                                 </div>
                                 
                             </div>
+<<<<<<< HEAD
                             <div class="flxrow">
                                 <!--??????????????????????????????????????????-->
 								<button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button>
                                 <div>
                                     <input class="comm" type="text" placeholder="Add a comment ...">
                                 </div>
+=======
+                            
+                        </div>
+                        <div class="flxrow">
+                            <button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button>
+                            <div>
+                                <input class="comm" type="text" placeholder="Add a comment ...">
+>>>>>>> 4f2cd05ecd22d2281985fd2d83facb4e127b8b8f
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+ 
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:rgba(0, 29, 74, 1) ;">
+        <div class="container-fluid ">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+             <a href="../home page/index.html" class=" navbar-brand JIJname" style="color: ivory;font-size: 35px;">Journey Into Jericho</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="../type/index.html">Book Now</a></li>       
+              <li><a href="../tourist%20attractions/index.html">Tourist Attractions </a></li>  
+              <li><a href="../trip/index.html">Trips</a></li>
+              <li><a href="../places/index.html">Places</a></li>
+              <li><a href="../notWork/index.html">Community</a></li>
+            </ul> 
+            <ul class="nav navbar-nav navbar-right">
+                <li><button class="join" id="LogInBtn"> 
+                    <span class="glyphicon glyphicon-log-in"> </span>Login</button>
+                    <div id="PopUpLogin" class="PopUpLogin">
+                          <div class="PopUpLogin-content">
+                              <span class="close">&times;</span>
+                              <form class="form-container text-left">
+                                  <h2 class="Login text-center">Welcome back</h2>
+                                  <hr> <br>
+                                  <label for="email" >Email address</label> <br>
+                                  <input type="email" placeholder="Enter Email" name="email" required> <br> 
+                                  <label>Password <br></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                                
+                                  <label>
+                                      <input type="checkbox" name="remember"> Remember me
+                                  </label> 
+                                  <span class="SF"> 
+                                    <button id="SignUpBtn" onclick="document.location='../Templates/Joinus.html'"> Sign up </button> 
+                                    <b>   |    </b>
+                                    <button id="ForgetPassword" onclick="document.location='../notWork/index.html'"> Forget Password?</button>
+                                  </span>
+                                  <br> <br>
+                                  <button id="btn"> Login</button>
+                              </form>
+                          </div>
+                    </div>
+                    <script>
+                      var modal = document.getElementById("PopUpLogin");
+                      var btn = document.getElementById("LogInBtn");
+                      var span = document.getElementsByClassName("close")[0];
+                      btn.onclick = function() {
+                          modal.style.display = "block";
+                      }
+                      span.onclick = function() {
+                          modal.style.display = "none";
+                      }
+                      window.onclick = function(event) {
+                          if (event.target == modal) {
+                              modal.style.display = "none";
+                          }
+                      }
+                    </script>
+                </li>
+                <li><a href="../Templates/Joinus.html">Join us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav> 
+
+<div class="container">
+  <div class="justify-content-center align-items-center row">
+      <video autoplay muted loop>
+          <source src="intro.mp4" type="video/mp4" />
+      </video>
+      <div id="bookinginfo" class="overlay justify-content-center align-items-center row w-100">
+          <div class="inOverlay">
+              <div class="justify-content-center align-items-center w-100 row m-2">
+                  <input class="search p-2" type="search" placeholder="Search for a hotel, hostel or chalet..">
+              </div>
+              <div class="justify-content-center align-items-center w-100 row m-2">
+                  <input id="check" class="infoBook m-2 p-2" type="text" name="datefilter" value="Check-in / Check_out "/>
+
+                  <script>
+                      $(function(){
+          
+                      $('input[name="datefilter"]').daterangepicker({
+                          autoUpdateInput: false,
+                          locale: {
+                              cancelLabel: 'Clear'
+                          }
+                      });
+          
+                      $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+                          $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+                      });
+          
+                      $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+                          $(this).val('');
+                      });
+          
+                      });
+                  </script>
+
+                  <select class="infoBook m-2 p-2" name="Adults">
+                      <option value="" disabled selected hidden>Adults</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6+</option>
+                  </select>
+                  <select class="infoBook m-2 p-2" name="Children">
+                      <option value="" disabled selected hidden>Children</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6+</option>
+                  </select>
+                  <select class="infoBook m-2 p-2" name="Room">
+                      <option value="" disabled selected hidden>Rooms</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6+</option>
+                  </select>           
+              </div>
+              <input type="checkbox" id="work" name="work" value="workingType">
+              <label id="labelWork" for="work"> I'm on duty</label>    
+              <br>
+              <div class="justify-content-center align-items-center row">
+                  <button class="booking" onclick="window.location.href='../type/index.html';"> Book now</button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <hr>
+</div>
+
+<div class="container text-center">    
+  <h3>What We Do</h3>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="images/trip.jpg" class="img-responsive" style="width:100%" alt="Image">
+      <p class="card-title">Trip</p>
+      <br>
+      <p>Enjoy the amazing places that get the tourists attention with the trips that we provide and organize to get your satisfaction and make sure you have a great time.</p>
+      <button type="button" class="btn browse" onclick="document.location='../trip/index.html';">Browse trip</button>
+    </div>
+    <div class="col-sm-3"> 
+      <img src="images/masar.jfif" class="img-responsive" style="width:100%" alt="Image">
+      <p class="card-title">Masar ibrahim al khalil</p>
+      <br>
+<p class="text-left">
+  is a way to meet and create relationships with Palestinians and hikers from all over the world.
+  <br>
+  Explore bedouin villages and experience the main Palestinian tradition of hospitality.
+ </p>
+ <button type="button" class="btn browse" onclick="document.location='../trip/index.html#masarKhalil';">Learn more</button>
+</div>
+    <div class="col-sm-3">
+        <div class="card text-left feature">
+          <div class="card-body">
+            <h5 class="card-title text-center">Communicate</h5>
+            <h6 class="card-subtitle mb-2 text-muted">SIM</h6>
+            <p class="card-text">You can buy a SIM card from Jawwal or Ooredoo which will be provided in your place once yiu arrive.</p>
+            <a href="../notWork/index.html" class="card-link">Buy</a>
+          </div>
+        </div>
+        <div class="card text-left feature">
+          <div class="card-body">
+            <h5 class="card-title text-center">Transport</h5>
+            <h6 class="card-subtitle mb-2 text-muted">CAREEM or local Taxi drivers</h6>
+            <p class="card-text">Booking transportations to get you to your place safely ,or rent a car of your choice to go wherever you want.</p>
+            <a href="../notWork/index.html" class="card-link">Book</a>
+          </div>
+        </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card text-left feature">
+        <div class="card-body">
+          <h5 class="card-title text-center">Move your luggage</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Amteaa</h6>
+          <p class="card-text">Move your luggage to the place you are staying in.</p>
+          <a href="../notWork/index.html" class="card-link">Hire</a>
+        </div>
+      </div>
+      <div class="card text-left feature">
+        <div class="card-body">
+          <h5 class="card-title text-center">Know more</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Tour Gide</h6>
+          <p class="card-text">Know more about Jericho's historical places with our experienced and well educated tour guides.</p>
+          <a href="../tourist%20attractions/index.html#gide" class="card-link">See out tour guides</a>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <hr>
+</div>
+
+<div class="breakBetweenSec"></div>
+
+
+<div class="container" style="display: flex;">
+  <div class="card" id="aboutJericho" style="width: 40%;height: 25em;">
+  <div class="card-body" >
+    <h2 class="card-title" style="font-size: 28px;">About Jericho</h2>
+    <p class="card-text" style="padding-top: 1em;">Jericho is one of the earliest continuous settlements in the world, dating perhaps from about 9000 BCE
+      <span id="dots">...</span>
+      <span id="more"> Archaeological excavations have demonstrated Jericho’s lengthy history. The city’s site is of great archaeological importance; it provides evidence of the first development of permanent settlements and thus of the first steps toward civilization. </span>
+      </p>
+      <button class="btn btn-link" onclick="myFunction()" id="Btn">Read more</button>
+      <div style="display: flex;">
+        <div class="text-left" style="padding-right: 1em;"> Don't know where to go in Jericho? </div>
+        <div id="linkTour" class="card-link">
+          <a href="../tourist%20attractions/index.html#gide" >Check out our Tour Guide</a>
+        </div>
+      </div>
+     
+  </div>
+  <script>
+    function myFunction() {
+      var dots = document.getElementById("dots");
+      var moreText = document.getElementById("more");
+      var btnText = document.getElementById("Btn");
+      if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more"; 
+        more.style.display = "none";
+      } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less"; 
+        more.style.display = "inline";
+      }
+    }
+  </script>
+  </div>
+<div style="width: 7%;"></div>
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width: 60%;">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox"  style="font-size: 20px;">
+    <div class="item active">
+      <img src="images/cable%20car.jpg" alt="cable car">
+      <div class="carousel-caption">
+        <a href="../trip/index.html">Enjoy the amazing views</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/hisham.jpg" alt="hisham palace">
+      <div class="carousel-caption">
+        <a href="../trip/index.html"> Visit historical features</a>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/dead%20see.jpg" alt="Dead sea">
+      <div class="carousel-caption">
+       <a href="../trip/index.html">Relaxation in the dead sea</a> 
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+
+<div class="breakBetweenSec"></div>
+<h3 class="text-center">Recommended</h3> <br>
+<div class="container ">
+  <div class="container">
+    <div style="display: flex;">
+      <div class="zoom col-3 " onclick="document.location='../room/index.html';">
+        <img src="images/1.jpg" alt="room 1">
+        <div class="overlayReco">
+            <div class="text">Room 1</div>
+        </div>  
+      </div>
+      <div class="zoom col-3 " onclick="document.location='../room/index.html';">
+        <img src="images/2.jpg" alt="room 2">
+        <div class="overlayReco">
+            <div class="text">Room 2</div>
+        </div>  
+      </div>
+      <div class="zoom col-3 " onclick="document.location='../room/index.html';">
+        <img src="images/3.jpg" alt="room 3">
+        <div class="overlayReco">
+            <div class="text">Room 3</div>
+        </div>  
+      </div>
+      <div class="zoom col-3 " onclick="document.location='../room/index.html';">
+        <img src="images/4.jpg" alt="room 4">
+        <div class="overlayReco">
+            <div class="text">Room 4</div>
+        </div>  
+      </div>
+    </div>  
+  </div> 
+</div>
+
+<div class="breakBetweenSec"></div>
+
+<h2 class="text-center">What our customers say</h2>
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
+    </div>
+    <div class="item">
+      <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
+    </div>
+    <div class="item">
+      <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<div class="breakBetweenSec"></div>
+
+<button onclick="topFunction()" id="topbtn" title="Go to top"><span class="	glyphicon glyphicon-chevron-up"> </span> </button>
+	<script> 
+		//Get the button:
+		mybutton = document.getElementById("topbtn");	
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			} else {
+				mybutton.style.display = "none";
+			}
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+			document.body.scrollTop = 0; // For Safari
+			document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+  </script>
+  
+  <footer class="container-fluid text-left  d-flex cl2">	
+    <div class="col-4" style="width: 25%;">
+      <h1 style="font-size: 50px;">JIJ</h1>
+      <p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
+    </div>
+    <div class=" col-4"style="width:50%;" >
+      <p style="font-size: 27px;" class="text-center">Subscribe to see what's new</p>
+      <form class="text-center"> 
+        <input type="email" id="email" name="email" placeholder=" Your email ">
+        <button class="subscribeButton"> Subscribe </button>
+      </form>
+    </div>
+    <div class="col-4 text-left" style="width: 25%;">
+      <h2 class="text-center">Contact us</h2>
+      <a id="mail" class="text-center" href="mailto:STPT.comp@gmail.com">STPT.comp@gmail.com</a>
+    <div id="numb"> 999-9999-999 </div>
+      <address>Palestine - Nablus</address>
+    </div>
+  </footer>
+  </body>
+  </html>

@@ -220,44 +220,40 @@ video{
     background-size: cover;
     position: relative;
 }
-.container {
-	position: relative;
-	width: 80%; 
-}
-.imageReco {
-	
-	display: block;
-	width: 80%;
-	height: 200px;
-	border-radius:50%;
-}
-.overlay {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 80%;
-	height: 200px;
-	opacity: 0;
-	transition: .5s ease;
-	background-color: #008CBA;
-	border-radius:50%;
-}
-.container:hover .overlay {
-	opacity: 1;
-}
-.text {
-	color: white;
-	font-size: 20px;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+/*recommended*/
+#recommended{
+	margin-top: 10%;  
+	}
+#carousel-inner img {
+	width: 900px;
+	height: 400px;    
+  }
+  #carousel-control-next{
+  left:820px;
+  }
+  #carousel-control-prev{
+  left:20px;
+  }
+  #carousel-control-next , #carousel-control-prev{ 
+	display: flexbox;
+	width: 2%;
 	text-align: center;
-}
+	opacity: .5;
+  }
+  #carousel-indicators{
+   content-align:center;
+  }
+  .row{
+  margin-right:-10px;
+  display: flexbox;
+  flex-wrap: wrap;
+  margin-left: 300px;
+  margin-top:-400px;
+  }
+
+
+
+
 .cl2{
   background-color: #001D4A;
   background-size: 100%;
@@ -349,188 +345,163 @@ svg{
   align-self: right;
   margin-left: 70px;
 }
-
-.form-popup h1{
-margin-left:90px;
-margin-top:20px;
-font-size:20px;
-font-family: 'Arial Bold';
+/* Sign up popup window css: */
+.PopUpSignUp {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-
-#space{
-margin-left:50px;
+.PopUpSignUp-content {
+	background-color:rgb(244,241,222);
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 30%;
 }
-
-.form-popup a{
-font-size:14px;
-margin-left:20px;
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
 }
-
-#remember{
-margin-top:1px;
-margin-left:1px;
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
 }
+/* Css for the content*/
 
-label {
-padding:7px;
-}
-
-/* The popup form - hidden by default */
-.form-popup {
-
-position: absolute;
-margin-left:502px;
-margin-top:-350px;
-border: 2px  #f1f1f1;
-width: 348px;
-height: 463px;
-z-index: 9;  
-}
-
-/* Add styles to the form container */
-.form-container {
-display: none;
-border-radius:15px;
-max-width:500px;
-padding: 10px;
-background-color:rgb(244,241,222);
-height:400px;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=password] {
-border-radius:6px;
-width: 90%;
-padding: 15px;
-margin: 5px 0 22px 0;
-border: none;
-background: white;
-}
-
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-border-radius:4px;
-background-color: rgb(236, 164, 0);
-color: white;
-padding: 16px 20px;
-border: none;
-cursor: pointer;
-width: 100%;
-margin-bottom:10px;
-opacity: 0.8;
-font-size:18px;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-border-radius:4px;
-background-color: red;
-width:80px;
-margin-left:120px;
-font-size:14px;
-}
-
-
-
-.formSingup-popup h1{
-margin-left:210px;
-margin-top:7px;
-font-size:30px;
-font-family: 'Arial Bold';
-}
-
-#spaceSignUp{
-margin-left:130px;
-}
-
-.formSingup-popup a{
-font-size:15px;
-margin-left:140px;
-margin-right:0px;
-}
-
-#rememberSignUp{
-margin-top:1px;
-margin-left:1px;
-}
-
-/* The popup form - hidden by default */
-.formSingup-popup {
-display: none;  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
-margin-left:380px;
-margin-top:-349px;
-border: 2px  #f1f1f1;
-width: 342px;
-height: 543px;
-
+.JoinUs{
+	text-align:center;
+	font-size:30px;
+	font-family: 'Arial Bold';
 }
 
 /* Add styles to the form container */
 .formSignUp-container {
-border-radius:15px;
-max-width:500px;
-padding: 10px;
-background-color:rgb(244,241,222);
-height:535px;
-position: absolute;
-
+	background-color:rgb(244,241,222);
 }
 
 .formSignUp-container input[type=text] {
-border-radius:6px;
-width: 170px;
-padding: 15px;
-margin: 5px 5px 22px 0;
-border: none;
-background: white;
-margin-left:20px;
+	border-radius:6px;
+	padding: 15px;
+	border: none;
+	background: white;
+	width:49%;
 }
-
-
-
 /* Full-width input fields */
 .formSignUp-container input[type=email], .formSignUp-container input[type=password] {
-border-radius:6px;
-width: 90%;
-padding: 15px;
-margin: 5px 0 22px 0;
-border: none;
-background: white;
+	border-radius:6px;
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: white;
 }
 
 /* Set a style for the submit/login button */
 .formSignUp-container .button {
-border-radius:4px;
-background-color: rgb(236, 164, 0);
-color: white;
-padding: 16px 20px;
-border: none;
-cursor: pointer;
-width: 100%;
-margin-bottom:10px;
-opacity: 0.8;
-font-size:18px;
-}
-
-/* Add a red background color to the cancel button */
-.formSignUp-container .cancel {
-border-radius:4px;
-background-color: red;
-width:80px;
-margin-left:210px;
-font-size:14px;
+	border-radius:4px;
+	background-color: rgb(236, 164, 0);
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+	font-size:18px;
 }
 
 /* Add some hover effects to buttons */
-.formSignUp-container .button:hover, .join1:hover {
-opacity: 1;
+.formSignUp-container .button:hover, .join:hover {
+	opacity: 1;
 }
 
  input[type=radio]{
-margin-left:20px;
+	margin-left:20px;
 }
 
 #type{
-padding-left:15px;
-}	
+	padding-left:15px;
+}
+/* Login popup css:*/
+.PopUpLogin {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.PopUpLogin-content {
+	background-color:rgb(244,241,222);
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 30%;
+}
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+.close:hover, .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* Css for the content*/
+/* Full-width input fields */
+.Login{
+	text-align:center;
+	font-size:30px;
+	
+}
+.form-container  input[type=email], .form-container input[type=password] {
+	border-radius:6px;
+	width: 100%;
+	padding: 15px;
+	margin: 5px 0 22px 0;
+	border: none;
+	background: white;
+}
+.SF{
+	float:right;
+}
+.SF #SignUpBtn , .Sf #ForgetPassword{
+	border:none;
+	font-size:15px;
+	background-color:rgb(244,241,222);
+}
+
+/* Set a style for the submit/login button */
+.form-container #btn {
+	border-radius:4px;
+	background-color: rgb(236, 164, 0);
+	color: white;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-bottom:10px;
+	opacity: 0.8;
+	font-size:18px;
+}
+

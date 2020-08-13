@@ -1,4 +1,4 @@
-body {
+* {
   font-family: "Lato", sans-serif;
 }
 .card {
@@ -62,10 +62,6 @@ body {
     height: 162px;
 }
 
-#container{
-  display: flex;
-  flex-direction: row;
-}
 
 #info{
   display: flex;
@@ -110,9 +106,7 @@ input[type=submit]:hover {
   border: 2px solid orange;
 }
 .firstgroup{
-  display: flex;
   flex-direction: row;
-  margin-top: -340px;
 }
 .thirdgroup{
   display: flex;

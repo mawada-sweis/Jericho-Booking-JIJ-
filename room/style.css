@@ -147,6 +147,7 @@
   left:20px;
   }
 #carousel-control-next , #carousel-control-prev{ 
+<<<<<<< HEAD
     display: flexbox;
     width: 2%;
     text-align: center;
@@ -155,6 +156,16 @@
 /* #carousel-indicators{
    content-align:center;
 } */
+=======
+  display: flexbox;
+  width: 2%;
+  text-align: center;
+}
+
+  
+
+
+>>>>>>> 4f2cd05ecd22d2281985fd2d83facb4e127b8b8f
 .row{
   margin-left:-10px;
   display: flexbox;
@@ -208,3 +219,5 @@
     font-weight: bold;
     font-size: 30px;
 }  
+
+
