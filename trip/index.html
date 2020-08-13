@@ -5,44 +5,144 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="style.css">
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-rating/1.5.0/bootstrap-rating.js" integrity="sha512-2y3fvT2j/1dhWejgIc3kfLfX/n5L/s56MoeM9biJO7QBfw/h8bHu/VYM6JUts1AplduKftAlt8qr4xhh96qF7Q==" crossorigin="anonymous"></script>
+
+ 
+  
+  <link rel="stylesheet" href="style.css">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="header">
-<a href>
-<img id="imagesection1" src="images/logo.png"></img>
-</a>
-<p>Journey Into Jericho</p>
-</div>
 
-<div class="navigation">
-<button id="tourist_nav" ><b>tourist attractions</b></button>
-<button id="places" ><b>places</b></button>
-<button id="trip" ><b>trip</b></button>
-<button id="service"><b>service</b></button>
-</div>
-<div class="d-flex">
-<div class="sidePart col-4">
-    <h1>Event name</h1>
-    <p><b>DD-MM-YY</b></p>
-    <p><b>00AM-00PM</b></p>
-    <p><b>location</b></p>
-</div>
-    
-<div class="additional col-8">
-<img id="tripPic" src="images/trip.jpg"></img>
 
-<p id="additionalId"><b>additional information</b></p>
-<p id="addP">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+        
+<nav class="navbar navbar-expand-sm navbar-dark joinn">
+  <!-- Brand/logo -->
+  <p class="navbar-brand col-3" style="font-size: 25px; margin: auto;">Journey Into Jericho</p>
+  <!-- Links -->
+  <ul class="navbar-nav navi col-6">
+    <li><a href="#">Book Now</a></li>       
+    <li><a href="#">Tourist Attractions </a></li>  
+    <li><a href="#">Trips</a></li>
+    <li><a href="#">Places</a></li>
+    <li><a href="#">Community</a></li>
+    <li></li>
+  </ul>
+  <div class="col-3 d-flex">
+      <div class="w-50 col-12" style="float: right;">
+<button class="open-button" onclick="openForm()">Log in</button>
+<div class="form-popup" id="myForm">
+    <div class="PopUpLogin-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <form action="/action_page.php" class="form-container">
+            <h1 class="Login">Welcome back</h1>
+            <hr> <br>
+            <label for="email" >Email address</label> <br>
+            <input type="email" placeholder="Enter Email" style="border: solid black;" name="email" required> <br> 
+            <label for="psw" >Password</label> <br>
+            <input type="password" placeholder="Enter Password" style="border: solid black;" name="psw" required> <br>
+            <label>
+                <input type="checkbox" name="remember"> Remember me
+            </label> 
+            <span class="SF"> 
+                <button id="SignUpBtn"> Sign up </button> 
+                <b>   |    </b>
+                <button id="ForgetPassword"> Forget Password?</button>
+            </span>
+            <br> <br>
+            <button id="btn"> Login</button>
+        </form>
+    </div>
+</div>
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
+</script>
+    <a href="joinus.html" >Join us</a></div>
+</div>
+</nav>
+
+<br><!--neeeeeeeeeeeeeeeew-->
+
+
+<div class="flex-container">
+<div class="flip-card col-4">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+    <h1><b>Event name<b></h1> 
+    <p>DD-MM-YY</p>
+    <p>00AM-00PM</p>
+    <p>location<p>
+    </div>
+    <div class="flip-card-back">
+      <h1>Additional information</h1> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
  Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
  Sociis natoque penatibus et magnis dis parturient montes, nascetur
- ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus 
- pronin sapien nunc accuan eget.</p>
-</div>
-</div>
+ ridiculus mus</p> 
 
-<p id="tripName justify-content-center align-items-center"><b>Trip name</b></p><br>
+    </div>
+  </div>
+</div>
+ 
+<div class="row" 
+<div class="col-8">
 
+                         
+<div id="demo" class="carousel slide" data-ride="carousel"  >
+    <!-- Indicators -->
+    <ul class="carousel-indicators" id="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+      <li data-target="#demo" data-slide-to="3"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner" id="carousel-inner">
+      <div class="carousel-item active" id="carousel-item active">
+        <img src="images/1.jpg"  >
+      </div>
+      <div class="carousel-item">
+        <img src="images/2.jpg" >
+      </div>
+      <div class="carousel-item">
+        <img src="images/3.jpg">
+      </div>
+      <div class="carousel-item">
+        <img src="images/4.jpg" >
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev" id="carousel-control-prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next" id="carousel-control-next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+ </div>
+ </div>
+  
+
+
+
+
+<p id="tripName"><b>Trip name</b></p><br>
 <div class="Trip-way">
 <p id="startPoint">Starting point</p>
 <img id="hishamTrip" src="images/hishamTrip.jpg"></img><br>
@@ -56,16 +156,16 @@
 <img id="churchTrip" src="images/church.jpg"></img>
 </div>
 
-
+<br>
 <!--sami-->
-<body class="m-5">
-        <h2>Cultural Trips:</h2>
-        <div class="d-flex">
-            <svg width="7em" height="7em" viewBox="0 0 16 16" class="bi bi-caret-left-fill col-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-              </svg>
-              <div class="col-3 p-3">
-                <div class="trip p-3">
+
+<Body> 
+
+        <h2 class="container">Cultural Trips:</h2>
+        <div class="d-flex justify-content-center align-items-center">
+            
+              <div class="col-3 p-3 ">
+                <div class="trip p-3 ">
                     <h2>Trip name</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin so</p>
                     <div class="d-flex justify-content-center align-items-center">
@@ -124,22 +224,9 @@
                     </div>
                 </div>
             </div>
-            <svg width="7em" height="7em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-              </svg>
+            
         </div>
 
-
-
-
-
-
-<div class="Masar">
-<p id="masarKhalil"><b>Masar Ibrahim Al-Khalil</b></p>
-<p id="masarInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet
-. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar sic tempor.
- Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
- Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus pronin sapien nunc accuan eget</p>
  <div class="d-flex justify-content-center align-items-center  w-100">
 <p id="bookHostel">Book hostel</p>
 <p id="lookAt">Look at places</p>
@@ -151,11 +238,9 @@
 
 <!--sami-->
 
-<h2>Sports Trips:</h2>
-        <div class="d-flex">
-            <svg width="7em" height="7em" viewBox="0 0 16 16" class="bi bi-caret-left-fill col-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-              </svg>
+<h2 class="container">Sports Trips:</h2>
+        <div class="d-flex justify-content-center align-items-center">
+          
             <div class="col-3 p-3">
                 <div class="trip p-3">
                     <h2>Trip name</h2>
@@ -216,15 +301,11 @@
                     </div>
                 </div>
             </div>
-            <svg width="7em" height="7em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-              </svg>
+            
         </div>
-        <h2>Medical Trips:</h2>
-        <div class="d-flex">
-            <svg width="7em" height="7em" viewBox="0 0 16 16" class="bi bi-caret-left-fill col-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.86 8.753l5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/>
-              </svg>
+        <h2 class="container">Medical Trips:</h2>
+        <div class="d-flex justify-content-center align-items-center">
+            
             <div class="col-3 p-3">
                 <div class="trip p-3">
                     <h2>Trip name</h2>
@@ -267,7 +348,7 @@
             </div>
             <div class="col-3 p-3">
                 <div class="trip p-3">
-                    <h2>Trip name</h2>
+                    <h2>Trip name </h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin so</p>
                     <div class="d-flex justify-content-center align-items-center">
                         <input type="date" class="input m-2">
@@ -285,70 +366,150 @@
                     </div>
                 </div>
             </div>
-            <svg width="7em" height="7em" viewBox="0 0 16 16" class="bi bi-caret-right-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.14 8.753l-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-              </svg>
+            
         </div>
 
 <!--recommended-->
-<section id="Tour-operater">
-			<div class="row">
-				<div class="column">
-					<div class="container">
-						<img src="image/1.jpg" alt="Avatar" class="imageReco" >
-						<div class="overlay">
-							<div class="text"> Hotel 1</div>
-						</div>
-					</div>
-				</div>
-				<div class="column">
-					<div class="container">
-						<img src="image/2.jpg" alt="Avatar" class="imageReco">
-						<div class="overlay">
-							<div class="text">Hotel 2</div>
-						</div>
-					</div>
-				</div>
-				<div class="column">
-					<div class="container">
-						<img src="image/3.jpg" alt="Avatar" class="imageReco">
-						<div class="overlay">
-							<div class="text">Hotel 3</div>
-						</div>
-					</div>
-				</div>
-				<div class="column">
-					<div class="container">
-						<img src="image/4.jpg" alt="Avatar" class="imageReco">
-						<div class="overlay">
-							<div class="text">Hotel 4</div>
-						</div>
-					</div>
-				</div>
-			</div>	
-		</section>
-		
-		<div class="breakhorizontally"></div>
-		<footer>
-			<div id="aboutUs col-4">
-				<h1>JIJ</h1>
-				<p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
-			</div>
-			<div class="marginLeft col-4" style="margin-top: 3%;">
-				<p class="formatText">Subscribe to see what's new</p>
-				<form > 
-					<input type="email" id="email" name="email" placeholder=" Your email ">
-					<button class="subscribeButton"> Subscribe </button>
-				</form>
-			</div>
-			<div class="marginLeft col-4" style="margin-top: 3%;">
-				<h2 class="formatText">contant us</h2>
-				<a id="mail"href="STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
-				999-9999-999 <br>
-				<address>Palestine - Nablus</address>
-			</div>
-		</footer>
-	</body>
+<div class="breakhorizontally"></div>
+<section class="recommended">
+      <h1 id="headinRecom" class="container">Recommended</h1> 
+       <br><br>
+<!--Carousel Wrapper-->
+<div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+
+ 
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/1.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/2.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/3.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/4.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/3.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/1.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/4.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/2.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+    </div>
+    <!--/.Second slide-->
+
+    <!--Third slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/2.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/4.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/1.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <div class="card2">
+          <img class="img-fluid" src="images/3.jpg"
+            alt="Card image cap">
+        </div>
+      </div>
+
+    </div>
+    <!--/.Third slide-->
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+<div class="breakhorizontally"></div>
+		 <footer class="container-fluid text-left  d-flex cl2">	
+  <div class="col-4" style="width: 25%;">
+    <h1 style="font-size: 50px;">JIJ</h1>
+    <p>“Journey into Jericho” is a booking website in Jericho city, it has three locations for the tourist: hotels, hostel and the chalet, We lead tourist to tourist attractions, and help the tourists with several services they need.</p>
+  </div>
+  <div class=" col-4"style="width:50%;" >
+    <p style="font-size: 27px;" class="text-center">Subscribe to see what's new</p>
+    <form class="text-center"> 
+      <input type="email" id="email" name="email" placeholder=" Your email ">
+      <button class="subscribeButton"> Subscribe </button>
+    </form>
+  </div>
+  <div class="col-4 text-left" style="width: 25%;">
+    <h2 class="text-center">Contact us</h2>
+    <a id="mail" class="text-center" href="mailto:STPT.comp@gmail.com">STPT.comp@gmail.com</a>
+	<div id="numb"> 999-9999-999 </div>
+    <address>Palestine - Nablus</address>
+  </div>
+</footer>
+</body>
 </html>
 
 

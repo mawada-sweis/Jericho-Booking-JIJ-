@@ -1,387 +1,441 @@
 
-            .logo{
-                z-index:1000;
-                position: relative;
-                /* padding-left: 100px; */
-                /* padding-top: 7px; */
-                padding: 7px;
-                float:left;
-                width: 150px;
-                height: 150px;
+           /* Add a gray background color and some padding to the footer */
+           footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+          }
+          .carousel-inner img {
+            width: 100%; /* Set width to 100% */
+            min-height: 200px;
+          }
+          /* Hide the carousel text when the screen is less than 600 pixels wide */
+          @media (max-width: 600px) {
+            .carousel-caption {
+              display: none; 
             }
-            .p{
-                color: white;
-                font-size: 50px;
-                margin-top: 10px;
-                padding-bottom: 30px;
-                padding-left: 220px;
-            }
-            .cl1{
-                background-color: #001D4A;
-                background-size: 100%;
-                padding-top: 1px;
-            }
-            
-            .nav{
-                width: 180px;
-                height: 50px;
-                background-color: #f59a23;
-                border: solid black;
-                border-radius: 10px;
-                color: white;
-                font-size: 20px;
-                margin: 8px;
-                padding:4px;
-            }
-            .nav:hover{
-                width: 180px;
-                height: 50px;
-                background-color: white !important;
-                border: solid #f59a23 !important;
-                border-radius: 10px;
-                color: black;
-                font-size: 20px;
-                margin: 8px;
-            }
-            .inner{
-                margin-left: 150px;
-                margin-right: 150px;
-            }
-            .flxrow{
-                display: flex;
-            }
-            .flxcol{
-                display: flex;
-                flex-direction: column;
-            }
-            .scroll{
-                overflow: auto;
-                width: 600px;
-                height: 800px;
-                background-color: #001D4A;
-                border-radius: 5px;
-            }
-            .rest{
-                margin-left: 10px;
-                margin-bottom: 25px;
-                margin-top: 25px;
-                /* width: 550px; */
-                width: 100%;
-                height: 200px;
-                border: solid white;
-                border-width: 1px;
-                
-                color: white;
-            } 
-            .title{
-                text-align: center;
-                color: white;
-            }
-            .restimg{
-                margin: 8px;
-                width: 200px;
-                height: 130px;
-                border: solid white;
-                border-radius: 5px;
-                border-width: 1px;
-            }
-            .boo{
-                width: 50px;
-                height: 60px;
-                align-self: right;
-                margin-left: 70px;
-            }
-            .prof{
-                width: 47px;
-                height: 47px;
-                margin-left: 5px;
-                border-radius: 45px;
-                background-color: white;
-            }
-            .comm{
-                margin-left: 8px;
-                margin-top: 8px;
-                width: 400px;
-                height: 30px;
-                border-radius: 4px;
-            }
-            .formm{
-                background-color: #f59a23;
-                border-radius: 5px;
-                padding: 15px;
-            }
-            .cl1{
-                background-color: #001D4A;
-                background-size: 100%;
-                padding-top: 1px;
-                height: 100px;
-            }
-            .cl2{
-                background-color: #001D4A;
-                background-size: 100%;
-                padding-top: 1px;
-                height: Auto;
-            }
-            footer{
-                letter-spacing: 1px;
-                display: flex;
-                background-color: #001D4A;
-                height: 35%;
-                color: white;
-                padding-left: 3%;
-                background-size: 100%;
-            }
-            footer h1{
-                font-size: 50px;
-            }
-            #mail {
-                text-decoration: none;
-                font-size: 16px;
-                font-weight: bold;
-                color:#F59A23;
-            }
-            #aboutUs{
-                width: 400px;
-            }
-            .marginLeft {
-                margin-left: 8%;
-            }
-            .formatText{
-                font-size: 26px;
-                font-weight: bold;
-            }
-            input[type=email] {
-                margin-left: 10%;
-                padding: 12px 20px;
-                display: inline-block;
-                border: 1px solid #ccc;
-                border-radius: 4px;
-            }
-            .subscribeButton {
-                background-color:#F59A23;
-                border-radius: 5px;
-                border: none; 
-                color: white; 
-                padding: 14px 20px; 
-            }  
-            .subscribeButton:hover {
-                background-color: #001D4A;
-            }
-            .rrest{
-                width: 280px;   
-                height: 35px;
-                font-size: 20px;
-                margin:center;
-                border:none;
-                border-radius: 7px;
-            }
-            .bookrest{
-                color: white;
-                width: 100%;
-                font-size: 25px;
-                margin: 10px;
-            }
-            .time{
-                width: 130px;
-                height:32px;
-				border:none;
-				margin-right:4px;
-				border-radius:7px;
-            }
-            .bookbutt{
-                width: 180px;
-                height: 50px;
-                background-color: #001D4A;
-                border: none;
-                border-radius: 10px;
-            
-                font-size: 20px;
-                margin-left: 50px;
-            }
-            .bookbutt:hover{
-                width: 180px;
-                height: 50px;
-                background-color: white;
-                border: solid black;
-                border-radius: 10px;
-                color: black;
-                font-size: 20px;
-                margin-left: 110px;
-            }
-            svg{
-                width: 35px;
-                height: 40px;
-                align-self: left;
-                margin-left: 4px;
-                margin-top: 7px;
-            }
-            .breakhorizontally{
-height: 100px;
+        }
+        * {
+          font-family: 'Poppins', sans-serif;
+          }
+        .PopUpLogin {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+      }
+      .PopUpLogin-content {
+        background-color:rgb(244,241,222);
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 30%;
+      }
+      /* The Close Button */
+      .close {
+        color: #aaaaaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+      }
+      .close:hover, .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+      .join{
+        font-size: 1.2em;
+        border:none;
+        color:white;
+        background-color:rgb(236, 164, 0) ;
     }
+      /* Set a style for the submit/login button */
+      .form-container #btn{
+        border-radius:4px;
+        background-color: rgb(236, 164, 0);
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        margin-bottom:10px;
+        opacity: 0.8;
+        font-size:18px;
+      }
+      .form-container  input[type=email], .form-container input[type=password] {
+        border-radius:6px;
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border: none;
+        background: white;
+      }
+      #SignUpBtn {
+        border:none;
+        font-size:15px;
+        background-color:rgb(244,241,222);
+      }
+      #ForgetPassword{
+        border:none;
+        font-size:15px;
+        background-color:rgb(244,241,222);
+      } 
+                .p{
+                    color: white;
+                    font-size: 50px;
+                    margin-top: 10px;
+                    padding-bottom: 30px;
+                    padding-left: 220px;
+                }
+                .inner{
+                    margin-left: 150px;
+                    margin-right: 150px;
+                }
+                .inner iframe{
+                    width:1020px;
+                }
+                .flxrow{
+                    display: flex;
+                }
+                .flxcol{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .scroll{
+                    overflow: auto;
+                    width: 600px;
+                    height: 800px;
+                    background-color: #001D4A;
+                    border-radius: 5px;
+                }
+                .rest{
+                    margin-left: 10px;
+                    margin-bottom: 25px;
+                    margin-top: 25px;
+                    /* width: 550px; */
+                    width: 100%;
+                    height: 200px;
+                    border: solid white;
+                    border-width: 1px;
+                    
+                    color: white;
+                } 
+                .title{
+                    text-align: center;
+                    color: white;
+                }
+                .restimg{
+                    margin: 8px;
+                    width: 200px;
+                    height: 130px;
+                    border: solid white;
+                    border-radius: 5px;
+                    border-width: 1px;
+                }
+                .boo{
+                    width: 50px;
+                    height: 60px;
+                    align-self: right;
+                    margin-left: 70px;
+                }
+                .prof{
+                    width: 47px;
+                    height: 47px;
+                    margin-left: 5px;
+                    border-radius: 45px;
+                    background-color: white;
+                }
+                .comm{
+                    margin-left: 8px;
+                    margin-top: 8px;
+                    width: 400px;
+                    height: 30px;
+                    border-radius:4px;
+                }
+                .formm{
+                    background-color: #f59a23;
+                    border-radius: 5px;
+                    padding: 15px;
+                    
+                }
+                .cl1{
+                    background-color: #001D4A;
+                    background-size: 100%;
+                    padding-top: 1px;
+                    height: 100px;
+                }
+                .cl2{
+                    background-color: #001D4A;
+                    background-size: 100%;
+                    padding-top: 1px;
+                    height: Auto;
+                    letter-spacing: 1px;
+                    display: flex;
+                    background-color: #001D4A;
+                    height: 35%;
+                    color: white;
+                    padding-left: 3%;
+                   
+                }
+               
+                footer h1{
+                    font-size: 50px;
+                }
+                #mail {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color:#F59A23;
+                }
+                #aboutUs{
+                    width: 400px;
+                }
+                .marginLeft {
+                    margin-left: 8%;
+                }
+                .formatText{
+                    font-size: 26px;/*neeeeeeeeeeeeeeeeeeeeeeeeeeeew*/
+                    font-weight: bold;
+                }
+                input[type=email] {
+                    margin-left: 10%;
+                    padding: 12px 20px;
+                    display: inline-block;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                }
+                .subscribeButton {
+                    background-color:#F59A23;
+                    border-radius: 5px;
+                    border: none; 
+                    color: white; 
+                    padding: 14px 20px; 
+                }  
+                .subscribeButton:hover {
+                    background-color: #001D4A;
+                }
+                .rrest{
+                    width: 280px;   
+                    height: 35px;
+                    font-size: 20px;
+                    margin:center;
+                    border:none;
+                    border-radius:7px;
+                }
+                .bookrest{
+                    color: white;
+                    width: 100%;
+                    font-size: 25px;
+                    margin: 10px;
+                }
+                .time{
+                    width: 130px;
+                    height:32px;
+                    border:none;
+                    margin-right:4px;
+                    border-radius:7px;
+                
+                }
+                .bookbutt{
+                    width: 180px;
+                    height: 50px;
+                    background-color: #001D4A;
+                    border: none;
+                    border-radius: 10px;
+                     
+                    font-size: 20px;
+                    margin-left: 50px;
+                }
+                .bookbutt:hover{
+                    width: 180px;
+                    height: 50px;
+                    background-color: white;
+                    border: solid black;
+                    border-radius: 10px;
+                    color: black;
+                    font-size: 20px;
+                    margin-left: 50px;
+                }
+                svg{
+                    width: 35px;
+                    height: 40px;
+                    align-self: left;
+                    margin-left: 4px;
+                    margin-top:7px;
+                }
+                .breakhorizontally{
+    height: 100px;
+        }
     h3 , h4{
         font-size:20px;
     }
-#shareH1{
-text-align: center;
-}
-
-.eventeId{
-text-align: center;
-font-size:30px;
-height: 197px;
-width: 100%;
-background-color:gray;
-padding-top: 5%;
-}
-
-body {
-		
-    background-color: rgb(220, 220, 220);
-}
-
-.event-list {
-    list-style: none;
-    font-family: 'Lato', sans-serif;
-    margin: 0px;
-    padding: 0px;
-}
-.event-list > li {
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 5px rgb(51, 51, 51);
-    box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
-    padding: 0px;
-    margin: 0px 0px 20px;
-}
-.event-list > li > time {
-    display: inline-block;
-    width: 100%;
-    color: rgb(255, 255, 255);
-    background-color: rgb(197, 44, 102);
-    padding: 5px;
+    #shareH1{
     text-align: center;
-    text-transform: uppercase;
-}
-.event-list > li:nth-child(even) > time {
-    background-color: rgb(165, 82, 167);
-}
-.event-list > li > time > span {
-    display: none;
-}
-.event-list > li > time > .day {
-    display: block;
-    font-size: 56pt;
-    font-weight: 100;
-    line-height: 1;
-}
-.event-list > li time > .month {
-    display: block;
-    font-size: 24pt;
-    font-weight: 900;
-    line-height: 1;
-}
-.event-list > li > img {
-    width: 100%;
-}
-.event-list > li > .info {
-    padding-top: 5px;
-    text-align: center;
-}
-.event-list > li > .info > .title {
-    font-size: 17pt;
-    font-weight: 700;
-    margin: 0px;
-}
-.event-list > li > .info > .desc {
-    font-size: 13pt;
-    font-weight: 300;
-    margin: 0px;
-}
-.event-list > li > .info > ul{
-    display: table;
-    list-style: none;
-    margin: 10px 0px 0px;
-    padding: 0px;
-    width: 100%;
-    text-align: center;
-}
-
-.event-list > li > .info > ul > li{
-    display: table-cell;
-    cursor: pointer;
-    color: rgb(30, 30, 30);
-    font-size: 11pt;
-    font-weight: 300;
-    padding: 3px 0px;
-}
-.event-list > li > .info > ul > li > a {
-    display: block;
-    width: 100%;
-    color: rgb(30, 30, 30);
-    text-decoration: none;
-} 
-
-.event-list > li > .info > ul > li:hover{
-    color: rgb(30, 30, 30);
-    background-color: rgb(200, 200, 200);
-}
-
-@media (min-width: 768px) {
-    .event-list > li {
-        position: relative;
-        display: block;
-        width: 100%;
-        height: 120px;
-        padding: 0px;
-    }
-    .event-list > li > time {
-        display: inline-block;
-    }
-    .event-list > li > time {
-        width: 120px;
-        float: left;
-    }
-    .event-list > li > .info {
-        background-color: rgb(245, 245, 245);
-        overflow: hidden;
-    }
-    .event-list > li > time {
-        width: 120px;
-        height: 120px;
-        padding: 0px;
-        margin: 0px;
-        
-    }
-    .event-list > li > .info {
-        position: relative;
-        height: 120px;
-        text-align:left;
-        padding-right: 40px;
-    }	
-    .event-list > li > .info > .title, 
-    .event-list > li > .info > .desc {
-        padding-left:11px;
-        color:black;
-    }
-    .event-list > li > .info > .title{
-        text-align:left;
-        padding-top: 25px;
-    }
-    .event-list > li > .info > .desc {
-        padding-top: 19px;
-        color:black;
-    }
-        
-    .event-list > li > .info > ul {
-        position: absolute;
-        left: 0px;
-        bottom: 0px;
     }
     
+    .eventeId{
+    text-align: center;
+    font-size:30px;
+    height: 197px;
+    width: 100%;
+    background-color:gray;
+    padding-top: 5%;
+    }
     
-}
-
-.flxrow button {
-    border:none;
-    background-color: #001D4A;
-    color:#f59a23
-}
+     body {
+            
+            background-color: rgb(220, 220, 220);
+        }
+        
+        .event-list {
+            list-style: none;
+            font-family: 'Lato', sans-serif;
+            margin: 0px;
+            padding: 0px;
+        }
+        .event-list > li {
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 0px 5px rgb(51, 51, 51);
+            box-shadow: 0px 0px 5px rgba(51, 51, 51, 0.7);
+            padding: 0px;
+            margin: 0px 0px 20px;
+        }
+        .event-list > li > time {
+            display: inline-block;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            background-color: rgb(197, 44, 102);
+            padding: 5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        .event-list > li:nth-child(even) > time {
+            background-color: rgb(165, 82, 167);
+        }
+        .event-list > li > time > span {
+            display: none;
+        }
+        .event-list > li > time > .day {
+            display: block;
+            font-size: 56pt;
+            font-weight: 100;
+            line-height: 1;
+        }
+        .event-list > li time > .month {
+            display: block;
+            font-size: 24pt;
+            font-weight: 900;
+            line-height: 1;
+        }
+        .event-list > li > img {
+            width: 100%;
+        }
+        .event-list > li > .info {
+            padding-top: 5px;
+            text-align: center;
+        }
+        .event-list > li > .info > .title {
+            font-size: 17pt;
+            font-weight: 700;
+            margin: 0px;
+        }
+        .event-list > li > .info > .desc {
+            font-size: 13pt;
+            font-weight: 300;
+            margin: 0px;
+        }
+        .event-list > li > .info > ul{
+            display: table;
+            list-style: none;
+            margin: 10px 0px 0px;
+            padding: 0px;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .event-list > li > .info > ul > li{
+            display: table-cell;
+            cursor: pointer;
+            color: rgb(30, 30, 30);
+            font-size: 11pt;
+            font-weight: 300;
+            padding: 3px 0px;
+        }
+        .event-list > li > .info > ul > li > a {
+            display: block;
+            width: 100%;
+            color: rgb(30, 30, 30);
+            text-decoration: none;
+        } 
+    
+        .event-list > li > .info > ul > li:hover{
+            color: rgb(30, 30, 30);
+            background-color: rgb(200, 200, 200);
+        }
+        
+        @media (min-width: 768px) {
+            .event-list > li {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: 120px;
+                padding: 0px;
+            }
+            .event-list > li > time {
+                display: inline-block;
+            }
+            .event-list > li > time {
+                width: 120px;
+                float: left;
+            }
+            .event-list > li > .info {
+                background-color: rgb(245, 245, 245);
+                overflow: hidden;
+            }
+            .event-list > li > time {
+                width: 120px;
+                height: 120px;
+                padding: 0px;
+                margin: 0px;
+                
+            }
+            .event-list > li > .info {
+                position: relative;
+                height: 120px;
+                text-align:left;
+                padding-right: 40px;
+            }	
+            .event-list > li > .info > .title, 
+            .event-list > li > .info > .desc {
+                padding-left:11px;
+                color:black;
+            }
+            .event-list > li > .info > .title{
+                text-align:left;
+                padding-top: 25px;
+            }
+            .event-list > li > .info > .desc {
+                padding-top: 19px;
+                color:black;
+            }
+                
+            .event-list > li > .info > ul {
+                position: absolute;
+                left: 0px;
+                bottom: 0px;
+            }
+            
+            
+        }
+        
+        .flxrow button {
+            border:none;
+            background-color: #001D4A;
+            color:#f59a23
+        }
