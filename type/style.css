@@ -1,9 +1,11 @@
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: auto;
   text-align: center;
   font-family: arial;
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
 }
 .card h3
 {
@@ -22,17 +24,45 @@ color:black;
 }
 .card button:hover {
   opacity: 0.7;
+} 
+.text {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+.imgcont{
+  position: relative; 
+  text-align: center; 
+  color: white;
+  padding: 10px;
+}
+.imgcont:hover .text{
+  position: absolute;
+  text-align: left;
+  vertical-align: middle;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  color: white;
+  font-size: 20px;
+}
+.roompic{
+  width: 350px;
+  height: 200px;
+}
+.roompic:hover{
+  filter: brightness(20%);
+  
 }
 body {
   font-family: "Lato", sans-serif;
-margin: 0px 80px;
 }
 .sidenav {
-  height: 1100x;
-  width: 500px;
+  height: auto;
+  width: 400px;
   background-color: #e6f2ff;
-  padding:60px 0px;
-}
+  }
 .sidenav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
@@ -76,14 +106,14 @@ text-align: left;
   margin-top: 1%;
 }
 
-#logo{
+/*#logo{
   border-width: 0px;
     position: absolute;
     left: 0px;
     top: 0px;
     width: 172px;
     height: 162px;
-}
+}*/
 
 #container{
   display: flex;
@@ -105,24 +135,27 @@ text-align: left;
 #data{
   display: flex;
   flex-direction: column;
+  margin: 15px;
 }
 
 #firstgroup{
   display: flex;
   flex-direction: row;
-  margin-top: -14%;
+  width: 100%;
 }
 
 #secondgroup{
   display: flex;
   flex-direction: row;
+  width: auto;
 }
 
 #thirdgroup{
   display: flex;
   flex-direction: row;
+  width: auto;
 }
-ul {
+.ul {
   list-style-type: none;
   height:180px;
   margin: 25px 80px;
@@ -130,14 +163,14 @@ ul {
   overflow: hidden;
   background-color: #ffffff;
 }
-li {
+.li {
   float: left;
   border-right:1px solid #000000;
   padding: 0px 0px; 
   font-size:30px;
   cursor: pointer;
 }
-li a {
+.li a {
   display: block;
   text-align: left;
   padding: 6px;
@@ -145,7 +178,193 @@ li a {
   font-size: 20px;
   font-weight: bold; 
 }
-li a:hover {
+.li a:hover {
   background-color: #f2f2f2;
 }
 
+/*Footer*/
+footer{
+  letter-spacing: 1px;
+  display: flex;
+  background-color: #001D4A;
+  height: 35%;
+  color: white;
+  padding-left: 3%;
+  }
+footer h1{
+  font-size: 50px;
+  }
+#mail {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  color:#F59A23;
+  }
+#aboutUs{
+  width: 400px;
+  }
+.marginLeft {
+  margin-left: 8%;
+  }
+.formatText{
+  font-size: 30px;
+  font-weight: bold;
+  }
+input[type=email] {
+  margin-left: 10%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  }
+.subscribeButton {
+  background-color:#F59A23;
+  border-radius: 5px;
+  border: none; 
+  color: white; 
+  padding: 14px 20px; 
+  } 
+.subscribeButton:hover {
+  background-color: #001D4A;
+  }
+            
+  * {
+    font-family: 'Poppins', sans-serif;
+   }
+            
+   * {
+     font-family: 'Poppins', sans-serif;
+    }
+    /* NAVIGATION BAR*/
+     nav {
+       margin-bottom: 0;
+       border-radius: 0;
+       background-color:rgba(0, 29, 74, 1) ;
+       padding: 8px;
+     }
+   
+     /* Login popup css:*/
+   
+   .PopUpLogin-content {
+     background-color:rgb(244,241,222);
+   }
+   /* The Close Button */
+   .close {
+     color: #aaaaaa;
+     float: right;
+     font-size: 28px;
+     font-weight: bold;
+   }
+   .close:hover, .close:focus {
+     color: #000;
+     text-decoration: none;
+     cursor: pointer;
+   }
+   /* Css for the content*/
+   /* Full-width input fields */
+   .Login{
+     text-align:center;
+     font-size:30px;
+     
+   }
+   .form-container  input[type=email], .form-container input[type=password] {
+     border-radius:6px;
+     width: 100%;
+     padding: 15px;
+     margin: 5px 0 22px 0;
+     border: none;
+     background: white;
+   }
+   .SF{
+     float:right;
+   }
+   #SignUpBtn {
+     border:none;
+     font-size:15px;
+     background-color:rgb(244,241,222);
+   }
+   #ForgetPassword{
+     border:none;
+     font-size:15px;
+     background-color:rgb(244,241,222);
+   }
+   .joinn{
+       background-color: rgba(0, 29, 74, 1);
+   }
+   .joinn a:link {
+     text-decoration: none;
+     background-color: rgba(0, 29, 74, 1);
+     color:rgb(143, 140, 140);
+   }
+   
+   .joinn a:visited {
+     text-decoration: none;
+     background-color: rgba(0, 29, 74, 1);
+     color:rgb(165, 161, 161);
+   }
+   
+   .joinn a:hover {
+     text-decoration: underline;
+     background-color: rgba(0, 29, 74, 1);
+     color:rgb(143, 140, 140);
+   }
+   
+   .joinn a:active {
+     text-decoration: underline;
+     background-color: rgba(0, 29, 74, 1);
+     color:rgb(90, 90, 90);
+   }
+   /* Set a style for the submit/login button */
+   .form-container #btn {
+     border-radius:4px;
+     background-color: rgb(236, 164, 0);
+     color: white;
+     padding: 16px 20px;
+     border: none;
+     cursor: pointer;
+     width: 100%;
+     margin-bottom:10px;
+     opacity: 0.8;
+     font-size:18px;
+     float: right;
+   }
+   /* NAVIGATION BAR*/
+   .navi a{
+       color: #aaaaaa;
+       margin: 5px 10px;
+   ;
+   }
+   /* Button used to open the contact form - fixed at the bottom of the page */
+   .open-button {
+     background-color: #F59A23;
+     color: white;
+     padding: 6px 10px;
+     border: none;
+     cursor: pointer;
+     opacity: 0.8;
+     bottom: 23px;
+     right: 28px;
+     width: 100px;
+   }
+   
+   /* The popup form - hidden by default */
+   .form-popup {
+     display: none;
+     position: fixed;
+     bottom: 0;
+     right: 15px;
+     border: 3px solid #f1f1f1;
+     z-index: 9;
+   }
+   
+   /* Add styles to the form container */
+   .form-container {
+     max-width: 300px;
+     padding: 10px;
+     background-color: white;
+   }
+   
+     .Section{
+    background-color:white;
+  }
+  
