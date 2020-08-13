@@ -191,12 +191,12 @@ footer {
 }
 
 input[type=email] {
+  margin-left: 10%;
   padding: 12px 20px;
   display: inline-block;
-    padding: 12px 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}	
+}
 .subscribeButton {
   background-color:#F59A23;
   border-radius: 5px;
@@ -221,12 +221,13 @@ input[type=email] {
   #numb{
     padding-left:90px;
   }   
-  #formatText{
-    padding-left: 120px;
-  }   
-	footer h2{
-padding-left: 90px;
-  }
+  .formatText{
+    font-size: 26px;
+    font-weight: bold;
+} 
+	footer h1{
+font-size: 50px;  
+}
 #topbtn {
   display: none; 
   position: fixed; 
@@ -246,8 +247,16 @@ padding-left: 90px;
   background-color: rgba(0, 29, 74, 1) ;
 }
 .cl2{
+  background-color: #001D4A;
+  padding-top: 1px;
+  height: Auto;
+  letter-spacing: 1px;
   display: flex;
+  background-color: #001D4A;
+  color: white;
+  padding-left: 3%;
 }
+
 #linkTour a:link, #linkTour a:visited {
     color: black;
     text-decoration: none;
