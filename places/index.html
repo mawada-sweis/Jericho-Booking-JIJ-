@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -8,7 +8,6 @@
 	    <link rel="stylesheet" type="text/css" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<<<<<<< HEAD
 		
 		
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -18,41 +17,45 @@
     </head>
     <body>
 	
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid " style="background-color:rgba(0, 29, 74, 1) ;">
-          <div class="collapse navbar-collapse" style="margin-left: 15em;">
-            <ul class="nav navbar-nav">
-              <li><a href="../tourist attractions/index.html">Tourist effects</a></li>
-              <li><a href="../places/index.html">Places</a></li>
-              <li><a href="../trip/index.html">Trip</a></li>
-            </ul> 
+        <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:rgba(0, 29, 74, 1) ;">
+        <div class="container-fluid ">
             <div class="navbar-header">
-                <a href="../home page/index.html" class="navbar-brand " style="margin-right:2em;margin-left:2em;color: ivory;font-size: 3em;">Journey Into Jericho</a>
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+             <a href="../home%20page/index.html" class=" navbar-brand JIJname" style="color: ivory;font-size: 35px;">Journey Into Jericho</a>
             </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-              <li><a href="../type/index.html">Type</a></li>
-              <li><a href="#contant">contant us</a></li>
+              <li><a href="../type/index.html">Book Now</a></li>       
+              <li><a href="../tourist%20attractions/index.html">Tourist Attractions </a></li>  
+              <li><a href="../trip/index.html">Trips</a></li>
+              <li><a href="../places/index.html">Places</a></li>
+              <li><a href="../notWork/index.html">Community</a></li>
             </ul> 
             <ul class="nav navbar-nav navbar-right">
-                <li><button class="nav join" id="LogInBtn"> 
+                <li><button class="join" id="LogInBtn"> 
                     <span class="glyphicon glyphicon-log-in"> </span>Login</button>
                     <div id="PopUpLogin" class="PopUpLogin">
                           <div class="PopUpLogin-content">
                               <span class="close">&times;</span>
-                              <form class="form-container">
-                                  <h1 style="text-align: center;font-size: 30px;">Welcome back</h1>
+                              <form class="form-container text-left">
+                                  <h2 class="Login text-center">Welcome back</h2>
                                   <hr> <br>
                                   <label for="email" >Email address</label> <br>
                                   <input type="email" placeholder="Enter Email" name="email" required> <br> 
-                                  <label for="psw" >Password</label> <br>
-                                  <input type="password" placeholder="Enter Password" name="psw" required> <br>
+                                  <label>Password <br></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                                
                                   <label>
                                       <input type="checkbox" name="remember"> Remember me
                                   </label> 
-                                  <span style="float:right;"> 
-                                    <button id="SignUpBtn"> Sign up </button> 
+                                  <span class="SF"> 
+                                    <button id="SignUpBtn" onclick="document.location='Joinus.html';"> Sign up </button> 
                                     <b>   |    </b>
-                                    <button id="ForgetPassword"> Forget Password?</button>
+                                    <button id="ForgetPassword" onclick="document.location='../notWork/index.html';"> Forget Password?</button>
                                   </span>
                                   <br> <br>
                                   <button id="btn"> Login</button>
@@ -76,91 +79,15 @@
                       }
                     </script>
                 </li>
-                <li><a href="../Templates/Joinus.html">Join us</a></li>
+                <li><a href="Joinus.html">Join us</a></li>
             </ul>
           </div>
         </div>
-      </nav>
-=======
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-       
-        <title>Places</title>
-    </head>
-    <body>
-       
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid " style="background-color:rgba(0, 29, 74, 1) ;">
-              <div class="collapse navbar-collapse" style="margin-left: 15em;">
-                <ul class="nav navbar-nav">
-                  <li><a href="../tourist attractions/index.html">Tourist effects</a></li>
-                  <li><a href="../places/index.html">Places</a></li>
-                  <li><a href="../trip/index.html">Trip</a></li>
-                </ul> 
-                <div class="navbar-header">
-                    <a href="../home page/index.html" class="navbar-brand " style="margin-right:2em;margin-left:2em;color: ivory;font-size: 3em;">Journey Into Jericho</a>
-                </div>
-                <ul class="nav navbar-nav">
-                  <li><a href="../type/index.html">Type</a></li>
-                  <li><a href="#contant">contant us</a></li>
-                </ul> 
-                <ul class="nav navbar-nav navbar-right">
-                    <li><button class="nav join" id="LogInBtn"> 
-                        <span class="glyphicon glyphicon-log-in"> </span>Login</button>
-                        <div id="PopUpLogin" class="PopUpLogin">
-                              <div class="PopUpLogin-content">
-                                  <span class="close">&times;</span>
-                                  <form class="form-container">
-                                      <h1 style="text-align: center;font-size: 30px;">Welcome back</h1>
-                                      <hr> <br>
-                                      <label for="email" >Email address</label> <br>
-                                      <input type="email" placeholder="Enter Email" name="email" required> <br> 
-                                      <label for="psw" >Password</label> <br>
-                                      <input type="password" placeholder="Enter Password" name="psw" required> <br>
-                                      <label>
-                                          <input type="checkbox" name="remember"> Remember me
-                                      </label> 
-                                      <span style="float:right;"> 
-                                        <button id="SignUpBtn"> Sign up </button> 
-                                        <b>   |    </b>
-                                        <button id="ForgetPassword"> Forget Password?</button>
-                                      </span>
-                                      <br> <br>
-                                      <button id="btn"> Login</button>
-                                  </form>
-                              </div>
-                        </div>
-                        <script>
-                          var modal = document.getElementById("PopUpLogin");
-                          var btn = document.getElementById("LogInBtn");
-                          var span = document.getElementsByClassName("close")[0];
-                          btn.onclick = function() {
-                              modal.style.display = "block";
-                          }
-                          span.onclick = function() {
-                              modal.style.display = "none";
-                          }
-                          window.onclick = function(event) {
-                              if (event.target == modal) {
-                                  modal.style.display = "none";
-                              }
-                          }
-                        </script>
-                    </li>
-                    <li><a href="../Templates/Joinus.html">Join us</a></li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-
-
->>>>>>> 4f2cd05ecd22d2281985fd2d83facb4e127b8b8f
-        
-        <br><br><br><br>
+      </nav> 
+<div class="breakhorizontally"></div>
+<div class="container">
         <div class="inner">
-            <iframe class="w-100 justify-content-center align-items-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54219.7354203509!2d35.4294883438231!3d31.859467452090175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ccc61e6ff8567%3A0x811428a4685668bb!2z2KPYsdmK2K3Ypw!5e0!3m2!1sen!2s!4v1596105513722!5m2!1sen!2s" width="800" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class="w-100 justify-content-center align-items-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54219.7354203509!2d35.4294883438231!3d31.859467452090175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ccc61e6ff8567%3A0x811428a4685668bb!2z2KPYsdmK2K3Ypw!5e0!3m2!1sen!2s!4v1596105513722!5m2!1sen!2s" width="800" height="450"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             <br><br><br><br>
             <div class="flxrow w-100 row m-0">
                 <div class="scroll w-100 col-lg-8 mb-4 mb-lg-0">
@@ -183,64 +110,91 @@
                                           </svg>
                                     </div>
                                 </div>
-                                <div><img class="restimg" src="images/limonah.jpg" alt="limonah"></div>
-                                <div>
+                            <div><img class="restimg" src="images/limonah.jpg" alt="limonah"></div>
+                            <div>
+                                <h3>Limonah Restaurant</h3>
+                                <h4>Muntazhat Street, Jericho</h4>
+                                <h4>3.9/5</h4>
+                                <div class="flxrow">
+                                    <button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button>
+                                    <div>
+                                        <input class="comm" type="text" placeholder="Add a comment ...">
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div>
+                        <div class="rest">
+                            <div class="flxrow">
+							<div class="flxcol">
+                                    <div>
+                                        <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M4.5 2a.5.5 0 0 0-.5.5v11.066l4-2.667 4 2.667V8.5a.5.5 0 0 1 1 0v6.934l-5-3.333-5 3.333V2.5A1.5 1.5 0 0 1 4.5 1h4a.5.5 0 0 1 0 1h-4zm9-1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V1.5a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M13 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
+                                          </svg>
+                                    </div>
+                                    <div>
+                                        <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                          </svg>
+                                    </div>
+                                </div>
+                            <div><img class="restimg" src="images/rest1.jpg" alt="limonah"></div>
+                            <div>
                                     <h3>Limonah Restaurant</h3>
                                     <h4>Muntazhat Street, Jericho</h4>
                                     <h4>3.9/5</h4>
-                                </div>
+                                    <div class="flxrow">
+                                        <button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button>
+                                        <div>
+                                            <input class="comm" type="text" placeholder="Add a comment ...">
+                                        </div>
+                                    </div>
+                            </div>
                                 
                             </div>
-                            <div class="flxrow">
-                                <button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button>
-                                <div>
-                                    <input class="comm" type="text" placeholder="Add a comment ...">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="rest">
-                            <div class="flxrow">
-							<div class="flxcol">
-                                    <div>
-                                        <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M4.5 2a.5.5 0 0 0-.5.5v11.066l4-2.667 4 2.667V8.5a.5.5 0 0 1 1 0v6.934l-5-3.333-5 3.333V2.5A1.5 1.5 0 0 1 4.5 1h4a.5.5 0 0 1 0 1h-4zm9-1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V1.5a.5.5 0 0 1 .5-.5z"/>
-                                            <path fill-rule="evenodd" d="M13 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
-                                          </svg>
-                                    </div>
-                                    <div>
-                                        <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
-                                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
-                                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                          </svg>
-                                    </div>
-                                </div>
-                                <div><img class="restimg" src="images/image.jpg" alt="image"></div>
-                                <div>
-                                    <h3>Example Restaurant</h3>
-                                    <h4>Example, Jericho</h4>
-                                    <h4>__/5</h4>
-                                </div>
-                                
-                            </div>
-<<<<<<< HEAD
-                            <div class="flxrow">
-                                <!--??????????????????????????????????????????-->
-								<button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button>
-                                <div>
-                                    <input class="comm" type="text" placeholder="Add a comment ...">
-                                </div>
-=======
                             
                         </div>
-                        <div class="flxrow">
-                            <button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button>
-                            <div>
-                                <input class="comm" type="text" placeholder="Add a comment ...">
->>>>>>> 4f2cd05ecd22d2281985fd2d83facb4e127b8b8f
+                    </div>
+                    <div>
+                        <div class="rest">
+                            <div class="flxrow">
+							<div class="flxcol">
+                                    <div>
+                                        <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M4.5 2a.5.5 0 0 0-.5.5v11.066l4-2.667 4 2.667V8.5a.5.5 0 0 1 1 0v6.934l-5-3.333-5 3.333V2.5A1.5 1.5 0 0 1 4.5 1h4a.5.5 0 0 1 0 1h-4zm9-1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V1.5a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M13 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
+                                          </svg>
+                                    </div>
+                                    <div>
+                                        <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
+                                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
+                                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                          </svg>
+                                    </div>
+                                </div>
+                                <div><img class="restimg" src="images/rest2.jpg" alt="image"></div>
+                                <div>
+                                    <h3>Example Restaurant</h3>
+                                    <h4>Example, Jericho</h4>
+                                    <h4>4/5</h4>
+                                    <div class="flxrow">
+                                <div><button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button></div>
+                                <div>
+                                    <input class="comm" type="text" placeholder="Add a comment ...">
+                                </div>
                             </div>
+                                </div>
+                                
+                            </div>
+                            
                         </div>
                     </div>
                     <div>
@@ -261,54 +215,21 @@
                                           </svg>
                                     </div>
                                 </div>
-                                <div><img class="restimg" src="images/image.jpg" alt="image"></div>
+                                <div><img class="restimg" src="images/rest3.jpg" alt="image"></div>
                                 <div>
                                     <h3>Example Restaurant</h3>
                                     <h4>Example, Jericho</h4>
-                                    <h4>__/5</h4>
-                                </div>
-                                
-                            </div>
-                            <div class="flxrow">
+                                    <h4>3.1/5</h4>
+                                    <div class="flxrow">
                                 <div><button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button></div>
                                 <div>
                                     <input class="comm" type="text" placeholder="Add a comment ...">
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="rest">
-                            <div class="flxrow">
-							<div class="flxcol">
-                                    <div>
-                                        <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-plus" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M4.5 2a.5.5 0 0 0-.5.5v11.066l4-2.667 4 2.667V8.5a.5.5 0 0 1 1 0v6.934l-5-3.333-5 3.333V2.5A1.5 1.5 0 0 1 4.5 1h4a.5.5 0 0 1 0 1h-4zm9-1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V1.5a.5.5 0 0 1 .5-.5z"/>
-                                            <path fill-rule="evenodd" d="M13 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
-                                          </svg>
-                                    </div>
-                                    <div>
-                                        <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd" d="M8 3.5a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5H4a.5.5 0 0 1 0-1h3.5V4a.5.5 0 0 1 .5-.5z"/>
-                                            <path fill-rule="evenodd" d="M7.5 8a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1H8.5V12a.5.5 0 0 1-1 0V8z"/>
-                                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                                          </svg>
-                                    </div>
-                                </div>
-                                <div><img class="restimg" src="images/image.jpg" alt="image"></div>
-                                <div>
-                                    <h3>Example Restaurant</h3>
-                                    <h4>Example, Jericho</h4>
-                                    <h4>__/5</h4>
                                 </div>
                                 
                             </div>
-                            <div class="flxrow">
-                                <div><button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button></div>
-                                <div>
-                                    <input class="comm" type="text" placeholder="Add a comment ...">
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                     <div>
@@ -321,12 +242,6 @@
                                             <path fill-rule="evenodd" d="M4.5 2a.5.5 0 0 0-.5.5v11.066l4-2.667 4 2.667V8.5a.5.5 0 0 1 1 0v6.934l-5-3.333-5 3.333V2.5A1.5 1.5 0 0 1 4.5 1h4a.5.5 0 0 1 0 1h-4zm9-1a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V1.5a.5.5 0 0 1 .5-.5z"/>
                                             <path fill-rule="evenodd" d="M13 3.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"/>
                                           </svg>
-	                                
-	<script>
-	function myFunction() {
-  alert("this action will be available soon");
- }
-</script>
                                     </div>
                                     <div>
                                         <svg onclick="myFunction()" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -336,20 +251,26 @@
                                           </svg>
                                     </div>
                                 </div>
-                                <div><img class="restimg" src="images/image.jpg" alt="image"></div>
+                                <div><img class="restimg" src="images/rest4.jpg" alt="image"></div>
                                 <div>
                                     <h3>Example Restaurant</h3>
                                     <h4>Example, Jericho</h4>
-                                    <h4>__/5</h4>
-                                </div>
-                                
-                            </div>
-                            <div class="flxrow">
+                                    <h4>4.2/5</h4>
+                                <div class="flxrow">
                                 <div><button onclick="myFunction()" style="font-size:24px"><i class="fa fa-send"></i></button></div>
                                 <div>
                                     <input class="comm" type="text" placeholder="Add a comment ...">
                                 </div>
                             </div>
+                        </div>
+                                
+                            </div>
+                            
+                            <script>
+                                function myFunction() {
+                              alert("this action will be available soon");
+                             }
+                            </script>
                         </div>
                     </div>
                 </div>
@@ -363,7 +284,6 @@
                                 <label class="bookrest">Check in</label><br>
                                 <input type="time" class="time">
                             </div>
-                            <!-- <div>&nbsp; &nbsp; &nbsp; &nbsp;</div> -->
                             <div>
                                 <label class="bookrest">Check out</label><br>
                                 <input type="time" class="time">
@@ -372,7 +292,7 @@
                         <br>
                         <div><input type="checkbox">I'm on a work trip</div>
                         <br>
-                        <div><button class="bookbutt">Book Now</button></div>
+                        <div><button class="bookbutt" onclick="document.location='../type/index.html';" >Book Now</button></div>
                     </div>
                 </div>
             </div>
@@ -386,7 +306,7 @@
 		<div class="row">
 			<div class="[ col-xs-12  col-sm-12 ]">
 				<ul class="event-list">
-					<li>
+					<li onclick="document.location='../notWork/index.html';">
 						<time datetime="2014-07-20">
 							<span class="day">9</span>
 							<span class="month">Jul</span>
@@ -401,8 +321,8 @@
 						
 					</li>
 
-					<li>
-						<time datetime="2014-07-20 0000">
+					<li onclick="document.location='../notWork/index.html';">
+						<time datetime="2000-01-01T00:00:00">
 							<span class="day">10</span>
 							<span class="month">Jul</span>
 							<span class="year">2020</span>
@@ -413,7 +333,7 @@
 							<p class="desc">cable car</p>
 							<ul>
 								
-								<li style="width:50%;"><span class="fa fa-money"></span> $3.99</li>
+								<li style="width:50%;"><span class="fa fa-money" onclick="document.location='booking.html';"></span> $3.99</li>
 							</ul>
 						</div>
 						
@@ -439,7 +359,7 @@
 			</div>
 			<div class="marginLeft col-4" style="margin-top: 3%;">
 				<h2 class="formatText">contant us</h2>
-				<a id="mail"href="STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
+				<a id="mail" href="STPT.comp@gmail.com">STPT.comp@gmail.com</a><br>
 				999-9999-999 <br>
 				<address>Palestine - Nablus</address>
 			</div>
