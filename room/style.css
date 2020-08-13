@@ -1,4 +1,4 @@
-            .box{
+.box{
                 display: flex;
             }
             .box1{
@@ -31,7 +31,7 @@
                 padding-bottom: 5px;
                 border-radius: 4%;
             }
-	          #id1{
+	       #id1{
                 margin-top: 0px;
                 padding-left: 30%;
                 font-size: 45px;
@@ -54,37 +54,25 @@
                 font-family: Arial;
                 font-size: 25px;
             }
-            
-            .btnBook{
+            .button{
                 background-color: #F59A23;
-                border: none;
                 padding: 20px;
                 margin: 5px;
                 width: 420px;
                 height: 100px;
-                font-size: 30px;
+                font-size: 20px;
                 color: white;
                 border-radius: 5px;
             }
-            .btnBook:hover{
-                background-color:beige;
+            .button:hover{
+                background-color: white;
                 padding: 20px;
                 margin: 5px;
                 width: 420px;
                 height: 100px;
-                font-size: 35px;
+                font-size: 20px;
                 color: #F59A23;
                 border-radius: 5px;
-            }
-            .infOwner{
-              border: 1px solid black;
-              text-align: center;
-              padding: 20px;
-              margin: 5px;
-              width: 420px;
-              height: 100px;
-              font-size: 20px;
-              border-radius: 5px;
             }
             #iid{
                 font-size: 20px;
@@ -144,18 +132,31 @@
             }
 			
 
-/*slide show*/
+
+
+/*neeeeeeeeeeeeew*/
+
 #carousel-inner img {
-  width: 900px;
-  height: 550px;    
-}
+    width: 900px;
+    height: 520px;    
+  }
 #carousel-control-next{
-left:820px;
-}
+  left:820px;
+  }
 #carousel-control-prev{
-left:20px;
-}
+  left:20px;
+  }
 #carousel-control-next , #carousel-control-prev{ 
+<<<<<<< HEAD
+    display: flexbox;
+    width: 2%;
+    text-align: center;
+    opacity: .5;
+  }
+/* #carousel-indicators{
+   content-align:center;
+} */
+=======
   display: flexbox;
   width: 2%;
   text-align: center;
@@ -164,16 +165,18 @@ left:20px;
   
 
 
+>>>>>>> 4f2cd05ecd22d2281985fd2d83facb4e127b8b8f
 .row{
-margin-left:-10px;
-display: flexbox;
-flex-wrap: wrap;
-margin-left: 70px;
+  margin-left:-10px;
+  display: flexbox;
+  flex-wrap: wrap;
+  margin-left: 70px;
 }
-/*rating star*/
+/*newwwwwwwwwwwwww star*/
 .main {
 	margin-right: 20px;
 	float:right;
+	
 }
 .rating-star {
     direction: rtl;
