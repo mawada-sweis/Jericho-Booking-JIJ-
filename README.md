@@ -115,7 +115,7 @@ sami.ghazal.2@gmail.com
 - Noor Kobari <br>
 noor.kobari9@gmail.com
 - Zubaida Al-Sadder <br> 
-sdrzubaida@gmail.co
+sdrzubaida@gmail.com
 - Ibrahim Ratrout <br>
 ibrahimratrout11@gmail.com
 
